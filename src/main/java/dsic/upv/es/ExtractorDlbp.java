@@ -20,7 +20,6 @@ public class ExtractorDlbp {
 			articlesDblp.put(dblpArticle);
 		}
 		dblpJson.put("publicaciones", articlesDblp);
-		System.out.println(dblpJson.toString());
 		return dblpJson;
 	}
 
@@ -30,18 +29,61 @@ public class ExtractorDlbp {
 		dblpArticle.put("titulo", this.getTitle(article));
 		dblpArticle.put("año", this.getYear(article));
 		dblpArticle.put("url", this.getUrl(article));
+		dblpArticle.put("pagina_inicio", this.getFirstPage(article));
+		dblpArticle.put("pagina_fin", this.getEndPage(article));
+		dblpArticle.put("ejemplar", this.getEjemplar(article));
 		return dblpArticle;
 	}
 
+
+	private JSONObject getEjemplar(JSONObject article) {
+		JSONObject ejemplar = new JSONObject();
+		if(article.has("volume")) {
+			ejemplar.put("volumen", article.get("volume"));
+		}
+		if(article.has("number")) {
+			ejemplar.put("numero", article.get("number"));
+		}
+		ejemplar.put("revista", article.get("journal"));
+		return ejemplar;
+	}
 	private int getYear(JSONObject article) {
 		int year = article.getInt("year");
 		return year;
 	}
+	private String getFirstPage(JSONObject article) {
+		String firstPage = "";
+		if(article.has("pages")) {
+			Object pagesObj = article.get("pages");
+			if(pagesObj instanceof String) {
+				String pages = article.getString("pages");
+				firstPage = pages.split("-")[0];
+			} else if(pagesObj instanceof Integer) {
+				firstPage = "1";
+			}
+		}
+		return firstPage;
+	}
+	private String getEndPage(JSONObject article) {
+		String endPage = "";
+		if(article.has("pages")) {
+			Object pagesObj = article.get("pages");
+			if(pagesObj instanceof String) {
+				String pages = article.getString("pages");
+				endPage = pages.split("-")[0];
+			} else if(pagesObj instanceof Integer) {
+				int pages = article.getInt("pages");
+				endPage = Integer.toString(pages);
+
+			}
+		}
+		return endPage;
+	}
 	private String getUrl(JSONObject article) {
 		String url = "";
-		try {
+		if(article.has("url")) {
 			url = article.getString("url");
-		} catch (Exception e) {}
+		}
 		return url;
 	}
 	private String getTitle(JSONObject article) {
@@ -50,7 +92,7 @@ public class ExtractorDlbp {
 	}
 	private JSONArray getAuthors(JSONObject article) {
 		JSONArray authors = new JSONArray();
-		try {
+		if(article.has("author")) {
 			Object authorsObj = article.get("author");
 			if(authorsObj instanceof JSONArray) {
 				JSONArray authorsJSON = (JSONArray) authorsObj;
@@ -64,8 +106,6 @@ public class ExtractorDlbp {
 				authors = this.getAuthorsFromString(authorsJSON);
 
 			}
-		} catch (Exception e) {
-			
 		}
 		return authors;
 	}

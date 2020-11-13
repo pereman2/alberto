@@ -16,6 +16,12 @@ public class XMLtoJSON2 {
 		JSONObject jsonObj = XMLtoJSON2.transformXMLtoJson(xmlFile);
 		ExtractorDlbp extractorDlbp = new ExtractorDlbp(jsonObj);
 		JSONObject dblpJson = extractorDlbp.extract();
+		String jsonFile = "/Users/peristocles/uni/iei/lab/dblp-converted.json";
+		int PRETTY_PRINT_INDENT_FACTOR = 4;
+		try (FileWriter fileWriter = new FileWriter(jsonFile)){
+			fileWriter.write(dblpJson.toString(PRETTY_PRINT_INDENT_FACTOR));
+			
+		} catch(Exception  e) {System.out.println(e); }
 
 	}
 
