@@ -20,7 +20,6 @@ public class ExtractorIeex {
 		JSONObject iexJson = new JSONObject();
 		JSONArray articles = new JSONArray();
 		JSONArray iexArticles = (JSONArray) this.jsonObj.get("articles");
-		System.out.println(articles.toString());
 		for(int i = 0; i < iexArticles.length(); i++) {
 			JSONObject article = iexArticles.getJSONObject(i);
 			JSONObject publication = getPublication(article);
@@ -35,6 +34,22 @@ public class ExtractorIeex {
 		publication.put("titulo", this.getTitle(article));
 		publication.put("año", this.getYear(article));
 		publication.put("url", this.getUrl(article));
+		String publicationType = article.getString("content_type").toLowerCase();
+		if(publicationType.contains("article") || publicationType.contains("journal")) {
+			publication.put("publication_type", "article");
+			publication.put("pagina_inicio", this.getFirstPage(article));
+			publication.put("pagina_fin", this.getEndPage(article));
+			publication.put("ejemplar", this.getEjemplar(article));
+
+		} else if(publicationType.contains("conference")) {
+			publication.put("publication_type", "conference");
+			publication.put("lugar", this.getLugar(article));
+			publication.put("pagina_inicio", this.getFirstPage(article));
+			publication.put("pagina_fin", this.getEndPage(article));
+		} else {
+			publication.put("publication_type", "book");
+			publication.put("editorial", this.getEditorial(article));
+		}
 		//dblpArticle.put("pagina_inicio", this.getFirstPage(article));
 		//dblpArticle.put("pagina_fin", this.getEndPage(article));
 		//dblpArticle.put("ejemplar", this.getEjemplar(article));
@@ -48,8 +63,25 @@ public class ExtractorIeex {
 		if(article.has("number")) {
 			ejemplar.put("numero", article.get("number"));
 		}
-		ejemplar.put("revista", article.get("journal"));
+		if(article.has("publication_date")) {
+			ejemplar.put("mes", article.get("publication_date"));
+		}
+		if(article.has("journal")) {
+			ejemplar.put("revista", article.get("journal"));
+		}
 		return ejemplar;
+	}
+	private String getEditorial(JSONObject article) {
+		if(article.has("publisher")) {
+			return article.getString("publisher");
+		}
+		return "";
+	}
+	private String getLugar(JSONObject article) {
+		if(article.has("conference_location")) {
+			return article.getString("conference_location");
+		}
+		return "";
 	}
 	private int getYear(JSONObject article) {
 		int year = -1;
@@ -59,30 +91,15 @@ public class ExtractorIeex {
 		return year;
 	}
 	private String getFirstPage(JSONObject article) {
-		String firstPage = "";
-		if(article.has("pages")) {
-			Object pagesObj = article.get("pages");
-			if(pagesObj instanceof String) {
-				String pages = article.getString("pages");
-				firstPage = pages.split("-")[0];
-			} else if(pagesObj instanceof Integer) {
-				firstPage = "1";
-			}
+		if(article.has("start_page")) {
+			return article.getString("start_page");
 		}
-		return firstPage;
+		return "";
 	}
 	private String getEndPage(JSONObject article) {
 		String endPage = "";
-		if(article.has("pages")) {
-			Object pagesObj = article.get("pages");
-			if(pagesObj instanceof String) {
-				String pages = article.getString("pages");
-				endPage = pages.split("-")[0];
-			} else if(pagesObj instanceof Integer) {
-				int pages = article.getInt("pages");
-				endPage = Integer.toString(pages);
-
-			}
+		if(article.has("end_page")) {
+			endPage = article.getString("end_page");
 		}
 		return endPage;
 	}
@@ -114,7 +131,7 @@ public class ExtractorIeex {
 					String name = splitName[0];
 					String surnames = "";
 					for(int j = 1; j < splitName.length; j++) {
-						surnames += splitName[i] + " ";
+						surnames += splitName[j] + " ";
 					}
 					author.put("name", name);
 					author.put("surname", surnames);
@@ -125,20 +142,18 @@ public class ExtractorIeex {
 		return authors;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		String jsonPath = "/Users/peristocles/uni/iei/lab/ieeexplore.json";
-		try {
-			InputStream is = new FileInputStream(jsonPath);
-			JSONTokener tokener = new JSONTokener(is);
-			JSONObject object = new JSONObject(tokener);
-			ExtractorIeex ex = new ExtractorIeex(object);
-			JSONObject transformedJson = ex.extract();
-			int PRETTY_PRINT_INDENT_FACTOR = 4;
-			String jsonFile = "/Users/peristocles/uni/iei/lab/iex-converted.json";
-			try (FileWriter fileWriter = new FileWriter(jsonFile)){
-				fileWriter.write(transformedJson.toString(PRETTY_PRINT_INDENT_FACTOR));
-				
-			} catch(Exception  e) {System.out.println(e); }
+		InputStream is = new FileInputStream(jsonPath);
+		JSONTokener tokener = new JSONTokener(is);
+		JSONObject object = new JSONObject(tokener);
+		ExtractorIeex ex = new ExtractorIeex(object);
+		JSONObject transformedJson = ex.extract();
+		int PRETTY_PRINT_INDENT_FACTOR = 4;
+		String jsonFile = "/Users/peristocles/uni/iei/lab/iex-converted.json";
+		try (FileWriter fileWriter = new FileWriter(jsonFile)){
+			fileWriter.write(transformedJson.toString(PRETTY_PRINT_INDENT_FACTOR));
+
 		} catch(Exception  e) {System.out.println(e); }
 
 	}
