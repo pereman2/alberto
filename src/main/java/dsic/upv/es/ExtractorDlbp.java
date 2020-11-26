@@ -149,7 +149,6 @@ public class ExtractorDlbp {
 		for(int i = 1; i < authorSplit.length; i++) {
 			surnames += authorSplit[i] + " ";
 		}
-		surnames = surnames.stripTrailing();
 		authorJson.put("nombre", name);
 		authorJson.put("apellido", surnames);
 		return authorJson;

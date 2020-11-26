@@ -32,7 +32,7 @@ public class ExtractorIeex {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("aÃ±o", this.getYear(article));
+		publication.put("año", this.getYear(article));
 		publication.put("url", this.getUrl(article));
 		String publicationType = article.getString("content_type").toLowerCase();
 		if(publicationType.contains("article") || publicationType.contains("journal")) {
@@ -143,14 +143,14 @@ public class ExtractorIeex {
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
-		String jsonPath = "/Users/peristocles/uni/iei/lab/ieeexplore.json";
+		String jsonPath = System.getProperty("user.dir") + "/DemoJsons/ieeeXplore_2018-2020-short.json";
 		InputStream is = new FileInputStream(jsonPath);
 		JSONTokener tokener = new JSONTokener(is);
 		JSONObject object = new JSONObject(tokener);
 		ExtractorIeex ex = new ExtractorIeex(object);
 		JSONObject transformedJson = ex.extract();
 		int PRETTY_PRINT_INDENT_FACTOR = 4;
-		String jsonFile = "/Users/peristocles/uni/iei/lab/iex-converted.json";
+		String jsonFile = System.getProperty("user.dir") + "/mapped-data/iex-converted.json";
 		try (FileWriter fileWriter = new FileWriter(jsonFile)){
 			fileWriter.write(transformedJson.toString(PRETTY_PRINT_INDENT_FACTOR));
 

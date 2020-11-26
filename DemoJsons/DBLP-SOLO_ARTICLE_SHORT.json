@@ -1,0 +1,1207 @@
+{
+	"dblp": {
+		"article": [
+						{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Olson10",
+				"author": "Lynne E. Olson",
+				"title": "Developing a Framework for Assessing Responsible Conduct of Research Education Programs.",
+				"pages": "185-200",
+				"year": "2010",
+				"volume": "16",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-010-9196-4",
+					"https://www.wikidata.org/entity/Q48229165"
+				],
+				"url": "db/journals/see/see16.html#Olson10"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/KalichmanPB12",
+				"author": [
+					{
+						"@orcid": "0000-0002-4268-1188",
+						"$": "Michael W. Kalichman"
+					},
+					"Dena Plemmons",
+					"Stephanie J. Bird"
+				],
+				"title": "Editors' Overview: Neuroethics: Many Voices and Many Stories.",
+				"pages": "423-432",
+				"year": "2012",
+				"volume": "18",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-012-9398-z"
+					},
+					"https://www.wikidata.org/entity/Q36354364"
+				],
+				"url": "db/journals/see/see18.html#KalichmanPB12"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/KoepsellBP15",
+				"author": [
+					"David Koepsell",
+					{
+						"@orcid": "0000-0001-8485-7092",
+						"$": "Willem-Paul Brinkman"
+					},
+					{
+						"@orcid": "0000-0002-9834-9600",
+						"$": "Sylvia C. Pont"
+					}
+				],
+				"title": "Human Participants in Engineering Research: Notes from a Fledgling Ethics Committee.",
+				"pages": "1033-1048",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-014-9568-2",
+					"https://www.wikidata.org/entity/Q38221031"
+				],
+				"url": "db/journals/see/see21.html#KoepsellBP15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Stroth16",
+				"author": "Nikolas Stroth",
+				"title": "The Central Importance of Laboratories for Reducing Waste in Biomedical Research.",
+				"pages": "1707-1716",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "6",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9738-x",
+					"https://www.wikidata.org/entity/Q48525086"
+				],
+				"url": "db/journals/see/see22.html#Stroth16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/KliestikovaKMCK18",
+				"author": [
+					"Jana Kliestikova",
+					"Tomas Kliestik",
+					"Maria Misankova",
+					"Tatiana Corejova",
+					"Anna Krizanova"
+				],
+				"title": "Aspects of Morality and Law Enforcement in Today's Science in Post-Soviet Countries.",
+				"pages": "1747-1753",
+				"year": "2018",
+				"volume": "24",
+				"journal": "Sci. Eng. Ethics",
+				"number": "6",
+				"ee": [
+					"https://doi.org/10.1007/s11948-017-9988-x",
+					"https://www.wikidata.org/entity/Q43925679"
+				],
+				"url": "db/journals/see/see24.html#KliestikovaKMCK18"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Miller19",
+				"author": "Seumas Miller",
+				"title": "Whither the University? Universities of Technology and the Problem of Institutional Purpose.",
+				"pages": "1679-1698",
+				"year": "2019",
+				"volume": "25",
+				"journal": "Sci. Eng. Ethics",
+				"number": "6",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-019-00147-7"
+					},
+					"https://www.wikidata.org/entity/Q92224924"
+				],
+				"url": "db/journals/see/see25.html#Miller19"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Cheruvalath19",
+				"author": {
+					"@orcid": "0000-0001-8868-7174",
+					"$": "Reena Cheruvalath"
+				},
+				"title": "Does Studying 'Ethics' Improve Engineering Students' Meta-Moral Cognitive Skills?",
+				"pages": "583-596",
+				"year": "2019",
+				"volume": "25",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					"https://doi.org/10.1007/s11948-017-0009-x",
+					"https://www.wikidata.org/entity/Q47270751"
+				],
+				"url": "db/journals/see/see25.html#Cheruvalath19"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/GilbertOMD18",
+				"author": [
+					{
+						"@orcid": "0000-0003-0524-8649",
+						"$": "Frédéric Gilbert 0003"
+					},
+					{
+						"@orcid": "0000-0002-1690-9505",
+						"$": "Cathal D. O'Connell"
+					},
+					"Tajanka Mladenovska",
+					{
+						"@orcid": "0000-0003-0292-9983",
+						"$": "Susan Dodds"
+					}
+				],
+				"title": "Print Me an Organ? Ethical and Regulatory Issues Emerging from 3D Bioprinting in Medicine.",
+				"pages": "73-91",
+				"year": "2018",
+				"volume": "24",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-017-9874-6",
+					"https://www.wikidata.org/entity/Q42696042"
+				],
+				"url": "db/journals/see/see24.html#GilbertOMD18"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/ErrenSM16",
+				"author": [
+					"Thomas C. Erren",
+					"David M. Shaw",
+					"Peter Morfeld"
+				],
+				"title": "Analyzing the Publish-or-Perish Paradigm with Game Theory: The Prisoner's Dilemma and a Possible Escape.",
+				"pages": "1431-1446",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "5",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9701-x",
+					"https://www.wikidata.org/entity/Q41367526"
+				],
+				"url": "db/journals/see/see22.html#ErrenSM16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/NicolosiR13",
+				"author": [
+					"Guido Nicolosi",
+					"Guido Ruivenkamp"
+				],
+				"title": "Re-skilling the Social Practices: Open Source and Life-Towards a Commons-Based Peer Production in Agro-biotechnology?",
+				"pages": "1181-1200",
+				"year": "2013",
+				"volume": "19",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					"https://doi.org/10.1007/s11948-012-9405-4",
+					"https://www.wikidata.org/entity/Q30422774"
+				],
+				"url": "db/journals/see/see19.html#NicolosiR13"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Wikman-SvahnL19",
+				"author": [
+					{
+						"@orcid": "0000-0001-6388-8674",
+						"$": "Per Wikman-Svahn"
+					},
+					"Lars Lindblom"
+				],
+				"title": "Toward a Responsibility-Catering Prioritarian Ethical Theory of Risk.",
+				"pages": "655-670",
+				"year": "2019",
+				"volume": "25",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-018-0036-2"
+					},
+					"https://www.wikidata.org/entity/Q58657916"
+				],
+				"url": "db/journals/see/see25.html#Wikman-SvahnL19"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/SemendeferiTDP16",
+				"author": [
+					{
+						"@orcid": "0000-0003-4651-5918",
+						"$": "Ioanna Semendeferi"
+					},
+					"Panagiotis Tsiamyrtzis",
+					"Malcolm Dcosta",
+					{
+						"@orcid": "0000-0001-8025-2600",
+						"$": "Ioannis T. Pavlidis"
+					}
+				],
+				"title": "Connecting Past with Present: A Mixed-Methods Science Ethics Course and its Evaluation.",
+				"pages": "251-274",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9626-4",
+					"https://www.wikidata.org/entity/Q47436915"
+				],
+				"url": "db/journals/see/see22.html#SemendeferiTDP16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/FlipseSO13",
+				"author": [
+					"Steven M. Flipse",
+					"Maarten C. A. van der Sanden",
+					"Patricia Osseweijer"
+				],
+				"title": "The Why and How of Enabling the Integration of Social and Ethical Aspects in Research and Development.",
+				"pages": "703-725",
+				"year": "2013",
+				"volume": "19",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					"https://doi.org/10.1007/s11948-012-9423-2",
+					"https://www.wikidata.org/entity/Q45768637"
+				],
+				"url": "db/journals/see/see19.html#FlipseSO13"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Berger15",
+				"author": "Vance W. Berger",
+				"title": "Conflicts of Interest, Selective Inertia, and Research Malpractice in Randomized Clinical Trials: An Unholy Trinity.",
+				"pages": "857-874",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-014-9576-2",
+					"https://www.wikidata.org/entity/Q24289463"
+				],
+				"url": "db/journals/see/see21.html#Berger15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Hansson11",
+				"author": "Sven Ove Hansson",
+				"title": "Do we Need a Special Ethics for Research?",
+				"pages": "21-29",
+				"year": "2011",
+				"volume": "17",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-009-9186-6",
+					"https://www.wikidata.org/entity/Q39925740"
+				],
+				"url": "db/journals/see/see17.html#Hansson11"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/CurzerPWP16",
+				"author": [
+					"Howard J. Curzer",
+					"Gad Perry",
+					"Mark C. Wallace",
+					"Dan Perry"
+				],
+				"title": "The Three Rs of Animal Research: What they Mean for the Institutional Animal Care and Use Committee and Why.",
+				"pages": "549-565",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9659-8",
+					"https://www.wikidata.org/entity/Q30375120"
+				],
+				"url": "db/journals/see/see22.html#CurzerPWP16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/PlougH14",
+				"author": [
+					{
+						"@orcid": "0000-0002-3693-0547",
+						"$": "Thomas Ploug"
+					},
+					{
+						"@orcid": "0000-0002-7200-5607",
+						"$": "Søren Holm"
+					}
+				],
+				"title": "Agreeing in Ignorance: Mapping the Routinisation of Consent in ICT-Services.",
+				"pages": "1097-1110",
+				"year": "2014",
+				"volume": "20",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-013-9492-x",
+					"https://www.wikidata.org/entity/Q57303007"
+				],
+				"url": "db/journals/see/see20.html#PlougH14"
+			},
+			{
+				"@mdate": "2020-08-13",
+				"@key": "journals/see/AkozerA16",
+				"author": [
+					"Mehmet Aközer",
+					"Emel Aközer"
+				],
+				"title": "Basing Science Ethics on Respect for Human Dignity.",
+				"pages": "1627-1647",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "6",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9731-4",
+					"https://www.wikidata.org/entity/Q58659024"
+				],
+				"url": "db/journals/see/see22.html#AkozerA16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Oksvold16",
+				"author": "Morten P. Oksvold",
+				"title": "Incidence of Data Duplications in a Randomly Selected Pool of Life Science Publications.",
+				"pages": "487-496",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9668-7",
+					"https://www.wikidata.org/entity/Q30969930"
+				],
+				"url": "db/journals/see/see22.html#Oksvold16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/HevelkeN15",
+				"author": [
+					"Alexander Hevelke",
+					"Julian Nida-Rümelin"
+				],
+				"title": "Responsibility for Crashes of Autonomous Vehicles: An Ethical Analysis.",
+				"pages": "619-630",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-014-9565-5"
+					},
+					"https://www.wikidata.org/entity/Q40636825"
+				],
+				"url": "db/journals/see/see21.html#HevelkeN15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/HorvatMOS16",
+				"author": [
+					"Martina Horvat",
+					"Ana Mlinaric",
+					"Jelena Omazic",
+					"Vesna Supak-Smolcic"
+				],
+				"title": "An Analysis of Medical Laboratory Technology Journals' Instructions for Authors.",
+				"pages": "1095-1106",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9689-2",
+					"https://www.wikidata.org/entity/Q47998475"
+				],
+				"url": "db/journals/see/see22.html#HorvatMOS16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/WicksonF15",
+				"author": [
+					{
+						"@orcid": "0000-0002-2841-4155",
+						"$": "Fern Wickson"
+					},
+					"Ellen-Marie Forsberg"
+				],
+				"title": "Standardising Responsibility? The Significance of Interstitial Spaces.",
+				"pages": "1159-1180",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "5",
+				"ee": [
+					"https://doi.org/10.1007/s11948-014-9602-4",
+					"https://www.wikidata.org/entity/Q48061755"
+				],
+				"url": "db/journals/see/see21.html#WicksonF15"
+			},
+			{
+				"@mdate": "2020-10-11",
+				"@key": "journals/see/SmithWMLSPSR20",
+				"author": [
+					{
+						"@orcid": "0000-0002-4615-8204",
+						"$": "Elise Smith"
+					},
+					{
+						"@orcid": "0000-0001-6771-3919",
+						"$": "Bryn Williams-Jones"
+					},
+					{
+						"@orcid": "0000-0002-3462-4546",
+						"$": "Zubin Master"
+					},
+					"Vincent Larivière",
+					"Cassidy R. Sugimoto",
+					"Adèle Paul-Hus",
+					"Min Shi",
+					"David B. Resnik"
+				],
+				"title": "Misconduct and Misbehavior Related to Authorship Disagreements in Collaborative Science.",
+				"pages": "1967-1993",
+				"year": "2020",
+				"volume": "26",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-019-00112-4",
+					"https://www.wikidata.org/entity/Q92506302"
+				],
+				"url": "db/journals/see/see26.html#SmithWMLSPSR20"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Davis19",
+				"author": {
+					"@orcid": "0000-0002-5309-0199",
+					"$": "Michael Davis 0002"
+				},
+				"title": "Temporal Limits on What Engineers Can Plan.",
+				"pages": "1609-1624",
+				"year": "2019",
+				"volume": "25",
+				"journal": "Sci. Eng. Ethics",
+				"number": "5",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-019-00124-0"
+					},
+					"https://www.wikidata.org/entity/Q92329543"
+				],
+				"url": "db/journals/see/see25.html#Davis19"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/EversFMM15",
+				"author": [
+					"David L. Evers",
+					"Carol B. Fowler",
+					"Jeffrey T. Mason",
+					"Rebecca K. Mimnall"
+				],
+				"title": "Deliberate Microbial Infection Research Reveals Limitations to Current Safety Protections of Healthy Human Subjects.",
+				"pages": "1049-1064",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-014-9579-z",
+					"https://www.wikidata.org/entity/Q38242596"
+				],
+				"url": "db/journals/see/see21.html#EversFMM15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Alonso",
+				"author": [
+					"Muhsen Owaida",
+					"Gustavo Alonso",
+					"Laura Fogliarini",
+					"Anthony Hock-Koon",
+					"Pierre-Etienne Melet"
+				],
+				"title": "Lowering the latency of data processing pipelines through fpga based hardware acceleration",
+				"pages": "71-85",
+				"year": "2019",
+				"volume": "13",
+				"journal": "Proceedings of the VLDB Endowment",
+				"number": "1"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/OwusuCSP20",
+				"author": [
+					{
+						"@orcid": "0000-0001-7263-0878",
+						"$": "Emmanuel Kingsford Owusu"
+					},
+					"Albert P. C. Chan",
+					"Ming Shan",
+					"Erika Pärn"
+				],
+				"title": "An Empirical Study on Construction Process Corruption Susceptibility: A Vignette of International Expertise.",
+				"pages": "325-349",
+				"year": "2020",
+				"volume": "26",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-019-00083-6",
+					"https://www.wikidata.org/entity/Q92346366"
+				],
+				"url": "db/journals/see/see26.html#OwusuCSP20"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Cohen-Almagor15",
+				"author": {
+					"@orcid": "0000-0002-5869-9243",
+					"$": "Raphael Cohen-Almagor"
+				},
+				"title": "Press Self-Regulation in Britain: A Critique.",
+				"pages": "159-181",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-014-9538-8",
+					"https://www.wikidata.org/entity/Q38200544"
+				],
+				"url": "db/journals/see/see21.html#Cohen-Almagor15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/NewberryALGD11",
+				"author": [
+					{
+						"@orcid": "0000-0002-7622-2238",
+						"$": "Byron Newberry"
+					},
+					{
+						"@orcid": "0000-0003-2079-0874",
+						"$": "Katherine A. Austin"
+					},
+					"William D. Lawson",
+					"Greta Gorsuch",
+					"Thomas Darwin"
+				],
+				"title": "Acclimating International Graduate Students to Professional Engineering Ethics.",
+				"pages": "171-194",
+				"year": "2011",
+				"volume": "17",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-009-9178-6",
+					"https://www.wikidata.org/entity/Q47438541"
+				],
+				"url": "db/journals/see/see17.html#NewberryALGD11"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/CoeckelberghPSP16",
+				"author": [
+					{
+						"@orcid": "0000-0001-9576-1002",
+						"$": "Mark Coeckelbergh"
+					},
+					"Cristina Pop 0002",
+					"Ramona Simut",
+					"Andreea Peca",
+					"Sebastian Pintea",
+					"Daniel O. David",
+					{
+						"@orcid": "0000-0003-4881-9341",
+						"$": "Bram Vanderborght"
+					}
+				],
+				"title": "A Survey of Expectations About the Role of Robots in Robot-Assisted Therapy for Children with ASD: Ethical Acceptability, Trust, Sociability, Appearance, and Attachment.",
+				"pages": "47-65",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9649-x",
+					"https://www.wikidata.org/entity/Q50312205"
+				],
+				"url": "db/journals/see/see22.html#CoeckelberghPSP16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Heilmann17",
+				"author": "Conrad Heilmann",
+				"title": "Values in Time Discounting.",
+				"pages": "1333-1349",
+				"year": "2017",
+				"volume": "23",
+				"journal": "Sci. Eng. Ethics",
+				"number": "5",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-017-9950-y"
+					},
+					"https://www.wikidata.org/entity/Q42374920"
+				],
+				"url": "db/journals/see/see23.html#Heilmann17"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/MillerWG17",
+				"author": [
+					"Keith W. Miller",
+					"Marty J. Wolf",
+					"Frances S. Grodzinsky"
+				],
+				"title": "This \"Ethical Trap\" Is for Roboticists, Not Robots: On the Issue of Artificial Agent Ethical Decision-Making.",
+				"pages": "389-401",
+				"year": "2017",
+				"volume": "23",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					"https://doi.org/10.1007/s11948-016-9785-y",
+					"https://www.wikidata.org/entity/Q30387365"
+				],
+				"url": "db/journals/see/see23.html#MillerWG17"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Moskovitz19",
+				"author": {
+					"@orcid": "0000-0001-5324-2407",
+					"$": "Cary Moskovitz"
+				},
+				"title": "Text Recycling in Scientific Writing.",
+				"pages": "813-851",
+				"year": "2019",
+				"volume": "25",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					"https://doi.org/10.1007/s11948-017-0008-y",
+					"https://www.wikidata.org/entity/Q52353416"
+				],
+				"url": "db/journals/see/see25.html#Moskovitz19"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/CrainMT13",
+				"author": [
+					"A. Lauren Crain",
+					"Brian C. Martinson",
+					"Carol R. Thrush"
+				],
+				"title": "Relationships Between the Survey of Organizational Research Climate (SORC) and Self-Reported Research Practices.",
+				"pages": "835-850",
+				"year": "2013",
+				"volume": "19",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					"https://doi.org/10.1007/s11948-012-9409-0",
+					"https://www.wikidata.org/entity/Q36674913"
+				],
+				"url": "db/journals/see/see19.html#CrainMT13"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Schomberg11",
+				"author": {
+					"@orcid": "0000-0003-1768-806X",
+					"$": "René von Schomberg"
+				},
+				"title": "On Identifying Plausibility and Deliberative Public Policy - Commentary on: \"Negotiating Plausibility: Intervening in the Future of Nanotechnology\".",
+				"pages": "739-742",
+				"year": "2011",
+				"volume": "17",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-011-9305-z",
+					"https://www.wikidata.org/entity/Q39713063"
+				],
+				"url": "db/journals/see/see17.html#Schomberg11"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/BrandlWNRSFFNM20",
+				"author": [
+					{
+						"@orcid": "0000-0001-6736-7366",
+						"$": "Christopher Brandl"
+					},
+					{
+						"@orcid": "0000-0003-0703-8944",
+						"$": "Matthias Wille"
+					},
+					{
+						"@orcid": "0000-0002-6123-9424",
+						"$": "Jochen Nelles"
+					},
+					{
+						"@orcid": "0000-0001-7974-8668",
+						"$": "Peter Rasche"
+					},
+					{
+						"@orcid": "0000-0002-7376-7304",
+						"$": "Katharina Schäfer"
+					},
+					"Frank Ole Flemisch",
+					{
+						"@orcid": "0000-0002-8551-5032",
+						"$": "Martin Frenz"
+					},
+					{
+						"@orcid": "0000-0002-4784-1283",
+						"$": "Verena Nitsch"
+					},
+					{
+						"@orcid": "0000-0002-3703-0401",
+						"$": "Alexander Mertens"
+					}
+				],
+				"title": "AMICAI: A Method Based on Risk Analysis to Integrate Responsible Research and Innovation into the Work of Research and Innovation Practitioners.",
+				"pages": "667-689",
+				"year": "2020",
+				"volume": "26",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					"https://doi.org/10.1007/s11948-019-00114-2",
+					"https://www.wikidata.org/entity/Q92736453"
+				],
+				"url": "db/journals/see/see26.html#BrandlWNRSFFNM20"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/LiF12",
+				"author": [
+					"Jessica Li",
+					"Shengli Fu"
+				],
+				"title": "A Systematic Approach to Engineering Ethics Education.",
+				"pages": "339-349",
+				"year": "2012",
+				"volume": "18",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					"https://doi.org/10.1007/s11948-010-9249-8",
+					"https://www.wikidata.org/entity/Q48747772"
+				],
+				"url": "db/journals/see/see18.html#LiF12"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/McComas12",
+				"author": "Katherine A. McComas",
+				"title": "Researcher Views About Funding Sources and Conflicts of Interest in Nanotechnology.",
+				"pages": "699-717",
+				"year": "2012",
+				"volume": "18",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-011-9264-4",
+					"https://www.wikidata.org/entity/Q34025787"
+				],
+				"url": "db/journals/see/see18.html#McComas12"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Greenspan12",
+				"author": "Ralph J. Greenspan",
+				"title": "Biological Indeterminacy.",
+				"pages": "447-452",
+				"year": "2012",
+				"volume": "18",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					"https://doi.org/10.1007/s11948-012-9379-2",
+					"https://www.wikidata.org/entity/Q46268833"
+				],
+				"url": "db/journals/see/see18.html#Greenspan12"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/ForsbergHNO18",
+				"author": [
+					{
+						"@orcid": "0000-0001-5137-1141",
+						"$": "Ellen-Marie Forsberg"
+					},
+					"Anders Braarud Hanssen",
+					"Hanne Marie Nielsen",
+					"Ingrid Olesen"
+				],
+				"title": "Patent Ethics: The Misalignment of Views Between the Patent System and the Wider Society.",
+				"pages": "1551-1576",
+				"year": "2018",
+				"volume": "24",
+				"journal": "Sci. Eng. Ethics",
+				"number": "5",
+				"ee": [
+					"https://doi.org/10.1007/s11948-017-9956-5",
+					"https://www.wikidata.org/entity/Q48233164"
+				],
+				"url": "db/journals/see/see24.html#ForsbergHNO18"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/GuntzburgerPT19",
+				"author": [
+					{
+						"@orcid": "0000-0002-5618-7340",
+						"$": "Yoann Guntzburger"
+					},
+					"Thierry C. Pauchant",
+					"Philippe A. Tanguy"
+				],
+				"title": "Empowering Engineering Students in Ethical Risk Management: An Experimental Study.",
+				"pages": "911-937",
+				"year": "2019",
+				"volume": "25",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					"https://doi.org/10.1007/s11948-018-0044-2",
+					"https://www.wikidata.org/entity/Q58657909"
+				],
+				"url": "db/journals/see/see25.html#GuntzburgerPT19"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/BaldiniBNT18",
+				"author": [
+					{
+						"@orcid": "0000-0003-4830-1227",
+						"$": "Gianmarco Baldini"
+					},
+					"Maarten Botterman",
+					"Ricardo Neisse",
+					"Mariachiara Tallacchini"
+				],
+				"title": "Ethical Design in the Internet of Things.",
+				"pages": "905-925",
+				"year": "2018",
+				"volume": "24",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-016-9754-5"
+					},
+					"https://www.wikidata.org/entity/Q40075407"
+				],
+				"url": "db/journals/see/see24.html#BaldiniBNT18"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Varelius15",
+				"author": "Jukka Varelius",
+				"title": "Is the Non-rivalrousness of Intellectual Objects a Problem for the Moral Justification of Economic Rights to Intellectual Property?",
+				"pages": "895-906",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-014-9574-4",
+					"https://www.wikidata.org/entity/Q48071530"
+				],
+				"url": "db/journals/see/see21.html#Varelius15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/IencaWJKE18",
+				"author": [
+					{
+						"@orcid": "0000-0001-8835-5444",
+						"$": "Marcello Ienca"
+					},
+					{
+						"@orcid": "0000-0003-0857-0510",
+						"$": "Tenzin Wangmo"
+					},
+					"Fabrice Jotterand",
+					"Reto W. Kressig",
+					{
+						"@orcid": "0000-0002-4249-7399",
+						"$": "Bernice Elger"
+					}
+				],
+				"title": "Ethical Design of Intelligent Assistive Technologies for Dementia: A Descriptive Review.",
+				"pages": "1035-1055",
+				"year": "2018",
+				"volume": "24",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-017-9976-1",
+					"https://www.wikidata.org/entity/Q47550868"
+				],
+				"url": "db/journals/see/see24.html#IencaWJKE18"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Sari17",
+				"author": "Arif Sari",
+				"title": "E-Government Attempts in Small Island Developing States: The Rate of Corruption with Virtualization.",
+				"pages": "1673-1688",
+				"year": "2017",
+				"volume": "23",
+				"journal": "Sci. Eng. Ethics",
+				"number": "6",
+				"ee": [
+					"https://doi.org/10.1007/s11948-016-9848-0",
+					"https://www.wikidata.org/entity/Q39044152"
+				],
+				"url": "db/journals/see/see23.html#Sari17"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Haskova17",
+				"author": {
+					"@orcid": "0000-0002-4971-7972",
+					"$": "Simona Hasková"
+				},
+				"title": "Holistic Assessment and Ethical Disputation on a New Trend in Solid Biofuels.",
+				"pages": "509-519",
+				"year": "2017",
+				"volume": "23",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					"https://doi.org/10.1007/s11948-016-9790-1",
+					"https://www.wikidata.org/entity/Q58658554"
+				],
+				"url": "db/journals/see/see23.html#Haskova17"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Zheng16",
+				"author": "Yue Liang Zheng",
+				"title": "Some Ethical Concerns About Human Induced Pluripotent Stem Cells.",
+				"pages": "1277-1284",
+				"year": "2016",
+				"volume": "22",
+				"journal": "Sci. Eng. Ethics",
+				"number": "5",
+				"ee": [
+					"https://doi.org/10.1007/s11948-015-9693-6",
+					"https://www.wikidata.org/entity/Q56765219"
+				],
+				"url": "db/journals/see/see22.html#Zheng16"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/VochozkaSM18",
+				"author": [
+					"Marek Vochozka",
+					"Vojtech Stehel",
+					"Anna Marousková"
+				],
+				"title": "Uncovering a New Moral Dilemma of Economic Optimization in Biotechnological Processing.",
+				"pages": "1331-1338",
+				"year": "2018",
+				"volume": "24",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-017-9925-z",
+					"https://www.wikidata.org/entity/Q40477254"
+				],
+				"url": "db/journals/see/see24.html#VochozkaSM18"
+			},
+			{
+				"@mdate": "2020-10-11",
+				"@key": "journals/see/BezuidenhoutQS20",
+				"author": [
+					{
+						"@orcid": "0000-0003-4328-3963",
+						"$": "Louise Bezuidenhout"
+					},
+					"Robert Quick",
+					"Hugh P. Shanahan"
+				],
+				"title": "\"Ethics When You Least Expect It\": A Modular Approach to Short Course Data Ethics Instruction.",
+				"pages": "2189-2213",
+				"year": "2020",
+				"volume": "26",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					"https://doi.org/10.1007/s11948-020-00197-2",
+					"https://www.wikidata.org/entity/Q89749635"
+				],
+				"url": "db/journals/see/see26.html#BezuidenhoutQS20"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Nyholm18",
+				"author": {
+					"@orcid": "0000-0002-3836-5932",
+					"$": "Sven Nyholm"
+				},
+				"title": "Attributing Agency to Automated Systems: Reflections on Human-Robot Collaborations and Responsibility-Loci.",
+				"pages": "1201-1219",
+				"year": "2018",
+				"volume": "24",
+				"journal": "Sci. Eng. Ethics",
+				"number": "4",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-017-9943-x"
+					},
+					"https://www.wikidata.org/entity/Q48104935"
+				],
+				"url": "db/journals/see/see24.html#Nyholm18"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Moskovitz19a",
+				"author": {
+					"@orcid": "0000-0001-5324-2407",
+					"$": "Cary Moskovitz"
+				},
+				"title": "Publisher Correction to: Text Recycling in Scientific Writing.",
+				"pages": "853-854",
+				"year": "2019",
+				"volume": "25",
+				"journal": "Sci. Eng. Ethics",
+				"number": "3",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-018-0060-2"
+					},
+					"https://www.wikidata.org/entity/Q89287492"
+				],
+				"url": "db/journals/see/see25.html#Moskovitz19a"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/PatenaudeLBBBBC15",
+				"author": [
+					"Johane Patenaude",
+					"Georges-Auguste Legault",
+					"Jacques Beauvais",
+					"Louise Bernier",
+					"Jean-Pierre Béland",
+					"Patrick Boissy",
+					"Vanessa Chenel",
+					"Charles-Étienne Daniel",
+					"Jonathan Genest",
+					"Marie-Sol Poirier",
+					"Danielle Tapin"
+				],
+				"title": "Framework for the Analysis of Nanotechnologies' Impacts and Ethical Acceptability: Basis of an Interdisciplinary Approach to Assessing Novel Technologies.",
+				"pages": "293-315",
+				"year": "2015",
+				"volume": "21",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-014-9543-y"
+					},
+					"https://www.wikidata.org/entity/Q35147011"
+				],
+				"url": "db/journals/see/see21.html#PatenaudeLBBBBC15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/Zhang",
+				"author": [
+					"Yiming Zhang",
+					"Dongsheng Li",
+					"Dongsheng Li",
+					"Feng Zhao",
+					"Jinshu Su",
+					"Jinshu Su"
+				],
+				"title": "CSR: Classified Source Routing in Distributed Networks",
+				"pages": "464-477",
+				"year": "2018",
+				"volume": "6",
+				"journal": "Sci. Eng. Ethics",
+				"number": "2",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-014-9543-y"
+					},
+					"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7116526"
+				],
+				"url": "db/journals/see/see21.html#PatenaudeLBBBBC15"
+			},
+			{
+				"@mdate": "2020-07-09",
+				"@key": "journals/see/KaaRTPK20",
+				"author": [
+					"Geerten van de Kaa",
+					"Jafar Rezaei 0001",
+					"Behnam Taebi",
+					{
+						"@orcid": "0000-0002-9553-5651",
+						"$": "Ibo van de Poel"
+					},
+					"Abhilash Kizhakenath"
+				],
+				"title": "How to Weigh Values in Value Sensitive Design: A Best Worst Method Approach for the Case of Smart Metering.",
+				"pages": "475-494",
+				"year": "2020",
+				"volume": "26",
+				"journal": "Sci. Eng. Ethics",
+				"number": "1",
+				"ee": [
+					{
+						"@type": "oa",
+						"$": "https://doi.org/10.1007/s11948-019-00105-3"
+					},
+					"https://www.wikidata.org/entity/Q92959988"
+				],
+				"url": "db/journals/see/see26.html#KaaRTPK20"
+			}
+			
+		]
+	}
+}

@@ -27,7 +27,7 @@
         "titulo": "A CNN-based face detector with a simple feature map and a coarse-to-fine classifier - Withdrawn",
         "publication_type": "article",
         "pagina_fin": "1",
-        "año": 2020,
+        "a�o": 2020,
         "url": ""
     },
     {
@@ -37,7 +37,7 @@
         "titulo": "A 5.8 GHz Integrated CMOS Dedicated Short Range Communication Transceiver for the Korea/Japan Electronic Toll Collection System",
         "publication_type": "article",
         "pagina_fin": "13",
-        "año": 2020,
+        "a�o": 2020,
         "url": "https://ieeexplore.ieee.org/document/5604341/"
     },
     {
@@ -51,12 +51,15 @@
                 "name": "Zun"
             }
         ],
-        "ejemplar": {"volumen": "22"},
+        "ejemplar": {
+            "volumen": "22",
+            "mes": "March 2018"
+        },
         "pagina_inicio": "470",
         "titulo": "On the Performance of Multi-Message Algebraic Gossip Algorithms in Dynamic Random Geometric Graphs",
         "publication_type": "article",
         "pagina_fin": "473",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/6868190/"
     },
     {
@@ -66,7 +69,7 @@
         "titulo": "Welcome to ASP-DAC 2018",
         "publication_type": "conference",
         "pagina_fin": "6",
-        "año": 2018,
+        "a�o": 2018,
         "url": ""
     },
     {
@@ -76,7 +79,7 @@
         "titulo": "Message from the technical program committee",
         "publication_type": "conference",
         "pagina_fin": "7",
-        "año": 2018,
+        "a�o": 2018,
         "url": ""
     },
     {
@@ -86,7 +89,7 @@
         "titulo": "Sponsorship",
         "publication_type": "conference",
         "pagina_fin": "8",
-        "año": 2018,
+        "a�o": 2018,
         "url": ""
     },
     {
@@ -104,12 +107,15 @@
                 "name": "Jin-Yun"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "April-June 2018"
+        },
         "pagina_inicio": "288",
         "titulo": "Disaster Rescue Task Scheduling: An Evolutionary Multiobjective Optimization Approach",
         "publication_type": "article",
         "pagina_fin": "300",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/6977929/"
     },
     {
@@ -127,12 +133,15 @@
                 "name": "Hualou"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "562",
         "titulo": "A Copula-Based Granger Causality Measure for the Analysis of Neural Spike Train Data",
         "publication_type": "article",
         "pagina_fin": "569",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7001041/"
     },
     {
@@ -154,12 +163,15 @@
                 "name": "Imogen"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "377",
         "titulo": "Modeling the Geometry and Dynamics of the Endoplasmic Reticulum Network",
         "publication_type": "article",
         "pagina_fin": "386",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7006715/"
     },
     {
@@ -173,12 +185,15 @@
                 "name": "Piergiuseppe"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "453",
         "titulo": "Space-Efficient Verifiable Secret Sharing Using Polynomial Interpolation",
         "publication_type": "article",
         "pagina_fin": "463",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7018923/"
     },
     {
@@ -200,12 +215,15 @@
                 "name": "Rajkumar"
             }
         ],
-        "ejemplar": {"volumen": "11"},
+        "ejemplar": {
+            "volumen": "11",
+            "mes": "1 Jan.-Feb. 2018"
+        },
         "pagina_inicio": "5",
         "titulo": "An Inter-Cloud Meta-Scheduling (ICMS) Simulation Framework: Architecture and Evaluation",
         "publication_type": "article",
         "pagina_fin": "19",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7029675/"
     },
     {
@@ -235,12 +253,15 @@
                 "name": "Albert"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "303",
         "titulo": "DROPS: Division and Replication of Data in Cloud for Optimal Performance and Security",
         "publication_type": "article",
         "pagina_fin": "315",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7031887/"
     },
     {
@@ -254,12 +275,15 @@
                 "name": "Ulisses"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "516",
         "titulo": "Optimal Fault Detection and Diagnosis in Transcriptional Circuits Using Next-Generation Sequencing",
         "publication_type": "article",
         "pagina_fin": "525",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7045509/"
     },
     {
@@ -269,7 +293,7 @@
         "titulo": "Organizing committee",
         "publication_type": "conference",
         "pagina_fin": "9",
-        "año": 2018,
+        "a�o": 2018,
         "url": ""
     },
     {
@@ -279,7 +303,7 @@
         "titulo": "Technical Program Committee",
         "publication_type": "conference",
         "pagina_fin": "12",
-        "año": 2018,
+        "a�o": 2018,
         "url": ""
     },
     {
@@ -289,7 +313,7 @@
         "titulo": "University LSI design contest committee",
         "publication_type": "conference",
         "pagina_fin": "13",
-        "año": 2018,
+        "a�o": 2018,
         "url": ""
     },
     {
@@ -299,7 +323,7 @@
         "titulo": "Steering committee",
         "publication_type": "conference",
         "pagina_fin": "14",
-        "año": 2018,
+        "a�o": 2018,
         "url": ""
     },
     {
@@ -329,12 +353,15 @@
                 "name": "Yufei"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "526",
         "titulo": "MeTDiff: A Novel Differential RNA Methylation Analysis for MeRIP-Seq Data",
         "publication_type": "article",
         "pagina_fin": "534",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7052329/"
     },
     {
@@ -356,12 +383,15 @@
                 "name": "Tian"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "401",
         "titulo": "Statistical Learning for Anomaly Detection in Cloud Server Systems: A Multi-Order Markov Chain Framework",
         "publication_type": "article",
         "pagina_fin": "413",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7065233/"
     },
     {
@@ -379,12 +409,15 @@
                 "name": "Georgios"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "Jan.-March 2018"
+        },
         "pagina_inicio": "145",
-        "titulo": "Massively Parallel Analog Computing: Ariadne\u2019s Thread Was Made of Memristors",
+        "titulo": "Massively Parallel Analog Computing: Ariadne�\u20ac�s Thread Was Made of Memristors",
         "publication_type": "article",
         "pagina_fin": "155",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7080907/"
     },
     {
@@ -406,12 +439,15 @@
                 "name": "Naixing"
             }
         ],
-        "ejemplar": {"volumen": "12"},
+        "ejemplar": {
+            "volumen": "12",
+            "mes": "March 2018"
+        },
         "pagina_inicio": "52",
         "titulo": "The Critical Patients Localization Algorithm Using Sparse Representation for Mixed Signals in Emergency Healthcare System",
         "publication_type": "article",
         "pagina_fin": "63",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7084608/"
     },
     {
@@ -425,12 +461,15 @@
                 "name": "Chin-Laung"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "414",
         "titulo": "Audit-Free Cloud Storage via Deniable Attribute-Based Encryption",
         "publication_type": "article",
         "pagina_fin": "427",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7090980/"
     },
     {
@@ -448,12 +487,15 @@
                 "name": "Andreas"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "Jan.-March 2018"
+        },
         "pagina_inicio": "135",
         "titulo": "A Neuromorphic VLSI Circuit for Spike-Based Random Sampling",
         "publication_type": "article",
         "pagina_fin": "144",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7097031/"
     },
     {
@@ -475,12 +517,15 @@
                 "name": "Xiaojiang"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "316",
         "titulo": "Towards Privacy Preserving Publishing of Set-Valued Data on Hybrid Cloud",
         "publication_type": "article",
         "pagina_fin": "329",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7103035/"
     },
     {
@@ -498,12 +543,15 @@
                 "name": "Libing"
             }
         ],
-        "ejemplar": {"volumen": "12"},
+        "ejemplar": {
+            "volumen": "12",
+            "mes": "March 2018"
+        },
         "pagina_inicio": "64",
         "titulo": "Certificateless Public Auditing Scheme for Cloud-Assisted Wireless Body Area Networks",
         "publication_type": "article",
         "pagina_fin": "73",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7111218/"
     },
     {
@@ -517,8 +565,8 @@
                 "name": "Dongsheng"
             },
             {
-                "surname": "Sun ",
-                "name": "Zhigang"
+                "surname": "Li ",
+                "name": "Dongsheng"
             },
             {
                 "surname": "Zhao ",
@@ -533,12 +581,15 @@
                 "name": "Xicheng"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "464",
         "titulo": "CSR: Classified Source Routing in Distributed Networks",
         "publication_type": "article",
         "pagina_fin": "477",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7116526/"
     },
     {
@@ -564,12 +615,15 @@
                 "name": "Byung-Jun"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "506",
         "titulo": "Computational Prediction of Pathogenic Network Modules in Fusarium verticillioides",
         "publication_type": "article",
         "pagina_fin": "515",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7118172/"
     },
     {
@@ -607,12 +661,15 @@
                 "name": "Lizhe"
             }
         ],
-        "ejemplar": {"volumen": "7"},
+        "ejemplar": {
+            "volumen": "7",
+            "mes": "1 Jan.-March 2019"
+        },
         "pagina_inicio": "48",
         "titulo": "Cross-Layer Multi-Cloud Real-Time Application QoS Monitoring and Benchmarking As-a-Service Framework",
         "publication_type": "article",
         "pagina_fin": "61",
-        "año": 2019,
+        "a�o": 2019,
         "url": "https://ieeexplore.ieee.org/document/7126933/"
     },
     {
@@ -630,12 +687,15 @@
                 "name": "Qi"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "537",
         "titulo": "Bayesian Multiresolution Variable Selection for Ultra-High Dimensional Neuroimaging Data",
         "publication_type": "article",
         "pagina_fin": "550",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7126946/"
     },
     {
@@ -673,12 +733,15 @@
                 "name": "Charles"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "494",
         "titulo": "Examining De Novo Transcriptome Assemblies via a Quality Assessment Pipeline",
         "publication_type": "article",
         "pagina_fin": "505",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7126949/"
     },
     {
@@ -704,12 +767,15 @@
                 "name": "Dewen"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 March-April 2018"
+        },
         "pagina_inicio": "551",
         "titulo": "Gender Identification of Human Brain Image with A Novel 3D Descriptor",
         "publication_type": "article",
         "pagina_fin": "561",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7130613/"
     },
     {
@@ -717,12 +783,15 @@
             "surname": "Fathi ",
             "name": "Mohammad"
         }],
-        "ejemplar": {"volumen": "12"},
+        "ejemplar": {
+            "volumen": "12",
+            "mes": "March 2018"
+        },
         "pagina_inicio": "465",
         "titulo": "A Spectrum Allocation Scheme Between Smart Grid Communication and Neighbor Communication Networks",
         "publication_type": "article",
         "pagina_fin": "472",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7131478/"
     },
     {
@@ -748,12 +817,15 @@
                 "name": "Pierangela"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "492",
         "titulo": "Three-Server Swapping for Access Confidentiality",
         "publication_type": "article",
         "pagina_fin": "505",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7134727/"
     },
     {
@@ -779,12 +851,15 @@
                 "name": "Changqing"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 April-June 2018"
+        },
         "pagina_inicio": "506",
         "titulo": "A Holistic Approach for Distributed Dimensionality Reduction of Big Data",
         "publication_type": "article",
         "pagina_fin": "518",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7134729/"
     },
     {
@@ -798,12 +873,15 @@
                 "name": "Deo"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 Jan.-March 2018"
+        },
         "pagina_inicio": "2",
         "titulo": "A Cost-Effective Deadline-Constrained Dynamic Scheduling Algorithm for Scientific Workflows in a Cloud Environment",
         "publication_type": "article",
         "pagina_fin": "18",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7145406/"
     },
     {
@@ -821,12 +899,15 @@
                 "name": "Su"
             }
         ],
-        "ejemplar": {"volumen": "12"},
+        "ejemplar": {
+            "volumen": "12",
+            "mes": "March 2018"
+        },
         "pagina_inicio": "497",
         "titulo": "Optimal Control of Double Probing in Delay-Tolerant Network",
         "publication_type": "article",
         "pagina_fin": "505",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7147806/"
     },
     {
@@ -844,12 +925,15 @@
                 "name": "Lourdes"
             }
         ],
-        "ejemplar": {"volumen": "15"},
+        "ejemplar": {
+            "volumen": "15",
+            "mes": "1 July-Aug. 2018"
+        },
         "pagina_inicio": "1270",
         "titulo": "REPA: Applying Pathway Analysis to Genome-Wide Transcription Factor Binding Data",
         "publication_type": "article",
         "pagina_fin": "1283",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7152849/"
     },
     {
@@ -867,12 +951,15 @@
                 "name": "Arif"
             }
         ],
-        "ejemplar": {"volumen": "6"},
+        "ejemplar": {
+            "volumen": "6",
+            "mes": "1 Jan.-March 2018"
+        },
         "pagina_inicio": "168",
         "titulo": "Risk-Aware Management of Virtual Resources in Access Controlled Service-Oriented Cloud Datacenters",
         "publication_type": "article",
         "pagina_fin": "181",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7152855/"
     },
     {
@@ -890,1934 +977,16 @@
                 "name": "Azzedine"
             }
         ],
-        "ejemplar": {"volumen": "7"},
+        "ejemplar": {
+            "volumen": "7",
+            "mes": "1 Jan.-March 2019"
+        },
         "pagina_inicio": "5",
         "titulo": "A Multi-Layered Scheme for Distributed Simulations on the Cloud Environment",
         "publication_type": "article",
         "pagina_fin": "18",
-        "año": 2019,
+        "a�o": 2019,
         "url": "https://ieeexplore.ieee.org/document/7152867/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Rantos ",
-                "name": "Konstantinos"
-            },
-            {
-                "surname": "Fysarakis ",
-                "name": "Konstantinos"
-            },
-            {
-                "surname": "Manifavas ",
-                "name": "Charalampos"
-            },
-            {
-                "surname": "G. Askoxylakis ",
-                "name": "Ioannis"
-            }
-        ],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "92",
-        "titulo": "Policy-Controlled Authenticated Access to LLN-Connected Healthcare Resources",
-        "publication_type": "article",
-        "pagina_fin": "102",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7160675/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Das ",
-                "name": "Snigdha"
-            },
-            {
-                "surname": "Khatua ",
-                "name": "Manas"
-            },
-            {
-                "surname": "Misra ",
-                "name": "Sudip"
-            },
-            {
-                "surname": "S. Obaidat ",
-                "name": "Mohammad"
-            }
-        ],
-        "ejemplar": {"volumen": "7"},
-        "pagina_inicio": "102",
-        "titulo": "Quality-Assured Secured Load Sharing in Mobile Cloud Networking Environment",
-        "publication_type": "article",
-        "pagina_fin": "115",
-        "año": 2019,
-        "url": "https://ieeexplore.ieee.org/document/7160735/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Chard ",
-                "name": "Ryan"
-            },
-            {
-                "surname": "Madduri ",
-                "name": "Ravi"
-            },
-            {
-                "surname": "T. Karonis ",
-                "name": "Nicholas"
-            },
-            {
-                "surname": "Chard ",
-                "name": "Kyle"
-            },
-            {
-                "surname": "L. Duffin ",
-                "name": "Kirk"
-            },
-            {
-                "surname": "E. Ordoñez ",
-                "name": "Caesar"
-            },
-            {
-                "surname": "D. Uram ",
-                "name": "Thomas"
-            },
-            {
-                "surname": "Fleischauer ",
-                "name": "Justin"
-            },
-            {
-                "surname": "T. Foster ",
-                "name": "Ian"
-            },
-            {
-                "surname": "E. Papka ",
-                "name": "Michael"
-            },
-            {
-                "surname": "Winans ",
-                "name": "John"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "182",
-        "titulo": "Scalable pCT Image Reconstruction Delivered as a Cloud Service",
-        "publication_type": "article",
-        "pagina_fin": "195",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7160740/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Sheng ",
-                "name": "Zhengguo"
-            },
-            {
-                "surname": "Mahapatra ",
-                "name": "Chinmaya"
-            },
-            {
-                "surname": "C. M. Leung ",
-                "name": "Victor"
-            },
-            {
-                "surname": "Chen ",
-                "name": "Min"
-            },
-            {
-                "surname": "Kumar Sahu ",
-                "name": "Pratap"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "114",
-        "titulo": "Energy Efficient Cooperative Computing in Mobile Wireless Sensor Networks",
-        "publication_type": "article",
-        "pagina_fin": "126",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7161307/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Hutton ",
-                "name": "Luke"
-            },
-            {
-                "surname": "Henderson ",
-                "name": "Tristan"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "156",
-        "titulo": "Toward Reproducibility in Online Social Network Research",
-        "publication_type": "article",
-        "pagina_fin": "167",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7163309/"
-    },
-    {
-        "editorial": "IEEE",
-        "persona": [
-            {
-                "surname": "Lehr ",
-                "name": "Jane"
-            },
-            {
-                "surname": "Ron ",
-                "name": "Pralhad"
-            }
-        ],
-        "titulo": "Front Matter",
-        "publication_type": "book",
-        "año": 2018,
-        "url": ""
-    },
-    {
-        "editorial": "IEEE",
-        "persona": [
-            {
-                "surname": "Lehr ",
-                "name": "Jane"
-            },
-            {
-                "surname": "Ron ",
-                "name": "Pralhad"
-            }
-        ],
-        "titulo": "Electromagnetic Interference and Noise Suppression",
-        "publication_type": "book",
-        "año": 2018,
-        "url": ""
-    },
-    {
-        "editorial": "IEEE",
-        "persona": [
-            {
-                "surname": "Lehr ",
-                "name": "Jane"
-            },
-            {
-                "surname": "Ron ",
-                "name": "Pralhad"
-            }
-        ],
-        "titulo": "Pulse Transformers",
-        "publication_type": "book",
-        "año": 2018,
-        "url": ""
-    },
-    {
-        "editorial": "IEEE",
-        "persona": [
-            {
-                "surname": "Lehr ",
-                "name": "Jane"
-            },
-            {
-                "surname": "Ron ",
-                "name": "Pralhad"
-            }
-        ],
-        "titulo": "Electrical Breakdown in Solids, Liquids, and Vacuum",
-        "publication_type": "book",
-        "año": 2018,
-        "url": ""
-    },
-    {
-        "editorial": "IEEE",
-        "persona": [
-            {
-                "surname": "Lehr ",
-                "name": "Jane"
-            },
-            {
-                "surname": "Ron ",
-                "name": "Pralhad"
-            }
-        ],
-        "titulo": "EM Topology for Interference Control",
-        "publication_type": "book",
-        "año": 2018,
-        "url": ""
-    },
-    {
-        "editorial": "IEEE",
-        "persona": [
-            {
-                "surname": "Lehr ",
-                "name": "Jane"
-            },
-            {
-                "surname": "Ron ",
-                "name": "Pralhad"
-            }
-        ],
-        "titulo": "Marx Generators and Marx\u2010Like Circuits",
-        "publication_type": "book",
-        "año": 2018,
-        "url": ""
-    },
-    {
-        "persona": [
-            {
-                "surname": "Karmokar ",
-                "name": "Ashok"
-            },
-            {
-                "surname": "Naeem ",
-                "name": "Muhammad"
-            },
-            {
-                "surname": "Anpalagan ",
-                "name": "Alagan"
-            }
-        ],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "1034",
-        "titulo": "Green Metric Optimization in Cooperative Cognitive Radio Networks With Statistical Interference Parameters",
-        "publication_type": "article",
-        "pagina_fin": "1037",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7164251/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Wang ",
-                "name": "Jihe"
-            },
-            {
-                "surname": "Qiu ",
-                "name": "Meikang"
-            },
-            {
-                "surname": "Guo ",
-                "name": "Bing"
-            },
-            {
-                "surname": "Zong ",
-                "name": "Ziliang"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "418",
-        "titulo": "Phase-Reconfigurable Shuffle Optimization for Hadoop MapReduce",
-        "publication_type": "article",
-        "pagina_fin": "431",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7164299/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Lan Zhang ",
-                "name": "Hao"
-            },
-            {
-                "surname": "Zhao ",
-                "name": "Yali"
-            },
-            {
-                "surname": "Pang ",
-                "name": "Chaoyi"
-            },
-            {
-                "surname": "He ",
-                "name": "Jinyuan"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "518",
-        "titulo": "Splitting Large Medical Data Sets Based on Normal Distribution in Cloud Environment",
-        "publication_type": "article",
-        "pagina_fin": "531",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7172493/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Chen ",
-                "name": "Jianhui"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Ningning"
-            },
-            {
-                "surname": "Deng ",
-                "name": "Yue"
-            },
-            {
-                "surname": "Zhong ",
-                "name": "Han"
-            },
-            {
-                "surname": "Han ",
-                "name": "Jian"
-            },
-            {
-                "surname": "Li ",
-                "name": "Youjun"
-            },
-            {
-                "surname": "Wan ",
-                "name": "Zhijiang"
-            },
-            {
-                "surname": "Kotake ",
-                "name": "Taihei"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Dongsheng"
-            },
-            {
-                "surname": "Zhong ",
-                "name": "Ning"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "539",
-        "titulo": "Wisdom as a Service for Mental Health Care",
-        "publication_type": "article",
-        "pagina_fin": "552",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7180313/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Guo ",
-                "name": "Yang"
-            },
-            {
-                "surname": "L. Stolyar ",
-                "name": "Alexander"
-            },
-            {
-                "surname": "Walid ",
-                "name": "Anwar"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "209",
-        "titulo": "Shadow-Routing Based Dynamic Algorithms for Virtual Machine Placement in a Network Cloud",
-        "publication_type": "article",
-        "pagina_fin": "220",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7180319/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Tsai ",
-                "name": "Linjiun"
-            },
-            {
-                "surname": "Liao ",
-                "name": "Wanjiun"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "235",
-        "titulo": "StarCube: An On-Demand and Cost-Effective Framework for Cloud Data Center Networks with Performance Guarantee",
-        "publication_type": "article",
-        "pagina_fin": "249",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7180324/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Xie ",
-                "name": "Ruitao"
-            },
-            {
-                "surname": "Jia ",
-                "name": "Xiaohua"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "87",
-        "titulo": "Data Transfer Scheduling for Maximizing Throughput of Big-Data Computing in Cloud Systems",
-        "publication_type": "article",
-        "pagina_fin": "98",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7180342/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Jiang ",
-                "name": "Chunxiao"
-            },
-            {
-                "surname": "Chen ",
-                "name": "Yan"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Qi"
-            },
-            {
-                "surname": "Ray Liu ",
-                "name": "K.J."
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "743",
-        "titulo": "Data-Driven Auction Mechanism Design in IaaS Cloud Computing",
-        "publication_type": "article",
-        "pagina_fin": "756",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7180387/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Chen ",
-                "name": "Hanhua"
-            },
-            {
-                "surname": "Jin ",
-                "name": "Hai"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "810",
-        "titulo": "Efficient Keyword Searching in Large-Scale Social Network Service",
-        "publication_type": "article",
-        "pagina_fin": "820",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7180394/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Hossein Nikounia ",
-                "name": "Seyed"
-            },
-            {
-                "surname": "Mohammadi ",
-                "name": "Siamak"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "757",
-        "titulo": "Hypervisor and Neighbors\u2019 Noise: Performance Degradation in Virtualized Environments",
-        "publication_type": "article",
-        "pagina_fin": "767",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7180396/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Samanta ",
-                "name": "Amit"
-            },
-            {
-                "surname": "Bera ",
-                "name": "Samaresh"
-            },
-            {
-                "surname": "Misra ",
-                "name": "Sudip"
-            }
-        ],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "74",
-        "titulo": "Link-Quality-Aware Resource Allocation With Load Balance in Wireless Body Area Networks",
-        "publication_type": "article",
-        "pagina_fin": "81",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7182257/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Sun ",
-                "name": "Chang-ai"
-            },
-            {
-                "surname": "Zhao ",
-                "name": "Yan"
-            },
-            {
-                "surname": "Pan ",
-                "name": "Lin"
-            },
-            {
-                "surname": "Liu ",
-                "name": "Huai"
-            },
-            {
-                "surname": "Yueh Chen ",
-                "name": "Tsong"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "616",
-        "titulo": "Automated Testing of WS-BPEL Service Compositions: A Scenario-Oriented Approach",
-        "publication_type": "article",
-        "pagina_fin": "629",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7185422/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Todoran Koitz ",
-                "name": "Irina"
-            },
-            {
-                "surname": "Glinz ",
-                "name": "Martin"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "768",
-        "titulo": "A Fuzzy Galois Lattices Approach to Requirements Elicitation for Cloud Services",
-        "publication_type": "article",
-        "pagina_fin": "781",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7185443/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Lv ",
-                "name": "Chen"
-            },
-            {
-                "surname": "Jiang ",
-                "name": "Wei"
-            },
-            {
-                "surname": "Hu ",
-                "name": "Songlin"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Jiye"
-            },
-            {
-                "surname": "Lu ",
-                "name": "Guoliang"
-            },
-            {
-                "surname": "Liu ",
-                "name": "Zhiyong"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "630",
-        "titulo": "Efficient Dynamic Evolution of Service Composition",
-        "publication_type": "article",
-        "pagina_fin": "643",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7185446/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Xuan Trang ",
-                "name": "Mai"
-            },
-            {
-                "surname": "Murakami ",
-                "name": "Yohei"
-            },
-            {
-                "surname": "Ishida ",
-                "name": "Toru"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "602",
-        "titulo": "Policy-Aware Service Composition: Predicting Parallel Execution Performance of Composite Services",
-        "publication_type": "article",
-        "pagina_fin": "615",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7192623/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "T. Grogan ",
-                "name": "Paul"
-            },
-            {
-                "surname": "L. de Weck ",
-                "name": "Olivier"
-            }
-        ],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "103",
-        "titulo": "Infrastructure System Simulation Interoperability Using the High-Level Architecture",
-        "publication_type": "article",
-        "pagina_fin": "114",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7194737/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Luis García-Dorado ",
-                "name": "José"
-            },
-            {
-                "surname": "G. Rao ",
-                "name": "Sanjay"
-            }
-        ],
-        "ejemplar": {"volumen": "7"},
-        "pagina_inicio": "34",
-        "titulo": "Cost-aware Multi Data-Center Bulk Transfers in the Cloud from a Customer-Side Perspective",
-        "publication_type": "article",
-        "pagina_fin": "47",
-        "año": 2019,
-        "url": "https://ieeexplore.ieee.org/document/7208810/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Nir ",
-                "name": "Manjinder"
-            },
-            {
-                "surname": "Matrawy ",
-                "name": "Ashraf"
-            },
-            {
-                "surname": "St-Hilaire ",
-                "name": "Marc"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "99",
-        "titulo": "Economic and Energy Considerations for Resource Augmentation in Mobile Cloud Computing",
-        "publication_type": "article",
-        "pagina_fin": "113",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7208816/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Enamul Kabir ",
-                "name": "Md"
-            },
-            {
-                "surname": "Naser Mahmood ",
-                "name": "Abdun"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Hua"
-            },
-            {
-                "surname": "K. Mustafa ",
-                "name": "Abdul"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "408",
-        "titulo": "Microaggregation Sorting Framework for K-Anonymity Statistical Disclosure Control in Cloud Computing",
-        "publication_type": "article",
-        "pagina_fin": "417",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7208829/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "A. L. Genez ",
-                "name": "Thiago"
-            },
-            {
-                "surname": "F. Bittencourt ",
-                "name": "Luiz"
-            },
-            {
-                "surname": "L. S. da Fonseca ",
-                "name": "Nelson"
-            },
-            {
-                "surname": "R. M. Madeira ",
-                "name": "Edmundo"
-            }
-        ],
-        "ejemplar": {"volumen": "7"},
-        "pagina_inicio": "62",
-        "titulo": "Estimation of the Available Bandwidth in Inter-Cloud Links for Task Scheduling in Hybrid Clouds",
-        "publication_type": "article",
-        "pagina_fin": "74",
-        "año": 2019,
-        "url": "https://ieeexplore.ieee.org/document/7208835/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Osmani ",
-                "name": "Lirim"
-            },
-            {
-                "surname": "Toor ",
-                "name": "Salman"
-            },
-            {
-                "surname": "Komu ",
-                "name": "Miika"
-            },
-            {
-                "surname": "J. Kortelainen ",
-                "name": "Matti"
-            },
-            {
-                "surname": "Lindén ",
-                "name": "Tomas"
-            },
-            {
-                "surname": "White ",
-                "name": "John"
-            },
-            {
-                "surname": "Khan ",
-                "name": "Rasib"
-            },
-            {
-                "surname": "Eerola ",
-                "name": "Paula"
-            },
-            {
-                "surname": "Tarkoma ",
-                "name": "Sasu"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "658",
-        "titulo": "Secure Cloud Connectivity for Scientific Applications",
-        "publication_type": "article",
-        "pagina_fin": "670",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7208868/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Zhang ",
-                "name": "Lijun"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Ming"
-            },
-            {
-                "surname": "W. Sterling ",
-                "name": "Nicholas"
-            },
-            {
-                "surname": "Lee ",
-                "name": "Eun-Young"
-            },
-            {
-                "surname": "J. Eslinger ",
-                "name": "Paul"
-            },
-            {
-                "surname": "Wagner ",
-                "name": "Daymond"
-            },
-            {
-                "surname": "Du ",
-                "name": "Guangwei"
-            },
-            {
-                "surname": "M. Lewis ",
-                "name": "Mechelle"
-            },
-            {
-                "surname": "Truong ",
-                "name": "Young"
-            },
-            {
-                "surname": "DuBois Bowman ",
-                "name": "F."
-            },
-            {
-                "surname": "Huang ",
-                "name": "Xuemei"
-            }
-        ],
-        "ejemplar": {"volumen": "15"},
-        "pagina_inicio": "570",
-        "titulo": "Cortical Thinning and Cognitive Impairment in Parkinson's Disease without Dementia",
-        "publication_type": "article",
-        "pagina_fin": "580",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7214255/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Chen ",
-                "name": "Hongbin"
-            },
-            {
-                "surname": "Li ",
-                "name": "Gang"
-            },
-            {
-                "surname": "Cai ",
-                "name": "Jun"
-            }
-        ],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "583",
-        "titulo": "Spectral\u2013Energy Efficiency Tradeoff in Full-Duplex Two-Way Relay Networks",
-        "publication_type": "article",
-        "pagina_fin": "592",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7219383/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Dabbagh ",
-                "name": "Mehiar"
-            },
-            {
-                "surname": "Hamdaoui ",
-                "name": "Bechir"
-            },
-            {
-                "surname": "Guizani ",
-                "name": "Mohsen"
-            },
-            {
-                "surname": "Rayes ",
-                "name": "Ammar"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "85",
-        "titulo": "Exploiting Task Elasticity and Price Heterogeneity for Maximizing Cloud Computing Profits",
-        "publication_type": "article",
-        "pagina_fin": "96",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7226798/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Zhang ",
-                "name": "Weiwen"
-            },
-            {
-                "surname": "Wen ",
-                "name": "Yonggang"
-            },
-            {
-                "surname": "Zhang ",
-                "name": "Xinwen"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "122",
-        "titulo": "Towards Virus Scanning as a Service in Mobile Cloud Computing: Energy-Efficient Dispatching Policy Under ${N}$ -Version Protection",
-        "publication_type": "article",
-        "pagina_fin": "134",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7226806/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Sun ",
-                "name": "Geng"
-            },
-            {
-                "surname": "Cui ",
-                "name": "Tingru"
-            },
-            {
-                "surname": "Yong ",
-                "name": "Jianming"
-            },
-            {
-                "surname": "Shen ",
-                "name": "Jun"
-            },
-            {
-                "surname": "Chen ",
-                "name": "Shiping"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "292",
-        "titulo": "MLaaS: A Cloud-Based System for Delivering Adaptive Micro Learning in Mobile MOOC Learning",
-        "publication_type": "article",
-        "pagina_fin": "305",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7226858/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Wang ",
-                "name": "Huaimin"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Tao"
-            },
-            {
-                "surname": "Yin ",
-                "name": "Gang"
-            },
-            {
-                "surname": "Yang ",
-                "name": "Cheng"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "782",
-        "titulo": "Linking Issue Tracker with Q&A Sites for Knowledge Sharing across Communities",
-        "publication_type": "article",
-        "pagina_fin": "795",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7226861/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "da Silva Arruda ",
-                "name": "Thiago"
-            },
-            {
-                "surname": "Dias ",
-                "name": "Ulisses"
-            },
-            {
-                "surname": "Dias ",
-                "name": "Zanoni"
-            }
-        ],
-        "ejemplar": {"volumen": "15"},
-        "pagina_inicio": "352",
-        "titulo": "A GRASP-Based Heuristic for the Sorting by Length-Weighted Inversions Problem",
-        "publication_type": "article",
-        "pagina_fin": "363",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7229299/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Björkqvist ",
-                "name": "Mathias"
-            },
-            {
-                "surname": "Gautam ",
-                "name": "Natarajan"
-            },
-            {
-                "surname": "Birke ",
-                "name": "Robert"
-            },
-            {
-                "surname": "Y. Chen ",
-                "name": "Lydia"
-            },
-            {
-                "surname": "Binder ",
-                "name": "Walter"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "156",
-        "titulo": "Optimizing for Tail Sojourn Times of Cloud Clusters",
-        "publication_type": "article",
-        "pagina_fin": "167",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7229305/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Chen ",
-                "name": "Chien-Hung"
-            },
-            {
-                "surname": "Lin ",
-                "name": "Jenn-Wei"
-            },
-            {
-                "surname": "Kuo ",
-                "name": "Sy-Yen"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "127",
-        "titulo": "MapReduce Scheduling for Deadline-Constrained Jobs in Heterogeneous Cloud Computing Systems",
-        "publication_type": "article",
-        "pagina_fin": "140",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7229311/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Li ",
-                "name": "Peng"
-            },
-            {
-                "surname": "Guo ",
-                "name": "Song"
-            },
-            {
-                "surname": "Yu ",
-                "name": "Shui"
-            },
-            {
-                "surname": "Zhuang ",
-                "name": "Weihua"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "375",
-        "titulo": "Cross-Cloud MapReduce for Big Data",
-        "publication_type": "article",
-        "pagina_fin": "386",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7229313/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Wang ",
-                "name": "Lan"
-            },
-            {
-                "surname": "Gelenbe ",
-                "name": "Erol"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "33",
-        "titulo": "Adaptive Dispatching of Tasks in the Cloud",
-        "publication_type": "article",
-        "pagina_fin": "45",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7229325/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Sun ",
-                "name": "Le"
-            },
-            {
-                "surname": "Ma ",
-                "name": "Jiangan"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Hua"
-            },
-            {
-                "surname": "Zhang ",
-                "name": "Yanchun"
-            },
-            {
-                "surname": "Yong ",
-                "name": "Jianming"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "354",
-        "titulo": "Cloud Service Description Model: An Extension of USDL for Cloud Services",
-        "publication_type": "article",
-        "pagina_fin": "368",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7229352/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Li ",
-                "name": "Xiaoyong"
-            },
-            {
-                "surname": "Ma ",
-                "name": "Huadong"
-            },
-            {
-                "surname": "Yao ",
-                "name": "Wenbin"
-            },
-            {
-                "surname": "Gui ",
-                "name": "Xiaolin"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "671",
-        "titulo": "Data-Driven and Feedback-Enhanced Trust Computing Pattern for Large-Scale Multi-Cloud Collaborative Services",
-        "publication_type": "article",
-        "pagina_fin": "684",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7236926/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Ricardo Sato ",
-                "name": "João"
-            },
-            {
-                "surname": "Calebe Vidal ",
-                "name": "Maciel"
-            },
-            {
-                "surname": "de Siqueira Santos ",
-                "name": "Suzana"
-            },
-            {
-                "surname": "Brauer Massirer ",
-                "name": "Katlin"
-            },
-            {
-                "surname": "Fujita ",
-                "name": "André"
-            }
-        ],
-        "ejemplar": {"volumen": "15"},
-        "pagina_inicio": "581",
-        "titulo": "Complex Network Measures in Autism Spectrum Disorders",
-        "publication_type": "article",
-        "pagina_fin": "587",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7239574/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Rodríguez-Pérez ",
-                "name": "Miguel"
-            },
-            {
-                "surname": "Fernández-Veiga ",
-                "name": "Manuel"
-            },
-            {
-                "surname": "Herrería-Alonso ",
-                "name": "Sergio"
-            },
-            {
-                "surname": "Hmila ",
-                "name": "Meriame"
-            },
-            {
-                "surname": "López-García ",
-                "name": "Cándido"
-            }
-        ],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "593",
-        "titulo": "Optimum Traffic Allocation in Bundled Energy-Efficient Ethernet Links",
-        "publication_type": "article",
-        "pagina_fin": "603",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7243300/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Chai ",
-                "name": "Xiaomeng"
-            },
-            {
-                "surname": "Zhang ",
-                "name": "Zhongshan"
-            },
-            {
-                "surname": "Long ",
-                "name": "Keping"
-            }
-        ],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "560",
-        "titulo": "Joint Spectrum-Sharing and Base Station Sleep Model for Improving Energy Efficiency of Heterogeneous Networks",
-        "publication_type": "article",
-        "pagina_fin": "570",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7244348/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Sun ",
-                "name": "Gang"
-            },
-            {
-                "surname": "Liao ",
-                "name": "Dan"
-            },
-            {
-                "surname": "Zhao ",
-                "name": "Dongcheng"
-            },
-            {
-                "surname": "Xu ",
-                "name": "Zichuan"
-            },
-            {
-                "surname": "Yu ",
-                "name": "Hongfang"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "279",
-        "titulo": "Live Migration for Multiple Correlated Virtual Machines in Cloud-Based Data Centers",
-        "publication_type": "article",
-        "pagina_fin": "291",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7254233/"
-    },
-    {
-        "persona": [{
-            "surname": "Lee ",
-            "name": "Tian-Fu"
-        }],
-        "ejemplar": {"volumen": "12"},
-        "pagina_inicio": "1499",
-        "titulo": "Provably Secure Anonymous Single-Sign-On Authentication Mechanisms Using Extended Chebyshev Chaotic Maps for Distributed Computer Networks",
-        "publication_type": "article",
-        "pagina_fin": "1505",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7258361/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Riesen ",
-                "name": "Kaspar"
-            },
-            {
-                "surname": "Ferrer ",
-                "name": "Miquel"
-            },
-            {
-                "surname": "Bunke ",
-                "name": "Horst"
-            }
-        ],
-        "ejemplar": {"volumen": "17"},
-        "pagina_inicio": "483",
-        "titulo": "Approximate Graph Edit Distance in Quadratic Time",
-        "publication_type": "article",
-        "pagina_fin": "494",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7264987/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Hou ",
-                "name": "Weigang"
-            },
-            {
-                "surname": "Zhang ",
-                "name": "Rui"
-            },
-            {
-                "surname": "Qi ",
-                "name": "Wen"
-            },
-            {
-                "surname": "Lu ",
-                "name": "Kejie"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Jianping"
-            },
-            {
-                "surname": "Guo ",
-                "name": "Lei"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "32",
-        "titulo": "A Provident Resource Defragmentation Framework for Mobile Cloud Computing",
-        "publication_type": "article",
-        "pagina_fin": "44",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7265056/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Zhang ",
-                "name": "Yuanyu"
-            },
-            {
-                "surname": "Shen ",
-                "name": "Yulong"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Hua"
-            },
-            {
-                "surname": "Zhang ",
-                "name": "Yanchun"
-            },
-            {
-                "surname": "Jiang ",
-                "name": "Xiaohong"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "318",
-        "titulo": "On Secure Wireless Communications for Service Oriented Computing",
-        "publication_type": "article",
-        "pagina_fin": "328",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7265093/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Yu ",
-                "name": "Rong"
-            },
-            {
-                "surname": "Ding ",
-                "name": "Jiefei"
-            },
-            {
-                "surname": "Maharjan ",
-                "name": "Sabita"
-            },
-            {
-                "surname": "Gjessing ",
-                "name": "Stein"
-            },
-            {
-                "surname": "Zhang ",
-                "name": "Yan"
-            },
-            {
-                "surname": "H. K. Tsang ",
-                "name": "Danny"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "72",
-        "titulo": "Decentralized and Optimal Resource Cooperation in Geo-Distributed Mobile Cloud Computing",
-        "publication_type": "article",
-        "pagina_fin": "84",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7268883/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "F. Ramalho ",
-                "name": "Rodrigo"
-            },
-            {
-                "surname": "Li ",
-                "name": "Sujun"
-            },
-            {
-                "surname": "Radivojac ",
-                "name": "Predrag"
-            },
-            {
-                "surname": "W. Hahn ",
-                "name": "Matthew"
-            }
-        ],
-        "ejemplar": {"volumen": "15"},
-        "pagina_inicio": "1284",
-        "titulo": "Proteomic Evidence for In-Frame and Out-of-Frame Alternatively Spliced Isoforms in Human and Mouse",
-        "publication_type": "article",
-        "pagina_fin": "1289",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7272055/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Hashemikhabir ",
-                "name": "Seyedsasan"
-            },
-            {
-                "surname": "Xia ",
-                "name": "Ran"
-            },
-            {
-                "surname": "Xiang ",
-                "name": "Yang"
-            },
-            {
-                "surname": "Chandra Janga ",
-                "name": "Sarath"
-            }
-        ],
-        "ejemplar": {"volumen": "15"},
-        "pagina_inicio": "1259",
-        "titulo": "A Framework for Identifying Genotypic Information from Clinical Records: Exploiting Integrated Ontology Structures to Transfer Annotations between ICD Codes and Gene Ontologies",
-        "publication_type": "article",
-        "pagina_fin": "1269",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7272066/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Wang ",
-                "name": "Hongbing"
-            },
-            {
-                "surname": "Yu ",
-                "name": "Chao"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Lei"
-            },
-            {
-                "surname": "Yu ",
-                "name": "Qi"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "644",
-        "titulo": "Effective BigData-Space Service Selection over Trust and Heterogeneous QoS Preferences",
-        "publication_type": "article",
-        "pagina_fin": "657",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7273955/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "H. Abawajy ",
-                "name": "Jemal"
-            },
-            {
-                "surname": "Chowdhury ",
-                "name": "Morshed"
-            },
-            {
-                "surname": "Kelarev ",
-                "name": "Andrei"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "398",
-        "titulo": "Hybrid Consensus Pruning of Ensemble Classifiers for Big Data Malware Detection",
-        "publication_type": "article",
-        "pagina_fin": "407",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7274666/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Chatterjee ",
-                "name": "Ayantika"
-            },
-            {
-                "surname": "Sengupta ",
-                "name": "Indranil"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "287",
-        "titulo": "Translating Algorithms to Handle Fully Homomorphic Encrypted Data on the Cloud",
-        "publication_type": "article",
-        "pagina_fin": "300",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274687/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Diaz-Montes ",
-                "name": "Javier"
-            },
-            {
-                "surname": "Diaz-Granados ",
-                "name": "Manuel"
-            },
-            {
-                "surname": "Zou ",
-                "name": "Mengsong"
-            },
-            {
-                "surname": "Tao ",
-                "name": "Shu"
-            },
-            {
-                "surname": "Parashar ",
-                "name": "Manish"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "250",
-        "titulo": "Supporting Data-Intensive Workflows in Software-Defined Federated Multi-Clouds",
-        "publication_type": "article",
-        "pagina_fin": "263",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274694/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Hirofuchi ",
-                "name": "Takahiro"
-            },
-            {
-                "surname": "Lebre ",
-                "name": "Adrien"
-            },
-            {
-                "surname": "Pouilloux ",
-                "name": "Laurent"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "221",
-        "titulo": "SimGrid VM: Virtual Machine Support for a Simulation Framework of Distributed Systems",
-        "publication_type": "article",
-        "pagina_fin": "234",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274701/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Shi ",
-                "name": "Weijie"
-            },
-            {
-                "surname": "Wu ",
-                "name": "Chuan"
-            },
-            {
-                "surname": "Li ",
-                "name": "Zongpeng"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "19",
-        "titulo": "A Shapley-Value Mechanism for Bandwidth On Demand between Datacenters",
-        "publication_type": "article",
-        "pagina_fin": "32",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274704/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Motai ",
-                "name": "Yuichi"
-            },
-            {
-                "surname": "Henderson ",
-                "name": "Eric"
-            },
-            {
-                "surname": "Alam Siddique ",
-                "name": "Nahian"
-            },
-            {
-                "surname": "Yoshida ",
-                "name": "Hiroyuki"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "495",
-        "titulo": "Cloud Colonography: Distributed Medical Testbed over Cloud",
-        "publication_type": "article",
-        "pagina_fin": "507",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7274705/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Qi ",
-                "name": "Zhiquan"
-            },
-            {
-                "surname": "Tian ",
-                "name": "Yingjie"
-            },
-            {
-                "surname": "Shi ",
-                "name": "Yong"
-            },
-            {
-                "surname": "Alexandrov ",
-                "name": "Vassil"
-            }
-        ],
-        "ejemplar": {"volumen": "8"},
-        "pagina_inicio": "532",
-        "titulo": "Parallel RMCLP Classification Algorithm and Its Application on the Medical Data",
-        "publication_type": "article",
-        "pagina_fin": "538",
-        "año": 2020,
-        "url": "https://ieeexplore.ieee.org/document/7274706/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Kyung Lee ",
-                "name": "Eun"
-            },
-            {
-                "surname": "Viswanathan ",
-                "name": "Hariharasudhan"
-            },
-            {
-                "surname": "Pompili ",
-                "name": "Dario"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "330",
-        "titulo": "Model-Based Thermal Anomaly Detection in Cloud Datacenters Using Thermal Imaging",
-        "publication_type": "article",
-        "pagina_fin": "343",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274707/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Deshpande ",
-                "name": "Umesh"
-            },
-            {
-                "surname": "Chan ",
-                "name": "Danny"
-            },
-            {
-                "surname": "Chan ",
-                "name": "Steven"
-            },
-            {
-                "surname": "Gopalan ",
-                "name": "Kartik"
-            },
-            {
-                "surname": "Bila ",
-                "name": "Nilton"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "196",
-        "titulo": "Scatter-Gather Live Migration of Virtual Machines",
-        "publication_type": "article",
-        "pagina_fin": "208",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274710/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Hu ",
-                "name": "Zhiming"
-            },
-            {
-                "surname": "Qiao ",
-                "name": "Yan"
-            },
-            {
-                "surname": "Luo ",
-                "name": "Jun"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "60",
-        "titulo": "ATME: Accurate Traffic Matrix Estimation in Both Public and Private Datacenter Networks",
-        "publication_type": "article",
-        "pagina_fin": "73",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274712/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Khabbaz ",
-                "name": "Maurice"
-            },
-            {
-                "surname": "M. Assi ",
-                "name": "Chadi"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "141",
-        "titulo": "Modelling and Analysis of A Novel Deadline-Aware Scheduling Scheme for Cloud Computing Data Centers",
-        "publication_type": "article",
-        "pagina_fin": "155",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274716/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Sipos ",
-                "name": "Márton"
-            },
-            {
-                "surname": "Heide ",
-                "name": "Janus"
-            },
-            {
-                "surname": "E. Lucani ",
-                "name": "Daniel"
-            },
-            {
-                "surname": "V. Pedersen ",
-                "name": "Morten"
-            },
-            {
-                "surname": "H.P. Fitzek ",
-                "name": "Frank"
-            },
-            {
-                "surname": "Charaf ",
-                "name": "Hassan"
-            }
-        ],
-        "ejemplar": {"volumen": "7"},
-        "pagina_inicio": "19",
-        "titulo": "Adaptive Network Coded Clouds: High Speed Downloads and Cost-Effective Version Control",
-        "publication_type": "article",
-        "pagina_fin": "33",
-        "año": 2019,
-        "url": "https://ieeexplore.ieee.org/document/7274724/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Zhang ",
-                "name": "Wei"
-            },
-            {
-                "surname": "Lin ",
-                "name": "Yaping"
-            },
-            {
-                "surname": "Qi ",
-                "name": "Gu"
-            }
-        ],
-        "ejemplar": {"volumen": "6"},
-        "pagina_inicio": "74",
-        "titulo": "Catch You if You Misbehave: Ranked Keyword Search Results Verification in Cloud Computing",
-        "publication_type": "article",
-        "pagina_fin": "86",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274725/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Huang ",
-                "name": "Hua"
-            },
-            {
-                "surname": "Peng ",
-                "name": "Rong"
-            },
-            {
-                "surname": "Feng ",
-                "name": "Zaiwen"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "821",
-        "titulo": "Efficient and Exact Query of Large Process Model Repositories in Cloud Workflow Systems",
-        "publication_type": "article",
-        "pagina_fin": "832",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274764/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Cui ",
-                "name": "Lizhen"
-            },
-            {
-                "surname": "Zhang ",
-                "name": "Junhua"
-            },
-            {
-                "surname": "Yue ",
-                "name": "Lingxi"
-            },
-            {
-                "surname": "Shi ",
-                "name": "Yuliang"
-            },
-            {
-                "surname": "Li ",
-                "name": "Hui"
-            },
-            {
-                "surname": "Yuan ",
-                "name": "Dong"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "727",
-        "titulo": "A Genetic Algorithm Based Data Replica Placement Strategy for Scientific Applications in Clouds",
-        "publication_type": "article",
-        "pagina_fin": "739",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7274769/"
-    },
-    {
-        "persona": [
-            {
-                "surname": "Ren ",
-                "name": "Zhengwei"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Lina"
-            },
-            {
-                "surname": "Wang ",
-                "name": "Qian"
-            },
-            {
-                "surname": "Xu ",
-                "name": "Mingdi"
-            }
-        ],
-        "ejemplar": {"volumen": "11"},
-        "pagina_inicio": "685",
-        "titulo": "Dynamic Proofs of Retrievability for Coded Cloud Storage Systems",
-        "publication_type": "article",
-        "pagina_fin": "698",
-        "año": 2018,
-        "url": "https://ieeexplore.ieee.org/document/7275163/"
     },
     {
         "persona": [
@@ -2846,12 +1015,15 @@
                 "name": "Junliang"
             }
         ],
-        "ejemplar": {"volumen": "11"},
+        "ejemplar": {
+            "volumen": "11",
+            "mes": "1 Sept.-Oct. 2018"
+        },
         "pagina_inicio": "796",
         "titulo": "Privacy-Preserving Top-k Spatial Keyword Queries in Untrusted Cloud Environments",
         "publication_type": "article",
         "pagina_fin": "809",
-        "año": 2018,
+        "a�o": 2018,
         "url": "https://ieeexplore.ieee.org/document/7275181/"
     }
 ]}

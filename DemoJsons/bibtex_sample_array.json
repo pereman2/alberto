@@ -1,0 +1,70 @@
+{
+	"books": 
+		[
+		{
+		"title": "La estructura de las revoluciones científicas",
+		"author": "Kuhn, Thomas S",
+		"year": "2019",
+		"publisher": "Fondo de cultura económica"
+		},
+		{
+		"title":"Electronic Government: 18th IFIP WG 8.5 International Conference, EGOV 2019, San Benedetto Del Tronto, Italy, September 2--4, 2019, Proceedings",
+		"author":"Lindgren, Ida and Janssen, Marijn and Lee, Habin and Polini, Andrea and Bolívar, Manuel Pedro Rodríguez and Scholl, Hans Jochen and Tambouris, Efthimios",
+		"year":"2019",
+		"publisher":"Springer",
+		"volume":"11685"
+		}
+		],
+
+	"articles":
+		[
+		{
+		"title":"Lowering the latency of data processing pipelines through fpga based hardware acceleration",
+		"author":"Owaida, Muhsen and Alonso, Gustavo and Fogliarini, Laura and Hock-Koon, Anthony and Melet, Pierre-Etienne",
+		"year":"2019",
+		"publisher":"VLDB Endowment",
+		"pages":"71--85",
+		"journal":"Proceedings of the VLDB Endowment",
+		"volume":"13",
+		"number":"1"
+		},
+		{
+		"title":"The basis of cellular and regional vulnerability in Alzheimer’s disease",
+		"author":"Mrdjen, Dunja and Fox, Edward J and Bukhari, Syed A and Montine, Kathleen S and Bendall, Sean C and Montine, Thomas J",
+		"year":"2019",
+		"publisher":"Springer",
+		"pages":"1--21",
+		"journal":"Acta Neuropathologica"
+		},
+		{
+		"title":"Mapping potential impact areas of Blockchain use in the public sector",
+		"author":"Scholl, Hans Jochen and Bolívar, Manuel Pedro Rodríguez",
+		"year":"2019",
+		"publisher":"IOS Press",
+		"pages":"1--20",
+		"journal":"Information Polity",
+		"number":"Preprint"
+		}
+		],
+
+	"inproceedings": [
+		{
+			"title": "Information Uses and Gratifications Related to Crisis: Student Perceptions since the Egyptian Uprising",
+			"author": "Sheetz, Steven D and Kavanaugh, Andrea L and Fox, Edward A and Hassan, Riham and Yang, Seungwon and Magdy, Mohamed and Shoemaker, Donald J",
+			"year": "2019",
+			"booktitle": "ISCRAM"
+		}
+	],
+	
+	"incollection":
+	{
+		"title":"A Unified Smart City Model (USCM) for smart city conceptualization and benchmarking",
+		"author":"Anthopoulos, Leonidas and Janssen, Marijn and Weerakkody, Vishanth",
+		"booktitle":"Smart cities and smart spaces: Concepts, methodologies, tools, and applications",
+		"pages":"247--264",
+		"year":"2019",
+		"publisher":"IGI Global"
+	}
+	
+}
+

@@ -19,19 +19,26 @@ public class ExtractorBibtex {
 	public JSONObject extract() {
 		JSONObject iexJson = new JSONObject();
 		JSONArray articles = new JSONArray();
-		JSONArray iexArticles = (JSONArray) this.jsonObj.get("articles");
+		JSONArray iexArticles = new JSONArray();
+		if(this.jsonObj.has("articles")) {
+			iexArticles = (JSONArray) this.jsonObj.get("articles");
+		}
 		for(int i = 0; i < iexArticles.length(); i++) {
 			JSONObject article = iexArticles.getJSONObject(i);
 			JSONObject publication = getPublication(article);
 			articles.put(publication);
 		}
-		iexArticles = (JSONArray) this.jsonObj.get("books");
+		if(this.jsonObj.has("books")) {
+			iexArticles = (JSONArray) this.jsonObj.get("books");
+		}
 		for(int i = 0; i < iexArticles.length(); i++) {
 			JSONObject article = iexArticles.getJSONObject(i);
 			JSONObject publication = getBook(article);
 			articles.put(publication);
 		}
-		iexArticles = (JSONArray) this.jsonObj.get("inproceedings");
+		if(this.jsonObj.has("inproceedings")) {
+			iexArticles = (JSONArray) this.jsonObj.get("inproceedings");
+		}
 		for(int i = 0; i < iexArticles.length(); i++) {
 			JSONObject article = iexArticles.getJSONObject(i);
 			JSONObject publication = getCongress(article);
@@ -155,18 +162,21 @@ public class ExtractorBibtex {
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
-		String jsonPath = "/Users/peristocles/uni/iei/lab/bibtext.json";
+		String jsonPath = System.getProperty("user.dir") + "/DemoJsons/bibtex_sample_array.json";
 		InputStream is = new FileInputStream(jsonPath);
 		JSONTokener tokener = new JSONTokener(is);
 		JSONObject object = new JSONObject(tokener);
 		ExtractorBibtex ex = new ExtractorBibtex(object);
 		JSONObject transformedJson = ex.extract();
 		int PRETTY_PRINT_INDENT_FACTOR = 4;
-		String jsonFile = "/Users/peristocles/uni/iei/lab/bibtext-converted.json";
+		String jsonFile = System.getProperty("user.dir") + "/mapped-data/bibtext-converted.json";
 		try (FileWriter fileWriter = new FileWriter(jsonFile)){
 			fileWriter.write(transformedJson.toString(PRETTY_PRINT_INDENT_FACTOR));
+			fileWriter.close();
+			is.close();
 
-		} catch(Exception  e) {System.out.println(e); }
-
+		} catch(Exception  e) {
+			System.out.println(e); 
+		}
 	}
 }
