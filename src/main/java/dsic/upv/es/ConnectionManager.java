@@ -17,21 +17,23 @@ import org.json.JSONTokener;
 
 
 public class ConnectionManager {
+	//FIX paths 
 	private static final String [] convertedPaths = {System.getProperty("user.dir") + "/mapped-data/iex-converted.json"};
+	private static final String [] tables = {"publicacionpersona", "articulo","ejemplar","revista","comunicacioncongreso", "libro","persona","publicacion"};
 	
 	private static Connection connection;
 	
-	private static int idArticulo = 0;
-	private static int idComunicacionCongreso = 0;
-	private static int idEjemplar = 0;
-	private static int idLibro = 0;
-	private static int idPersona = 0;
-	private static int idPublicacion = 0;
-	private static int idRevista = 0;
+	private static int idArticulo = 1;
+	private static int idComunicacionCongreso = 1;
+	private static int idEjemplar = 1;
+	private static int idLibro = 1;
+	private static int idPersona = 1;
+	private static int idPublicacion = 1;
+	private static int idRevista = 1;
 	
 	
 	private static void extractAndMapBibtex() {
-		
+		//FIX
 	}
 	
 	private static void extractAndMapIex() throws FileNotFoundException{
@@ -39,7 +41,15 @@ public class ConnectionManager {
 	}
 	
 	private static void extractAndMapDlbp() {
-		
+		//FIX
+	}
+	
+	private static void eraseDataBase() throws SQLException {
+		Statement statement = connection.createStatement();
+		for(String table:tables) {
+			statement.executeUpdate("DELETE FROM " + table);
+			connection.commit();
+		}
 	}
 	
 	private static void insertIntoDBAll() throws FileNotFoundException, JSONException, SQLException{
@@ -47,9 +57,7 @@ public class ConnectionManager {
 			InputStream inputStream = new FileInputStream(path);
 			JSONTokener tokener = new JSONTokener(inputStream);
 			JSONObject object = new JSONObject(tokener);
-			insertIntoDB(object);
-			
-			
+			insertIntoDB(object);	
 		}
 	}
 	
@@ -71,7 +79,7 @@ public class ConnectionManager {
 						break;
 				}
 			}else {
-				
+				processArticle(publicacion);
 			}
 		}
 	}
@@ -100,7 +108,7 @@ public class ConnectionManager {
 		insertIntoEjemplarTable(idEjemplar, volumen, numero, mes, idRevis);
 		String titulo = article.getString("titulo");
 		int año = article.getInt("año");
-		String URL = article.getString("URL");
+		String URL = article.getString("url");
 		String paginaInicio = article.getString("pagina_inicio");
 		String paginaFin = article.getString("pagina_fin");
 		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
@@ -109,11 +117,40 @@ public class ConnectionManager {
 	}
 	
 	private static void processConference(JSONObject conference) throws JSONException, SQLException {
-		processPersonas(conference.getJSONArray("persona"),idPublicacion);
+		String titulo = conference.getString("titulo");
+		int año = conference.getInt("año");
+		String URL = conference.getString("url");
+		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
+		String congreso = "";
+		String edicion = "";
+		String lugar = "";
+		String paginaInicio = conference.getString("pagina_inicio");;
+		String paginaFin = conference.getString("pagina_fin");;
+		if(conference.has("congreso")) {
+			congreso = conference.getString("congreso");
+		}
+		if(conference.has("edicion")) {
+			edicion = conference.getString("edicion");
+		}
+		if(conference.has("lugar")) {
+			lugar = conference.getString("lugar");
+		}
+		
+		insertIntoComunicacionCongresoTable(idComunicacionCongreso++, congreso, edicion, lugar, paginaInicio, paginaFin, idPublicacion);
+		processPersonas(conference.getJSONArray("persona"),idPublicacion++);
 	}
 
 	private static void processBook(JSONObject book) throws JSONException, SQLException {
-		processPersonas(book.getJSONArray("persona"),idPublicacion);
+		String titulo = book.getString("titulo");
+		int año = book.getInt("año");
+		String URL = book.getString("url");
+		String editorial = "";
+		if(book.has("editorial")) {
+			editorial = book.getString("edicion");
+		}
+		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
+		insertIntoLibroTable(idLibro++, editorial, idPublicacion++);
+		processPersonas(book.getJSONArray("persona"),idPublicacion++);
 	}
 	
 	private static void processPersonas(JSONArray personas, int idPublicacion) throws SQLException {
@@ -126,17 +163,34 @@ public class ConnectionManager {
 				idPers = idPersona;
 				insertIntoPersonaTable(idPersona++, nombre, apellidos);
 			}
-			insertIntoPublicacionPersonaTable(idPers, idPublicacion);
+			if(!checkDuplicatedRowPPTable(idPublicacion, idPers)) {
+				insertIntoPublicacionPersonaTable(idPublicacion, idPers);
+			}
+		}
+	}
+	
+	private static boolean checkDuplicatedRowPPTable(int idPublicacion, int idPers) throws SQLException {
+		Statement statement = connection.createStatement();
+		ResultSet rs = statement.executeQuery("SELECT COUNT(*) AS rowcount FROM publicacionpersona WHERE (idpublicacion = " + idPublicacion + " AND idpersona = " + idPers + ")");
+		rs.next();
+		int count = rs.getInt("rowcount");
+		if(count == 0) {
+			return false;
+		}else {
+			return true;
 		}
 	}
 	
 	private static int checkPersona(String nombre, String apellidos) throws SQLException {
 		Statement statement = connection.createStatement();
-		ResultSet rs = statement.executeQuery("SELECT * FROM persona WHERE (nombre == " + nombre + " AND apellidos == " + apellidos + ")");
-		if(rs == null) {
+		ResultSet rs = statement.executeQuery("SELECT COUNT(*) AS rowcount FROM persona WHERE (nombre = '" + nombre + "' AND apellidos = '" + apellidos + "')");
+		rs.next();
+		int count = rs.getInt("rowcount");
+		if(count == 0) {
 			return -1;
 		}else {
-			rs.last();
+			rs = statement.executeQuery("SELECT * FROM persona WHERE (nombre = '" + nombre + "' AND apellidos = '" + apellidos + "')");
+			rs.next();
 			return rs.getInt("idpersona");
 		}
 	}
@@ -200,19 +254,20 @@ public class ConnectionManager {
 	
 	public static void main(String [] args) throws FileNotFoundException{
 		//Execute all extractors
+		System.out.println("Starting...");
 		extractAndMapIex();
+		extractAndMapBibtex();
+		extractAndMapDlbp();
 		
 		try
 		{
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 		   connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/publications?user=root?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "root");
 		   connection.setAutoCommit(false);
-		   //Statement query = connection.createStatement();		   
-		   //query.executeUpdate("INSERT INTO persona VALUES (13,'Manolo','el navajas')");
-		   //connection.commit();
+		   eraseDataBase();
 		   insertIntoDBAll();
 		   connection.close();
-		   
+		   System.out.println("Done! inserted " + (--idPublicacion) + " new publications" );
 		   
 		}catch(Exception e) {
 			System.out.println(e.toString());
