@@ -33,7 +33,7 @@ public class ExtractorDlbp {
 		JSONObject dblpArticle = new JSONObject();
 		dblpArticle.put("persona", this.getAuthors(article));
 		dblpArticle.put("titulo", this.getTitle(article));
-		dblpArticle.put("aÃ±o", this.getYear(article));
+		dblpArticle.put("año", this.getYear(article));
 		dblpArticle.put("url", this.getUrl(article));
 		dblpArticle.put("pagina_inicio", this.getFirstPage(article));
 		dblpArticle.put("pagina_fin", this.getEndPage(article));
@@ -94,9 +94,21 @@ public class ExtractorDlbp {
 		return url;
 	}
 	private String getTitle(JSONObject article) {
-		String title = article.get("title").toString();
+		String title = fixApostroph(article.get("title").toString());
 		return title;
 	}
+	
+	private static String fixApostroph(String input) {
+		String aux = input;
+		for(int i = 0; i < aux.length(); i++) {
+			if(aux.charAt(i) == '\'') {
+				aux = aux.substring(0, i + 1) + "'" + aux.substring(i + 2, aux.length());
+				i++;
+			}
+		}
+		return aux;
+	}
+	
 	private JSONArray getAuthors(JSONObject article) {
 		JSONArray authors = new JSONArray();
 		if(article.has("author")) {
@@ -156,8 +168,8 @@ public class ExtractorDlbp {
 		for(int i = 1; i < authorSplit.length; i++) {
 			surnames += authorSplit[i] + " ";
 		}
-		authorJson.put("nombre", name);
-		authorJson.put("apellido", surnames);
+		authorJson.put("name", fixApostroph(name));
+		authorJson.put("surname", fixApostroph(surnames));
 		return authorJson;
 		
 	}

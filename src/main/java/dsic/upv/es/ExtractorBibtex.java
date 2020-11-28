@@ -51,7 +51,7 @@ public class ExtractorBibtex {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("aÃ±o", this.getYear(article));
+		publication.put("año", this.getYear(article));
 		publication.put("congreso", this.getCongressName(article));
 		publication.put("pagina_inicio", this.getFirstPage(article));
 		publication.put("pagina_fin", this.getEndPage(article));
@@ -68,7 +68,7 @@ public class ExtractorBibtex {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("aÃ±o", this.getYear(article));
+		publication.put("año", this.getYear(article));
 		publication.put("editorial", this.getEditorial(article));
 		publication.put("publication_type", "book");
 		return publication;
@@ -78,7 +78,7 @@ public class ExtractorBibtex {
 		publication.put("publication_type", "article");
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("aÃ±o", this.getYear(article));
+		publication.put("año", this.getYear(article));
 		publication.put("pagina_inicio", this.getFirstPage(article));
 		publication.put("pagina_fin", this.getEndPage(article));
 		publication.put("ejemplar", this.getEjemplar(article));
@@ -139,7 +139,7 @@ public class ExtractorBibtex {
 	private String getTitle(JSONObject article) {
 		String title = "";
 		if(article.has("title")) {
-			title = article.get("title").toString();
+			title = fixApostroph(article.get("title").toString());
 		}
 		return title;
 	}
@@ -153,12 +153,23 @@ public class ExtractorBibtex {
 				String[] splitName = fullname.split(", ");
 				String name = splitName[1];
 				String surnames = splitName[0];
-				author.put("name", name);
-				author.put("surname", surnames);
+				author.put("name", fixApostroph(name));
+				author.put("surname", fixApostroph(surnames));
 				authors.put(author);
 			}
 		}
 		return authors;
+	}
+	
+	private static String fixApostroph(String input) {
+		String aux = input;
+		for(int i = 0; i < aux.length(); i++) {
+			if(aux.charAt(i) == '\'') {
+				aux = aux.substring(0, i + 1) + "'" + aux.substring(i + 2, aux.length());
+				i++;
+			}
+		}
+		return aux;
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {

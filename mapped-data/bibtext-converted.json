@@ -31,7 +31,7 @@
         "titulo": "Lowering the latency of data processing pipelines through fpga based hardware acceleration",
         "publication_type": "article",
         "pagina_fin": "85",
-        "aÃ±o": 2019
+        "año": 2019
     },
     {
         "persona": [
@@ -65,7 +65,7 @@
         "titulo": "The basis of cellular and regional vulnerability in Alzheimerâ\u20ac™s disease",
         "publication_type": "article",
         "pagina_fin": "21",
-        "aÃ±o": 2019
+        "año": 2019
     },
     {
         "persona": [
@@ -86,7 +86,7 @@
         "titulo": "Mapping potential impact areas of Blockchain use in the public sector",
         "publication_type": "article",
         "pagina_fin": "20",
-        "aÃ±o": 2019
+        "año": 2019
     },
     {
         "editorial": "Fondo de cultura econÃ³mica",
@@ -96,7 +96,7 @@
         }],
         "titulo": "La estructura de las revoluciones cientÃ­ficas",
         "publication_type": "book",
-        "aÃ±o": 2019
+        "año": 2019
     },
     {
         "editorial": "Springer",
@@ -132,7 +132,7 @@
         ],
         "titulo": "Electronic Government: 18th IFIP WG 8.5 International Conference, EGOV 2019, San Benedetto Del Tronto, Italy, September 2--4, 2019, Proceedings",
         "publication_type": "book",
-        "aÃ±o": 2019
+        "año": 2019
     },
     {
         "persona": [
@@ -170,6 +170,6 @@
         "congreso": "ISCRAM",
         "pagina_fin": "",
         "publication_type": "conference",
-        "aÃ±o": 2019
+        "año": 2019
     }
 ]}

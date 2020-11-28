@@ -113,7 +113,7 @@ public class ExtractorIeex {
 	private String getTitle(JSONObject article) {
 		String title = "";
 		if(article.has("title")) {
-			title = article.get("title").toString();
+			title = fixApostroph(article.get("title").toString());
 		}
 		return title;
 	}
@@ -133,8 +133,8 @@ public class ExtractorIeex {
 					for(int j = 1; j < splitName.length; j++) {
 						surnames += splitName[j] + " ";
 					}
-					author.put("name", name);
-					author.put("surname", surnames);
+					author.put("name", fixApostroph(name));
+					author.put("surname", fixApostroph(surnames));
 					authors.put(author);
 				}
 			}
@@ -142,6 +142,17 @@ public class ExtractorIeex {
 		return authors;
 	}
 
+	private static String fixApostroph(String input) {
+		String aux = input;
+		for(int i = 0; i < aux.length(); i++) {
+			if(aux.charAt(i) == '\'') {
+				aux = aux.substring(0, i + 1) + "'" + aux.substring(i + 2, aux.length());
+				i++;
+			}
+		}
+		return aux;
+	}
+	
 	public static void main(String[] args) throws FileNotFoundException {
 		String jsonPath = System.getProperty("user.dir") + "/DemoJsons/ieeeXplore_2018-2020-short.json";
 		InputStream is = new FileInputStream(jsonPath);

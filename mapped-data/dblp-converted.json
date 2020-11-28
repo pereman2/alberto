@@ -1,8 +1,8 @@
 {"publicaciones": [
     {
         "persona": [{
-            "apellido": "E. Olson ",
-            "nombre": "Lynne"
+            "surname": "E. Olson ",
+            "name": "Lynne"
         }],
         "ejemplar": {
             "numero": "1",
@@ -13,22 +13,22 @@
         "titulo": "Developing a Framework for Assessing Responsible Conduct of Research Education Programs.",
         "pagina_fin": "185",
         "publication_type": "article",
-        "año": 2010,
+        "a�o": 2010,
         "url": "db/journals/see/see16.html#Olson10"
     },
     {
         "persona": [
             {
-                "apellido": "W. Kalichman ",
-                "nombre": "Michael"
+                "surname": "W. Kalichman ",
+                "name": "Michael"
             },
             {
-                "apellido": "Plemmons ",
-                "nombre": "Dena"
+                "surname": "Plemmons ",
+                "name": "Dena"
             },
             {
-                "apellido": "J. Bird ",
-                "nombre": "Stephanie"
+                "surname": "J. Bird ",
+                "name": "Stephanie"
             }
         ],
         "ejemplar": {
@@ -37,25 +37,25 @@
             "revista": "Sci. Eng. Ethics"
         },
         "pagina_inicio": "423",
-        "titulo": "Editors' Overview: Neuroethics: Many Voices and Many Stories.",
+        "titulo": "Editors''Overview: Neuroethics: Many Voices and Many Stories.",
         "pagina_fin": "423",
         "publication_type": "article",
-        "año": 2012,
+        "a�o": 2012,
         "url": "db/journals/see/see18.html#KalichmanPB12"
     },
     {
         "persona": [
             {
-                "apellido": "Koepsell ",
-                "nombre": "David"
+                "surname": "Koepsell ",
+                "name": "David"
             },
             {
-                "apellido": "Brinkman ",
-                "nombre": "Willem-Paul"
+                "surname": "Brinkman ",
+                "name": "Willem-Paul"
             },
             {
-                "apellido": "C. Pont ",
-                "nombre": "Sylvia"
+                "surname": "C. Pont ",
+                "name": "Sylvia"
             }
         ],
         "ejemplar": {
@@ -67,13 +67,13 @@
         "titulo": "Human Participants in Engineering Research: Notes from a Fledgling Ethics Committee.",
         "pagina_fin": "1033",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#KoepsellBP15"
     },
     {
         "persona": [{
-            "apellido": "Stroth ",
-            "nombre": "Nikolas"
+            "surname": "Stroth ",
+            "name": "Nikolas"
         }],
         "ejemplar": {
             "numero": "6",
@@ -84,30 +84,30 @@
         "titulo": "The Central Importance of Laboratories for Reducing Waste in Biomedical Research.",
         "pagina_fin": "1707",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#Stroth16"
     },
     {
         "persona": [
             {
-                "apellido": "Kliestikova ",
-                "nombre": "Jana"
+                "surname": "Kliestikova ",
+                "name": "Jana"
             },
             {
-                "apellido": "Kliestik ",
-                "nombre": "Tomas"
+                "surname": "Kliestik ",
+                "name": "Tomas"
             },
             {
-                "apellido": "Misankova ",
-                "nombre": "Maria"
+                "surname": "Misankova ",
+                "name": "Maria"
             },
             {
-                "apellido": "Corejova ",
-                "nombre": "Tatiana"
+                "surname": "Corejova ",
+                "name": "Tatiana"
             },
             {
-                "apellido": "Krizanova ",
-                "nombre": "Anna"
+                "surname": "Krizanova ",
+                "name": "Anna"
             }
         ],
         "ejemplar": {
@@ -116,16 +116,16 @@
             "revista": "Sci. Eng. Ethics"
         },
         "pagina_inicio": "1747",
-        "titulo": "Aspects of Morality and Law Enforcement in Today's Science in Post-Soviet Countries.",
+        "titulo": "Aspects of Morality and Law Enforcement in Today'' Science in Post-Soviet Countries.",
         "pagina_fin": "1747",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see24.html#KliestikovaKMCK18"
     },
     {
         "persona": [{
-            "apellido": "Miller ",
-            "nombre": "Seumas"
+            "surname": "Miller ",
+            "name": "Seumas"
         }],
         "ejemplar": {
             "numero": "6",
@@ -136,13 +136,13 @@
         "titulo": "Whither the University? Universities of Technology and the Problem of Institutional Purpose.",
         "pagina_fin": "1679",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": "db/journals/see/see25.html#Miller19"
     },
     {
         "persona": [{
-            "apellido": "Cheruvalath ",
-            "nombre": "Reena"
+            "surname": "Cheruvalath ",
+            "name": "Reena"
         }],
         "ejemplar": {
             "numero": "2",
@@ -150,29 +150,29 @@
             "revista": "Sci. Eng. Ethics"
         },
         "pagina_inicio": "583",
-        "titulo": "Does Studying 'Ethics' Improve Engineering Students' Meta-Moral Cognitive Skills?",
+        "titulo": "Does Studying ''thics''Improve Engineering Students''Meta-Moral Cognitive Skills?",
         "pagina_fin": "583",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": "db/journals/see/see25.html#Cheruvalath19"
     },
     {
         "persona": [
             {
-                "apellido": "Gilbert 0003 ",
-                "nombre": "Frédéric"
+                "surname": "Gilbert 0003 ",
+                "name": "Frédéric"
             },
             {
-                "apellido": "D. O'Connell ",
-                "nombre": "Cathal"
+                "surname": "D. O''onnell ",
+                "name": "Cathal"
             },
             {
-                "apellido": "Mladenovska ",
-                "nombre": "Tajanka"
+                "surname": "Mladenovska ",
+                "name": "Tajanka"
             },
             {
-                "apellido": "Dodds ",
-                "nombre": "Susan"
+                "surname": "Dodds ",
+                "name": "Susan"
             }
         ],
         "ejemplar": {
@@ -184,22 +184,22 @@
         "titulo": "Print Me an Organ? Ethical and Regulatory Issues Emerging from 3D Bioprinting in Medicine.",
         "pagina_fin": "73",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see24.html#GilbertOMD18"
     },
     {
         "persona": [
             {
-                "apellido": "C. Erren ",
-                "nombre": "Thomas"
+                "surname": "C. Erren ",
+                "name": "Thomas"
             },
             {
-                "apellido": "M. Shaw ",
-                "nombre": "David"
+                "surname": "M. Shaw ",
+                "name": "David"
             },
             {
-                "apellido": "Morfeld ",
-                "nombre": "Peter"
+                "surname": "Morfeld ",
+                "name": "Peter"
             }
         ],
         "ejemplar": {
@@ -208,21 +208,21 @@
             "revista": "Sci. Eng. Ethics"
         },
         "pagina_inicio": "1431",
-        "titulo": "Analyzing the Publish-or-Perish Paradigm with Game Theory: The Prisoner's Dilemma and a Possible Escape.",
+        "titulo": "Analyzing the Publish-or-Perish Paradigm with Game Theory: The Prisoner'' Dilemma and a Possible Escape.",
         "pagina_fin": "1431",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#ErrenSM16"
     },
     {
         "persona": [
             {
-                "apellido": "Nicolosi ",
-                "nombre": "Guido"
+                "surname": "Nicolosi ",
+                "name": "Guido"
             },
             {
-                "apellido": "Ruivenkamp ",
-                "nombre": "Guido"
+                "surname": "Ruivenkamp ",
+                "name": "Guido"
             }
         ],
         "ejemplar": {
@@ -234,18 +234,18 @@
         "titulo": "Re-skilling the Social Practices: Open Source and Life-Towards a Commons-Based Peer Production in Agro-biotechnology?",
         "pagina_fin": "1181",
         "publication_type": "article",
-        "año": 2013,
+        "a�o": 2013,
         "url": "db/journals/see/see19.html#NicolosiR13"
     },
     {
         "persona": [
             {
-                "apellido": "Wikman-Svahn ",
-                "nombre": "Per"
+                "surname": "Wikman-Svahn ",
+                "name": "Per"
             },
             {
-                "apellido": "Lindblom ",
-                "nombre": "Lars"
+                "surname": "Lindblom ",
+                "name": "Lars"
             }
         ],
         "ejemplar": {
@@ -257,26 +257,26 @@
         "titulo": "Toward a Responsibility-Catering Prioritarian Ethical Theory of Risk.",
         "pagina_fin": "655",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": "db/journals/see/see25.html#Wikman-SvahnL19"
     },
     {
         "persona": [
             {
-                "apellido": "Semendeferi ",
-                "nombre": "Ioanna"
+                "surname": "Semendeferi ",
+                "name": "Ioanna"
             },
             {
-                "apellido": "Tsiamyrtzis ",
-                "nombre": "Panagiotis"
+                "surname": "Tsiamyrtzis ",
+                "name": "Panagiotis"
             },
             {
-                "apellido": "Dcosta ",
-                "nombre": "Malcolm"
+                "surname": "Dcosta ",
+                "name": "Malcolm"
             },
             {
-                "apellido": "T. Pavlidis ",
-                "nombre": "Ioannis"
+                "surname": "T. Pavlidis ",
+                "name": "Ioannis"
             }
         ],
         "ejemplar": {
@@ -288,22 +288,22 @@
         "titulo": "Connecting Past with Present: A Mixed-Methods Science Ethics Course and its Evaluation.",
         "pagina_fin": "251",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#SemendeferiTDP16"
     },
     {
         "persona": [
             {
-                "apellido": "M. Flipse ",
-                "nombre": "Steven"
+                "surname": "M. Flipse ",
+                "name": "Steven"
             },
             {
-                "apellido": "C. A. van der Sanden ",
-                "nombre": "Maarten"
+                "surname": "C. A. van der Sanden ",
+                "name": "Maarten"
             },
             {
-                "apellido": "Osseweijer ",
-                "nombre": "Patricia"
+                "surname": "Osseweijer ",
+                "name": "Patricia"
             }
         ],
         "ejemplar": {
@@ -315,13 +315,13 @@
         "titulo": "The Why and How of Enabling the Integration of Social and Ethical Aspects in Research and Development.",
         "pagina_fin": "703",
         "publication_type": "article",
-        "año": 2013,
+        "a�o": 2013,
         "url": "db/journals/see/see19.html#FlipseSO13"
     },
     {
         "persona": [{
-            "apellido": "W. Berger ",
-            "nombre": "Vance"
+            "surname": "W. Berger ",
+            "name": "Vance"
         }],
         "ejemplar": {
             "numero": "4",
@@ -332,13 +332,13 @@
         "titulo": "Conflicts of Interest, Selective Inertia, and Research Malpractice in Randomized Clinical Trials: An Unholy Trinity.",
         "pagina_fin": "857",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#Berger15"
     },
     {
         "persona": [{
-            "apellido": "Ove Hansson ",
-            "nombre": "Sven"
+            "surname": "Ove Hansson ",
+            "name": "Sven"
         }],
         "ejemplar": {
             "numero": "1",
@@ -349,26 +349,26 @@
         "titulo": "Do we Need a Special Ethics for Research?",
         "pagina_fin": "21",
         "publication_type": "article",
-        "año": 2011,
+        "a�o": 2011,
         "url": "db/journals/see/see17.html#Hansson11"
     },
     {
         "persona": [
             {
-                "apellido": "J. Curzer ",
-                "nombre": "Howard"
+                "surname": "J. Curzer ",
+                "name": "Howard"
             },
             {
-                "apellido": "Perry ",
-                "nombre": "Gad"
+                "surname": "Perry ",
+                "name": "Gad"
             },
             {
-                "apellido": "C. Wallace ",
-                "nombre": "Mark"
+                "surname": "C. Wallace ",
+                "name": "Mark"
             },
             {
-                "apellido": "Perry ",
-                "nombre": "Dan"
+                "surname": "Perry ",
+                "name": "Dan"
             }
         ],
         "ejemplar": {
@@ -380,18 +380,18 @@
         "titulo": "The Three Rs of Animal Research: What they Mean for the Institutional Animal Care and Use Committee and Why.",
         "pagina_fin": "549",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#CurzerPWP16"
     },
     {
         "persona": [
             {
-                "apellido": "Ploug ",
-                "nombre": "Thomas"
+                "surname": "Ploug ",
+                "name": "Thomas"
             },
             {
-                "apellido": "Holm ",
-                "nombre": "Søren"
+                "surname": "Holm ",
+                "name": "Søren"
             }
         ],
         "ejemplar": {
@@ -403,18 +403,18 @@
         "titulo": "Agreeing in Ignorance: Mapping the Routinisation of Consent in ICT-Services.",
         "pagina_fin": "1097",
         "publication_type": "article",
-        "año": 2014,
+        "a�o": 2014,
         "url": "db/journals/see/see20.html#PlougH14"
     },
     {
         "persona": [
             {
-                "apellido": "Aközer ",
-                "nombre": "Mehmet"
+                "surname": "Aközer ",
+                "name": "Mehmet"
             },
             {
-                "apellido": "Aközer ",
-                "nombre": "Emel"
+                "surname": "Aközer ",
+                "name": "Emel"
             }
         ],
         "ejemplar": {
@@ -426,13 +426,13 @@
         "titulo": "Basing Science Ethics on Respect for Human Dignity.",
         "pagina_fin": "1627",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#AkozerA16"
     },
     {
         "persona": [{
-            "apellido": "P. Oksvold ",
-            "nombre": "Morten"
+            "surname": "P. Oksvold ",
+            "name": "Morten"
         }],
         "ejemplar": {
             "numero": "2",
@@ -443,18 +443,18 @@
         "titulo": "Incidence of Data Duplications in a Randomly Selected Pool of Life Science Publications.",
         "pagina_fin": "487",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#Oksvold16"
     },
     {
         "persona": [
             {
-                "apellido": "Hevelke ",
-                "nombre": "Alexander"
+                "surname": "Hevelke ",
+                "name": "Alexander"
             },
             {
-                "apellido": "Nida-Rümelin ",
-                "nombre": "Julian"
+                "surname": "Nida-Rümelin ",
+                "name": "Julian"
             }
         ],
         "ejemplar": {
@@ -466,26 +466,26 @@
         "titulo": "Responsibility for Crashes of Autonomous Vehicles: An Ethical Analysis.",
         "pagina_fin": "619",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#HevelkeN15"
     },
     {
         "persona": [
             {
-                "apellido": "Horvat ",
-                "nombre": "Martina"
+                "surname": "Horvat ",
+                "name": "Martina"
             },
             {
-                "apellido": "Mlinaric ",
-                "nombre": "Ana"
+                "surname": "Mlinaric ",
+                "name": "Ana"
             },
             {
-                "apellido": "Omazic ",
-                "nombre": "Jelena"
+                "surname": "Omazic ",
+                "name": "Jelena"
             },
             {
-                "apellido": "Supak-Smolcic ",
-                "nombre": "Vesna"
+                "surname": "Supak-Smolcic ",
+                "name": "Vesna"
             }
         ],
         "ejemplar": {
@@ -494,21 +494,21 @@
             "revista": "Sci. Eng. Ethics"
         },
         "pagina_inicio": "1095",
-        "titulo": "An Analysis of Medical Laboratory Technology Journals' Instructions for Authors.",
+        "titulo": "An Analysis of Medical Laboratory Technology Journals''Instructions for Authors.",
         "pagina_fin": "1095",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#HorvatMOS16"
     },
     {
         "persona": [
             {
-                "apellido": "Wickson ",
-                "nombre": "Fern"
+                "surname": "Wickson ",
+                "name": "Fern"
             },
             {
-                "apellido": "Forsberg ",
-                "nombre": "Ellen-Marie"
+                "surname": "Forsberg ",
+                "name": "Ellen-Marie"
             }
         ],
         "ejemplar": {
@@ -520,42 +520,42 @@
         "titulo": "Standardising Responsibility? The Significance of Interstitial Spaces.",
         "pagina_fin": "1159",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#WicksonF15"
     },
     {
         "persona": [
             {
-                "apellido": "Smith ",
-                "nombre": "Elise"
+                "surname": "Smith ",
+                "name": "Elise"
             },
             {
-                "apellido": "Williams-Jones ",
-                "nombre": "Bryn"
+                "surname": "Williams-Jones ",
+                "name": "Bryn"
             },
             {
-                "apellido": "Master ",
-                "nombre": "Zubin"
+                "surname": "Master ",
+                "name": "Zubin"
             },
             {
-                "apellido": "Larivière ",
-                "nombre": "Vincent"
+                "surname": "Larivière ",
+                "name": "Vincent"
             },
             {
-                "apellido": "R. Sugimoto ",
-                "nombre": "Cassidy"
+                "surname": "R. Sugimoto ",
+                "name": "Cassidy"
             },
             {
-                "apellido": "Paul-Hus ",
-                "nombre": "Adèle"
+                "surname": "Paul-Hus ",
+                "name": "Adèle"
             },
             {
-                "apellido": "Shi ",
-                "nombre": "Min"
+                "surname": "Shi ",
+                "name": "Min"
             },
             {
-                "apellido": "B. Resnik ",
-                "nombre": "David"
+                "surname": "B. Resnik ",
+                "name": "David"
             }
         ],
         "ejemplar": {
@@ -567,13 +567,13 @@
         "titulo": "Misconduct and Misbehavior Related to Authorship Disagreements in Collaborative Science.",
         "pagina_fin": "1967",
         "publication_type": "article",
-        "año": 2020,
+        "a�o": 2020,
         "url": "db/journals/see/see26.html#SmithWMLSPSR20"
     },
     {
         "persona": [{
-            "apellido": "Davis 0002 ",
-            "nombre": "Michael"
+            "surname": "Davis 0002 ",
+            "name": "Michael"
         }],
         "ejemplar": {
             "numero": "5",
@@ -584,26 +584,26 @@
         "titulo": "Temporal Limits on What Engineers Can Plan.",
         "pagina_fin": "1609",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": "db/journals/see/see25.html#Davis19"
     },
     {
         "persona": [
             {
-                "apellido": "L. Evers ",
-                "nombre": "David"
+                "surname": "L. Evers ",
+                "name": "David"
             },
             {
-                "apellido": "B. Fowler ",
-                "nombre": "Carol"
+                "surname": "B. Fowler ",
+                "name": "Carol"
             },
             {
-                "apellido": "T. Mason ",
-                "nombre": "Jeffrey"
+                "surname": "T. Mason ",
+                "name": "Jeffrey"
             },
             {
-                "apellido": "K. Mimnall ",
-                "nombre": "Rebecca"
+                "surname": "K. Mimnall ",
+                "name": "Rebecca"
             }
         ],
         "ejemplar": {
@@ -615,30 +615,30 @@
         "titulo": "Deliberate Microbial Infection Research Reveals Limitations to Current Safety Protections of Healthy Human Subjects.",
         "pagina_fin": "1049",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#EversFMM15"
     },
     {
         "persona": [
             {
-                "apellido": "Owaida ",
-                "nombre": "Muhsen"
+                "surname": "Owaida ",
+                "name": "Muhsen"
             },
             {
-                "apellido": "Alonso ",
-                "nombre": "Gustavo"
+                "surname": "Alonso ",
+                "name": "Gustavo"
             },
             {
-                "apellido": "Fogliarini ",
-                "nombre": "Laura"
+                "surname": "Fogliarini ",
+                "name": "Laura"
             },
             {
-                "apellido": "Hock-Koon ",
-                "nombre": "Anthony"
+                "surname": "Hock-Koon ",
+                "name": "Anthony"
             },
             {
-                "apellido": "Melet ",
-                "nombre": "Pierre-Etienne"
+                "surname": "Melet ",
+                "name": "Pierre-Etienne"
             }
         ],
         "ejemplar": {
@@ -650,26 +650,26 @@
         "titulo": "Lowering the latency of data processing pipelines through fpga based hardware acceleration",
         "pagina_fin": "71",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": ""
     },
     {
         "persona": [
             {
-                "apellido": "Kingsford Owusu ",
-                "nombre": "Emmanuel"
+                "surname": "Kingsford Owusu ",
+                "name": "Emmanuel"
             },
             {
-                "apellido": "P. C. Chan ",
-                "nombre": "Albert"
+                "surname": "P. C. Chan ",
+                "name": "Albert"
             },
             {
-                "apellido": "Shan ",
-                "nombre": "Ming"
+                "surname": "Shan ",
+                "name": "Ming"
             },
             {
-                "apellido": "Pärn ",
-                "nombre": "Erika"
+                "surname": "Pärn ",
+                "name": "Erika"
             }
         ],
         "ejemplar": {
@@ -681,13 +681,13 @@
         "titulo": "An Empirical Study on Construction Process Corruption Susceptibility: A Vignette of International Expertise.",
         "pagina_fin": "325",
         "publication_type": "article",
-        "año": 2020,
+        "a�o": 2020,
         "url": "db/journals/see/see26.html#OwusuCSP20"
     },
     {
         "persona": [{
-            "apellido": "Cohen-Almagor ",
-            "nombre": "Raphael"
+            "surname": "Cohen-Almagor ",
+            "name": "Raphael"
         }],
         "ejemplar": {
             "numero": "1",
@@ -698,30 +698,30 @@
         "titulo": "Press Self-Regulation in Britain: A Critique.",
         "pagina_fin": "159",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#Cohen-Almagor15"
     },
     {
         "persona": [
             {
-                "apellido": "Newberry ",
-                "nombre": "Byron"
+                "surname": "Newberry ",
+                "name": "Byron"
             },
             {
-                "apellido": "A. Austin ",
-                "nombre": "Katherine"
+                "surname": "A. Austin ",
+                "name": "Katherine"
             },
             {
-                "apellido": "D. Lawson ",
-                "nombre": "William"
+                "surname": "D. Lawson ",
+                "name": "William"
             },
             {
-                "apellido": "Gorsuch ",
-                "nombre": "Greta"
+                "surname": "Gorsuch ",
+                "name": "Greta"
             },
             {
-                "apellido": "Darwin ",
-                "nombre": "Thomas"
+                "surname": "Darwin ",
+                "name": "Thomas"
             }
         ],
         "ejemplar": {
@@ -733,38 +733,38 @@
         "titulo": "Acclimating International Graduate Students to Professional Engineering Ethics.",
         "pagina_fin": "171",
         "publication_type": "article",
-        "año": 2011,
+        "a�o": 2011,
         "url": "db/journals/see/see17.html#NewberryALGD11"
     },
     {
         "persona": [
             {
-                "apellido": "Coeckelbergh ",
-                "nombre": "Mark"
+                "surname": "Coeckelbergh ",
+                "name": "Mark"
             },
             {
-                "apellido": "Pop 0002 ",
-                "nombre": "Cristina"
+                "surname": "Pop 0002 ",
+                "name": "Cristina"
             },
             {
-                "apellido": "Simut ",
-                "nombre": "Ramona"
+                "surname": "Simut ",
+                "name": "Ramona"
             },
             {
-                "apellido": "Peca ",
-                "nombre": "Andreea"
+                "surname": "Peca ",
+                "name": "Andreea"
             },
             {
-                "apellido": "Pintea ",
-                "nombre": "Sebastian"
+                "surname": "Pintea ",
+                "name": "Sebastian"
             },
             {
-                "apellido": "O. David ",
-                "nombre": "Daniel"
+                "surname": "O. David ",
+                "name": "Daniel"
             },
             {
-                "apellido": "Vanderborght ",
-                "nombre": "Bram"
+                "surname": "Vanderborght ",
+                "name": "Bram"
             }
         ],
         "ejemplar": {
@@ -776,13 +776,13 @@
         "titulo": "A Survey of Expectations About the Role of Robots in Robot-Assisted Therapy for Children with ASD: Ethical Acceptability, Trust, Sociability, Appearance, and Attachment.",
         "pagina_fin": "47",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#CoeckelberghPSP16"
     },
     {
         "persona": [{
-            "apellido": "Heilmann ",
-            "nombre": "Conrad"
+            "surname": "Heilmann ",
+            "name": "Conrad"
         }],
         "ejemplar": {
             "numero": "5",
@@ -793,22 +793,22 @@
         "titulo": "Values in Time Discounting.",
         "pagina_fin": "1333",
         "publication_type": "article",
-        "año": 2017,
+        "a�o": 2017,
         "url": "db/journals/see/see23.html#Heilmann17"
     },
     {
         "persona": [
             {
-                "apellido": "W. Miller ",
-                "nombre": "Keith"
+                "surname": "W. Miller ",
+                "name": "Keith"
             },
             {
-                "apellido": "J. Wolf ",
-                "nombre": "Marty"
+                "surname": "J. Wolf ",
+                "name": "Marty"
             },
             {
-                "apellido": "S. Grodzinsky ",
-                "nombre": "Frances"
+                "surname": "S. Grodzinsky ",
+                "name": "Frances"
             }
         ],
         "ejemplar": {
@@ -820,13 +820,13 @@
         "titulo": "This \"Ethical Trap\" Is for Roboticists, Not Robots: On the Issue of Artificial Agent Ethical Decision-Making.",
         "pagina_fin": "389",
         "publication_type": "article",
-        "año": 2017,
+        "a�o": 2017,
         "url": "db/journals/see/see23.html#MillerWG17"
     },
     {
         "persona": [{
-            "apellido": "Moskovitz ",
-            "nombre": "Cary"
+            "surname": "Moskovitz ",
+            "name": "Cary"
         }],
         "ejemplar": {
             "numero": "3",
@@ -837,22 +837,22 @@
         "titulo": "Text Recycling in Scientific Writing.",
         "pagina_fin": "813",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": "db/journals/see/see25.html#Moskovitz19"
     },
     {
         "persona": [
             {
-                "apellido": "Lauren Crain ",
-                "nombre": "A."
+                "surname": "Lauren Crain ",
+                "name": "A."
             },
             {
-                "apellido": "C. Martinson ",
-                "nombre": "Brian"
+                "surname": "C. Martinson ",
+                "name": "Brian"
             },
             {
-                "apellido": "R. Thrush ",
-                "nombre": "Carol"
+                "surname": "R. Thrush ",
+                "name": "Carol"
             }
         ],
         "ejemplar": {
@@ -864,13 +864,13 @@
         "titulo": "Relationships Between the Survey of Organizational Research Climate (SORC) and Self-Reported Research Practices.",
         "pagina_fin": "835",
         "publication_type": "article",
-        "año": 2013,
+        "a�o": 2013,
         "url": "db/journals/see/see19.html#CrainMT13"
     },
     {
         "persona": [{
-            "apellido": "von Schomberg ",
-            "nombre": "René"
+            "surname": "von Schomberg ",
+            "name": "René"
         }],
         "ejemplar": {
             "numero": "4",
@@ -881,46 +881,46 @@
         "titulo": "On Identifying Plausibility and Deliberative Public Policy - Commentary on: \"Negotiating Plausibility: Intervening in the Future of Nanotechnology\".",
         "pagina_fin": "739",
         "publication_type": "article",
-        "año": 2011,
+        "a�o": 2011,
         "url": "db/journals/see/see17.html#Schomberg11"
     },
     {
         "persona": [
             {
-                "apellido": "Brandl ",
-                "nombre": "Christopher"
+                "surname": "Brandl ",
+                "name": "Christopher"
             },
             {
-                "apellido": "Wille ",
-                "nombre": "Matthias"
+                "surname": "Wille ",
+                "name": "Matthias"
             },
             {
-                "apellido": "Nelles ",
-                "nombre": "Jochen"
+                "surname": "Nelles ",
+                "name": "Jochen"
             },
             {
-                "apellido": "Rasche ",
-                "nombre": "Peter"
+                "surname": "Rasche ",
+                "name": "Peter"
             },
             {
-                "apellido": "Schäfer ",
-                "nombre": "Katharina"
+                "surname": "Schäfer ",
+                "name": "Katharina"
             },
             {
-                "apellido": "Ole Flemisch ",
-                "nombre": "Frank"
+                "surname": "Ole Flemisch ",
+                "name": "Frank"
             },
             {
-                "apellido": "Frenz ",
-                "nombre": "Martin"
+                "surname": "Frenz ",
+                "name": "Martin"
             },
             {
-                "apellido": "Nitsch ",
-                "nombre": "Verena"
+                "surname": "Nitsch ",
+                "name": "Verena"
             },
             {
-                "apellido": "Mertens ",
-                "nombre": "Alexander"
+                "surname": "Mertens ",
+                "name": "Alexander"
             }
         ],
         "ejemplar": {
@@ -932,18 +932,18 @@
         "titulo": "AMICAI: A Method Based on Risk Analysis to Integrate Responsible Research and Innovation into the Work of Research and Innovation Practitioners.",
         "pagina_fin": "667",
         "publication_type": "article",
-        "año": 2020,
+        "a�o": 2020,
         "url": "db/journals/see/see26.html#BrandlWNRSFFNM20"
     },
     {
         "persona": [
             {
-                "apellido": "Li ",
-                "nombre": "Jessica"
+                "surname": "Li ",
+                "name": "Jessica"
             },
             {
-                "apellido": "Fu ",
-                "nombre": "Shengli"
+                "surname": "Fu ",
+                "name": "Shengli"
             }
         ],
         "ejemplar": {
@@ -955,13 +955,13 @@
         "titulo": "A Systematic Approach to Engineering Ethics Education.",
         "pagina_fin": "339",
         "publication_type": "article",
-        "año": 2012,
+        "a�o": 2012,
         "url": "db/journals/see/see18.html#LiF12"
     },
     {
         "persona": [{
-            "apellido": "A. McComas ",
-            "nombre": "Katherine"
+            "surname": "A. McComas ",
+            "name": "Katherine"
         }],
         "ejemplar": {
             "numero": "4",
@@ -972,13 +972,13 @@
         "titulo": "Researcher Views About Funding Sources and Conflicts of Interest in Nanotechnology.",
         "pagina_fin": "699",
         "publication_type": "article",
-        "año": 2012,
+        "a�o": 2012,
         "url": "db/journals/see/see18.html#McComas12"
     },
     {
         "persona": [{
-            "apellido": "J. Greenspan ",
-            "nombre": "Ralph"
+            "surname": "J. Greenspan ",
+            "name": "Ralph"
         }],
         "ejemplar": {
             "numero": "3",
@@ -989,26 +989,26 @@
         "titulo": "Biological Indeterminacy.",
         "pagina_fin": "447",
         "publication_type": "article",
-        "año": 2012,
+        "a�o": 2012,
         "url": "db/journals/see/see18.html#Greenspan12"
     },
     {
         "persona": [
             {
-                "apellido": "Forsberg ",
-                "nombre": "Ellen-Marie"
+                "surname": "Forsberg ",
+                "name": "Ellen-Marie"
             },
             {
-                "apellido": "Braarud Hanssen ",
-                "nombre": "Anders"
+                "surname": "Braarud Hanssen ",
+                "name": "Anders"
             },
             {
-                "apellido": "Marie Nielsen ",
-                "nombre": "Hanne"
+                "surname": "Marie Nielsen ",
+                "name": "Hanne"
             },
             {
-                "apellido": "Olesen ",
-                "nombre": "Ingrid"
+                "surname": "Olesen ",
+                "name": "Ingrid"
             }
         ],
         "ejemplar": {
@@ -1020,22 +1020,22 @@
         "titulo": "Patent Ethics: The Misalignment of Views Between the Patent System and the Wider Society.",
         "pagina_fin": "1551",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see24.html#ForsbergHNO18"
     },
     {
         "persona": [
             {
-                "apellido": "Guntzburger ",
-                "nombre": "Yoann"
+                "surname": "Guntzburger ",
+                "name": "Yoann"
             },
             {
-                "apellido": "C. Pauchant ",
-                "nombre": "Thierry"
+                "surname": "C. Pauchant ",
+                "name": "Thierry"
             },
             {
-                "apellido": "A. Tanguy ",
-                "nombre": "Philippe"
+                "surname": "A. Tanguy ",
+                "name": "Philippe"
             }
         ],
         "ejemplar": {
@@ -1047,26 +1047,26 @@
         "titulo": "Empowering Engineering Students in Ethical Risk Management: An Experimental Study.",
         "pagina_fin": "911",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": "db/journals/see/see25.html#GuntzburgerPT19"
     },
     {
         "persona": [
             {
-                "apellido": "Baldini ",
-                "nombre": "Gianmarco"
+                "surname": "Baldini ",
+                "name": "Gianmarco"
             },
             {
-                "apellido": "Botterman ",
-                "nombre": "Maarten"
+                "surname": "Botterman ",
+                "name": "Maarten"
             },
             {
-                "apellido": "Neisse ",
-                "nombre": "Ricardo"
+                "surname": "Neisse ",
+                "name": "Ricardo"
             },
             {
-                "apellido": "Tallacchini ",
-                "nombre": "Mariachiara"
+                "surname": "Tallacchini ",
+                "name": "Mariachiara"
             }
         ],
         "ejemplar": {
@@ -1078,13 +1078,13 @@
         "titulo": "Ethical Design in the Internet of Things.",
         "pagina_fin": "905",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see24.html#BaldiniBNT18"
     },
     {
         "persona": [{
-            "apellido": "Varelius ",
-            "nombre": "Jukka"
+            "surname": "Varelius ",
+            "name": "Jukka"
         }],
         "ejemplar": {
             "numero": "4",
@@ -1095,30 +1095,30 @@
         "titulo": "Is the Non-rivalrousness of Intellectual Objects a Problem for the Moral Justification of Economic Rights to Intellectual Property?",
         "pagina_fin": "895",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#Varelius15"
     },
     {
         "persona": [
             {
-                "apellido": "Ienca ",
-                "nombre": "Marcello"
+                "surname": "Ienca ",
+                "name": "Marcello"
             },
             {
-                "apellido": "Wangmo ",
-                "nombre": "Tenzin"
+                "surname": "Wangmo ",
+                "name": "Tenzin"
             },
             {
-                "apellido": "Jotterand ",
-                "nombre": "Fabrice"
+                "surname": "Jotterand ",
+                "name": "Fabrice"
             },
             {
-                "apellido": "W. Kressig ",
-                "nombre": "Reto"
+                "surname": "W. Kressig ",
+                "name": "Reto"
             },
             {
-                "apellido": "Elger ",
-                "nombre": "Bernice"
+                "surname": "Elger ",
+                "name": "Bernice"
             }
         ],
         "ejemplar": {
@@ -1130,13 +1130,13 @@
         "titulo": "Ethical Design of Intelligent Assistive Technologies for Dementia: A Descriptive Review.",
         "pagina_fin": "1035",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see24.html#IencaWJKE18"
     },
     {
         "persona": [{
-            "apellido": "Sari ",
-            "nombre": "Arif"
+            "surname": "Sari ",
+            "name": "Arif"
         }],
         "ejemplar": {
             "numero": "6",
@@ -1147,13 +1147,13 @@
         "titulo": "E-Government Attempts in Small Island Developing States: The Rate of Corruption with Virtualization.",
         "pagina_fin": "1673",
         "publication_type": "article",
-        "año": 2017,
+        "a�o": 2017,
         "url": "db/journals/see/see23.html#Sari17"
     },
     {
         "persona": [{
-            "apellido": "Hasková ",
-            "nombre": "Simona"
+            "surname": "Hasková ",
+            "name": "Simona"
         }],
         "ejemplar": {
             "numero": "2",
@@ -1164,13 +1164,13 @@
         "titulo": "Holistic Assessment and Ethical Disputation on a New Trend in Solid Biofuels.",
         "pagina_fin": "509",
         "publication_type": "article",
-        "año": 2017,
+        "a�o": 2017,
         "url": "db/journals/see/see23.html#Haskova17"
     },
     {
         "persona": [{
-            "apellido": "Liang Zheng ",
-            "nombre": "Yue"
+            "surname": "Liang Zheng ",
+            "name": "Yue"
         }],
         "ejemplar": {
             "numero": "5",
@@ -1181,22 +1181,22 @@
         "titulo": "Some Ethical Concerns About Human Induced Pluripotent Stem Cells.",
         "pagina_fin": "1277",
         "publication_type": "article",
-        "año": 2016,
+        "a�o": 2016,
         "url": "db/journals/see/see22.html#Zheng16"
     },
     {
         "persona": [
             {
-                "apellido": "Vochozka ",
-                "nombre": "Marek"
+                "surname": "Vochozka ",
+                "name": "Marek"
             },
             {
-                "apellido": "Stehel ",
-                "nombre": "Vojtech"
+                "surname": "Stehel ",
+                "name": "Vojtech"
             },
             {
-                "apellido": "Marousková ",
-                "nombre": "Anna"
+                "surname": "Marousková ",
+                "name": "Anna"
             }
         ],
         "ejemplar": {
@@ -1208,22 +1208,22 @@
         "titulo": "Uncovering a New Moral Dilemma of Economic Optimization in Biotechnological Processing.",
         "pagina_fin": "1331",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see24.html#VochozkaSM18"
     },
     {
         "persona": [
             {
-                "apellido": "Bezuidenhout ",
-                "nombre": "Louise"
+                "surname": "Bezuidenhout ",
+                "name": "Louise"
             },
             {
-                "apellido": "Quick ",
-                "nombre": "Robert"
+                "surname": "Quick ",
+                "name": "Robert"
             },
             {
-                "apellido": "P. Shanahan ",
-                "nombre": "Hugh"
+                "surname": "P. Shanahan ",
+                "name": "Hugh"
             }
         ],
         "ejemplar": {
@@ -1235,13 +1235,13 @@
         "titulo": "\"Ethics When You Least Expect It\": A Modular Approach to Short Course Data Ethics Instruction.",
         "pagina_fin": "2189",
         "publication_type": "article",
-        "año": 2020,
+        "a�o": 2020,
         "url": "db/journals/see/see26.html#BezuidenhoutQS20"
     },
     {
         "persona": [{
-            "apellido": "Nyholm ",
-            "nombre": "Sven"
+            "surname": "Nyholm ",
+            "name": "Sven"
         }],
         "ejemplar": {
             "numero": "4",
@@ -1252,13 +1252,13 @@
         "titulo": "Attributing Agency to Automated Systems: Reflections on Human-Robot Collaborations and Responsibility-Loci.",
         "pagina_fin": "1201",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see24.html#Nyholm18"
     },
     {
         "persona": [{
-            "apellido": "Moskovitz ",
-            "nombre": "Cary"
+            "surname": "Moskovitz ",
+            "name": "Cary"
         }],
         "ejemplar": {
             "numero": "3",
@@ -1269,54 +1269,54 @@
         "titulo": "Publisher Correction to: Text Recycling in Scientific Writing.",
         "pagina_fin": "853",
         "publication_type": "article",
-        "año": 2019,
+        "a�o": 2019,
         "url": "db/journals/see/see25.html#Moskovitz19a"
     },
     {
         "persona": [
             {
-                "apellido": "Patenaude ",
-                "nombre": "Johane"
+                "surname": "Patenaude ",
+                "name": "Johane"
             },
             {
-                "apellido": "Legault ",
-                "nombre": "Georges-Auguste"
+                "surname": "Legault ",
+                "name": "Georges-Auguste"
             },
             {
-                "apellido": "Beauvais ",
-                "nombre": "Jacques"
+                "surname": "Beauvais ",
+                "name": "Jacques"
             },
             {
-                "apellido": "Bernier ",
-                "nombre": "Louise"
+                "surname": "Bernier ",
+                "name": "Louise"
             },
             {
-                "apellido": "Béland ",
-                "nombre": "Jean-Pierre"
+                "surname": "Béland ",
+                "name": "Jean-Pierre"
             },
             {
-                "apellido": "Boissy ",
-                "nombre": "Patrick"
+                "surname": "Boissy ",
+                "name": "Patrick"
             },
             {
-                "apellido": "Chenel ",
-                "nombre": "Vanessa"
+                "surname": "Chenel ",
+                "name": "Vanessa"
             },
             {
-                "apellido": "Daniel ",
-                "nombre": "Charles-Étienne"
+                "surname": "Daniel ",
+                "name": "Charles-�\u2030tienne"
             },
             {
-                "apellido": "Genest ",
-                "nombre": "Jonathan"
+                "surname": "Genest ",
+                "name": "Jonathan"
             },
             {
-                "apellido": "Poirier ",
-                "nombre": "Marie-Sol"
+                "surname": "Poirier ",
+                "name": "Marie-Sol"
             },
             {
-                "apellido": "Tapin ",
-                "nombre": "Danielle"
+                "surname": "Tapin ",
+                "name": "Danielle"
             }
         ],
         "ejemplar": {
@@ -1325,37 +1325,37 @@
             "revista": "Sci. Eng. Ethics"
         },
         "pagina_inicio": "293",
-        "titulo": "Framework for the Analysis of Nanotechnologies' Impacts and Ethical Acceptability: Basis of an Interdisciplinary Approach to Assessing Novel Technologies.",
+        "titulo": "Framework for the Analysis of Nanotechnologies''Impacts and Ethical Acceptability: Basis of an Interdisciplinary Approach to Assessing Novel Technologies.",
         "pagina_fin": "293",
         "publication_type": "article",
-        "año": 2015,
+        "a�o": 2015,
         "url": "db/journals/see/see21.html#PatenaudeLBBBBC15"
     },
     {
         "persona": [
             {
-                "apellido": "Zhang ",
-                "nombre": "Yiming"
+                "surname": "Zhang ",
+                "name": "Yiming"
             },
             {
-                "apellido": "Li ",
-                "nombre": "Dongsheng"
+                "surname": "Li ",
+                "name": "Dongsheng"
             },
             {
-                "apellido": "Li ",
-                "nombre": "Dongsheng"
+                "surname": "Li ",
+                "name": "Dongsheng"
             },
             {
-                "apellido": "Zhao ",
-                "nombre": "Feng"
+                "surname": "Zhao ",
+                "name": "Feng"
             },
             {
-                "apellido": "Su ",
-                "nombre": "Jinshu"
+                "surname": "Su ",
+                "name": "Jinshu"
             },
             {
-                "apellido": "Su ",
-                "nombre": "Jinshu"
+                "surname": "Su ",
+                "name": "Jinshu"
             }
         ],
         "ejemplar": {
@@ -1367,30 +1367,30 @@
         "titulo": "CSR: Classified Source Routing in Distributed Networks",
         "pagina_fin": "464",
         "publication_type": "article",
-        "año": 2018,
+        "a�o": 2018,
         "url": "db/journals/see/see21.html#PatenaudeLBBBBC15"
     },
     {
         "persona": [
             {
-                "apellido": "van de Kaa ",
-                "nombre": "Geerten"
+                "surname": "van de Kaa ",
+                "name": "Geerten"
             },
             {
-                "apellido": "Rezaei 0001 ",
-                "nombre": "Jafar"
+                "surname": "Rezaei 0001 ",
+                "name": "Jafar"
             },
             {
-                "apellido": "Taebi ",
-                "nombre": "Behnam"
+                "surname": "Taebi ",
+                "name": "Behnam"
             },
             {
-                "apellido": "van de Poel ",
-                "nombre": "Ibo"
+                "surname": "van de Poel ",
+                "name": "Ibo"
             },
             {
-                "apellido": "Kizhakenath ",
-                "nombre": "Abhilash"
+                "surname": "Kizhakenath ",
+                "name": "Abhilash"
             }
         ],
         "ejemplar": {
@@ -1402,7 +1402,7 @@
         "titulo": "How to Weigh Values in Value Sensitive Design: A Best Worst Method Approach for the Case of Smart Metering.",
         "pagina_fin": "475",
         "publication_type": "article",
-        "año": 2020,
+        "a�o": 2020,
         "url": "db/journals/see/see26.html#KaaRTPK20"
     }
 ]}

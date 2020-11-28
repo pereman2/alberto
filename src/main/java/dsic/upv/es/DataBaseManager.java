@@ -16,9 +16,9 @@ import org.json.JSONTokener;
 
 
 
-public class ConnectionManager {
+public class DataBaseManager {
 	//FIX paths 
-	private static final String [] convertedPaths = {System.getProperty("user.dir") + "/mapped-data/iex-converted.json"};
+	private static final String [] convertedPaths = {System.getProperty("user.dir") + "/mapped-data/iex-converted.json", System.getProperty("user.dir") + "/mapped-data/dblp-converted.json", System.getProperty("user.dir") + "/mapped-data/bibtext-converted.json"};
 	private static final String [] tables = {"publicacionpersona", "articulo","ejemplar","revista","comunicacioncongreso", "libro","persona","publicacion"};
 	
 	private static Connection connection;
@@ -32,16 +32,16 @@ public class ConnectionManager {
 	private static int idRevista = 1;
 	
 	
-	private static void extractAndMapBibtex() {
-		//FIX
+	private static void extractAndMapBibtex() throws FileNotFoundException {
+		ExtractorBibtex.main(null);
 	}
 	
 	private static void extractAndMapIex() throws FileNotFoundException{
 		ExtractorIeex.main(null);
 	}
 	
-	private static void extractAndMapDlbp() {
-		//FIX
+	private static void extractAndMapDlbp() throws FileNotFoundException {
+		ExtractorDlbp.main(null);
 	}
 	
 	private static void eraseDataBase() throws SQLException {
@@ -89,7 +89,12 @@ public class ConnectionManager {
 		JSONObject ejemplar = article.getJSONObject("ejemplar");
 		if(ejemplar.has("revista")) {
 			String nombre = ejemplar.getString("revista");
-			insertIntoRevistaTable(idRevista++, nombre);
+			try {
+				insertIntoRevistaTable(idRevista++, nombre);
+			}catch(Exception e) {
+				idRevis = Integer.toString(findRevista(nombre));
+				idRevista--;
+			}
 		}else {
 			idRevis = null;
 		}
@@ -108,7 +113,10 @@ public class ConnectionManager {
 		insertIntoEjemplarTable(idEjemplar, volumen, numero, mes, idRevis);
 		String titulo = article.getString("titulo");
 		int año = article.getInt("año");
-		String URL = article.getString("url");
+		String URL = "";
+		if(article.has("url")) {
+			URL = article.getString("url");
+		}
 		String paginaInicio = article.getString("pagina_inicio");
 		String paginaFin = article.getString("pagina_fin");
 		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
@@ -119,7 +127,10 @@ public class ConnectionManager {
 	private static void processConference(JSONObject conference) throws JSONException, SQLException {
 		String titulo = conference.getString("titulo");
 		int año = conference.getInt("año");
-		String URL = conference.getString("url");
+		String URL = "";
+		if(conference.has("url")) {
+			URL = conference.getString("url");
+		}
 		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
 		String congreso = "";
 		String edicion = "";
@@ -143,21 +154,30 @@ public class ConnectionManager {
 	private static void processBook(JSONObject book) throws JSONException, SQLException {
 		String titulo = book.getString("titulo");
 		int año = book.getInt("año");
-		String URL = book.getString("url");
+		String URL = "";
+		if(book.has("url")) {
+			URL = book.getString("url");
+		}
 		String editorial = "";
 		if(book.has("editorial")) {
-			editorial = book.getString("edicion");
+			editorial = book.getString("editorial");
 		}
 		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
-		insertIntoLibroTable(idLibro++, editorial, idPublicacion++);
+		insertIntoLibroTable(idLibro++, editorial, idPublicacion);
 		processPersonas(book.getJSONArray("persona"),idPublicacion++);
 	}
 	
 	private static void processPersonas(JSONArray personas, int idPublicacion) throws SQLException {
 		for(int i = 0; i < personas.length(); i++) {
 			JSONObject persona = personas.getJSONObject(i);
-			String nombre = persona.getString("name");
-			String apellidos = persona.getString("surname");
+			String nombre = "";
+			String apellidos = "";
+			if(persona.has("name")){
+					nombre = persona.getString("name");
+			}
+			if(persona.has("surname")) {	
+				apellidos = persona.getString("surname");
+			}
 			int idPers = checkPersona(nombre, apellidos);
 			if(idPers == -1) {
 				idPers = idPersona;
@@ -169,6 +189,7 @@ public class ConnectionManager {
 		}
 	}
 	
+	
 	private static boolean checkDuplicatedRowPPTable(int idPublicacion, int idPers) throws SQLException {
 		Statement statement = connection.createStatement();
 		ResultSet rs = statement.executeQuery("SELECT COUNT(*) AS rowcount FROM publicacionpersona WHERE (idpublicacion = " + idPublicacion + " AND idpersona = " + idPers + ")");
@@ -179,6 +200,13 @@ public class ConnectionManager {
 		}else {
 			return true;
 		}
+	}
+	
+	private static int findRevista(String nombre) throws SQLException {
+		Statement statement = connection.createStatement();
+		ResultSet rs = statement.executeQuery("SELECT * FROM revista WHERE nombre = '" + nombre + "'" );
+		rs.next();
+		return rs.getInt("idrevista");
 	}
 	
 	private static int checkPersona(String nombre, String apellidos) throws SQLException {
