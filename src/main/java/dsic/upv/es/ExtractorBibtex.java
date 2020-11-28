@@ -44,6 +44,14 @@ public class ExtractorBibtex {
 			JSONObject publication = getCongress(article);
 			articles.put(publication);
 		}
+		if(this.jsonObj.has("incollections")) {
+			iexArticles = (JSONArray) this.jsonObj.get("books");
+		}
+		for(int i = 0; i < iexArticles.length(); i++) {
+			JSONObject article = iexArticles.getJSONObject(i);
+			JSONObject publication = getBook(article);
+			articles.put(publication);
+		}
 		iexJson.put("publicaciones", articles);
 		return iexJson;
 	}
@@ -51,7 +59,7 @@ public class ExtractorBibtex {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("año", this.getYear(article));
+		publication.put("anyo", this.getYear(article));
 		publication.put("congreso", this.getCongressName(article));
 		publication.put("pagina_inicio", this.getFirstPage(article));
 		publication.put("pagina_fin", this.getEndPage(article));
@@ -68,7 +76,7 @@ public class ExtractorBibtex {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("año", this.getYear(article));
+		publication.put("anyo", this.getYear(article));
 		publication.put("editorial", this.getEditorial(article));
 		publication.put("publication_type", "book");
 		return publication;
@@ -78,7 +86,7 @@ public class ExtractorBibtex {
 		publication.put("publication_type", "article");
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("año", this.getYear(article));
+		publication.put("anyo", this.getYear(article));
 		publication.put("pagina_inicio", this.getFirstPage(article));
 		publication.put("pagina_fin", this.getEndPage(article));
 		publication.put("ejemplar", this.getEjemplar(article));

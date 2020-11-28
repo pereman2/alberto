@@ -33,7 +33,7 @@ public class ExtractorDlbp {
 		JSONObject dblpArticle = new JSONObject();
 		dblpArticle.put("persona", this.getAuthors(article));
 		dblpArticle.put("titulo", this.getTitle(article));
-		dblpArticle.put("año", this.getYear(article));
+		dblpArticle.put("anyo", this.getYear(article));
 		dblpArticle.put("url", this.getUrl(article));
 		dblpArticle.put("pagina_inicio", this.getFirstPage(article));
 		dblpArticle.put("pagina_fin", this.getEndPage(article));

@@ -32,7 +32,7 @@ public class ExtractorIeex {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
 		publication.put("titulo", this.getTitle(article));
-		publication.put("año", this.getYear(article));
+		publication.put("anyo", this.getYear(article));
 		publication.put("url", this.getUrl(article));
 		String publicationType = article.getString("content_type").toLowerCase();
 		if(publicationType.contains("article") || publicationType.contains("journal")) {
