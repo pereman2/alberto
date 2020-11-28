@@ -86,7 +86,9 @@ public class DataBaseManager {
 	
 	private static void processArticle(JSONObject article) throws SQLException{
 		String idRevis = Integer.toString(idRevista);
+		String titulo = article.getString("titulo");
 		JSONObject ejemplar = article.getJSONObject("ejemplar");
+		if(!checkDuplicatedPublication(titulo)) {
 		if(ejemplar.has("revista")) {
 			String nombre = ejemplar.getString("revista");
 			try {
@@ -111,49 +113,51 @@ public class DataBaseManager {
 			mes = ejemplar.getString("mes");
 		}
 		insertIntoEjemplarTable(idEjemplar, volumen, numero, mes, idRevis);
-		String titulo = article.getString("titulo");
-		int año = article.getInt("año");
+		int anyo = article.getInt("anyo");
 		String URL = "";
 		if(article.has("url")) {
 			URL = article.getString("url");
 		}
 		String paginaInicio = article.getString("pagina_inicio");
 		String paginaFin = article.getString("pagina_fin");
-		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
+		insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
 		processPersonas(article.getJSONArray("persona"),idPublicacion);
 		insertIntoArticuloTable(idArticulo++, paginaInicio, paginaFin, idPublicacion++, idEjemplar++);
+		}
 	}
 	
 	private static void processConference(JSONObject conference) throws JSONException, SQLException {
 		String titulo = conference.getString("titulo");
-		int año = conference.getInt("año");
+		int anyo = conference.getInt("anyo");
 		String URL = "";
 		if(conference.has("url")) {
 			URL = conference.getString("url");
 		}
-		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
-		String congreso = "";
-		String edicion = "";
-		String lugar = "";
-		String paginaInicio = conference.getString("pagina_inicio");;
-		String paginaFin = conference.getString("pagina_fin");;
-		if(conference.has("congreso")) {
-			congreso = conference.getString("congreso");
-		}
-		if(conference.has("edicion")) {
-			edicion = conference.getString("edicion");
-		}
-		if(conference.has("lugar")) {
-			lugar = conference.getString("lugar");
-		}
+		if(!checkDuplicatedPublication(titulo)) {
+			insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
+			String congreso = "";
+			String edicion = "";
+			String lugar = "";
+			String paginaInicio = conference.getString("pagina_inicio");;
+			String paginaFin = conference.getString("pagina_fin");;
+			if(conference.has("congreso")) {
+				congreso = conference.getString("congreso");
+			}
+			if(conference.has("edicion")) {
+				edicion = conference.getString("edicion");
+			}
+			if(conference.has("lugar")) {
+				lugar = conference.getString("lugar");
+			}
 		
-		insertIntoComunicacionCongresoTable(idComunicacionCongreso++, congreso, edicion, lugar, paginaInicio, paginaFin, idPublicacion);
-		processPersonas(conference.getJSONArray("persona"),idPublicacion++);
+			insertIntoComunicacionCongresoTable(idComunicacionCongreso++, congreso, edicion, lugar, paginaInicio, paginaFin, idPublicacion);
+			processPersonas(conference.getJSONArray("persona"),idPublicacion++);
+		}
 	}
 
 	private static void processBook(JSONObject book) throws JSONException, SQLException {
 		String titulo = book.getString("titulo");
-		int año = book.getInt("año");
+		int anyo = book.getInt("anyo");
 		String URL = "";
 		if(book.has("url")) {
 			URL = book.getString("url");
@@ -162,9 +166,11 @@ public class DataBaseManager {
 		if(book.has("editorial")) {
 			editorial = book.getString("editorial");
 		}
-		insertIntoPublicacionTable(idPublicacion, titulo, año, URL);
-		insertIntoLibroTable(idLibro++, editorial, idPublicacion);
-		processPersonas(book.getJSONArray("persona"),idPublicacion++);
+		if(!checkDuplicatedPublication(titulo)) {
+			insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
+			insertIntoLibroTable(idLibro++, editorial, idPublicacion);
+			processPersonas(book.getJSONArray("persona"),idPublicacion++);
+		}
 	}
 	
 	private static void processPersonas(JSONArray personas, int idPublicacion) throws SQLException {
@@ -186,6 +192,18 @@ public class DataBaseManager {
 			if(!checkDuplicatedRowPPTable(idPublicacion, idPers)) {
 				insertIntoPublicacionPersonaTable(idPublicacion, idPers);
 			}
+		}
+	}
+	
+	private static boolean checkDuplicatedPublication(String titulo) throws SQLException {
+		Statement statement = connection.createStatement();
+		ResultSet rs = statement.executeQuery("SELECT COUNT(*) AS rowcount FROM publicacion WHERE titulo = '" + titulo + "'");
+		rs.next();
+		int count = rs.getInt("rowcount");
+		if(count == 0) {
+			return false;
+		}else {
+			return true;
 		}
 	}
 	
