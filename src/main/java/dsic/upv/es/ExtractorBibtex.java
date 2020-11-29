@@ -1,13 +1,10 @@
 package dsic.upv.es;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.json.JSONTokener;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.InputStream;
+import java.sql.SQLException;
 
 import org.json.*;
 public class ExtractorBibtex implements Extractor{
@@ -16,7 +13,7 @@ public class ExtractorBibtex implements Extractor{
 	public ExtractorBibtex(JSONObject jsonObj) {
 		this.jsonObj = jsonObj;
 	}
-	public JSONObject extract() {
+	public void extract() throws JSONException, SQLException {
 		JSONObject iexJson = new JSONObject();
 		JSONArray articles = new JSONArray();
 		JSONArray iexArticles = new JSONArray();
@@ -53,7 +50,7 @@ public class ExtractorBibtex implements Extractor{
 			articles.put(publication);
 		}
 		iexJson.put("publicaciones", articles);
-		return iexJson;
+		DataBaseManager.insertIntoDB(iexJson);
 	}
 	private JSONObject getCongress(JSONObject article) {
 		JSONObject publication = new JSONObject();
@@ -178,24 +175,5 @@ public class ExtractorBibtex implements Extractor{
 			}
 		}
 		return aux;
-	}
-
-	public static void main(String[] args) throws FileNotFoundException {
-		String jsonPath = System.getProperty("user.dir") + "/DemoJsons/bibtex_sample_array.json";
-		InputStream is = new FileInputStream(jsonPath);
-		JSONTokener tokener = new JSONTokener(is);
-		JSONObject object = new JSONObject(tokener);
-		ExtractorBibtex ex = new ExtractorBibtex(object);
-		JSONObject transformedJson = ex.extract();
-		int PRETTY_PRINT_INDENT_FACTOR = 4;
-		String jsonFile = System.getProperty("user.dir") + "/mapped-data/bibtext-converted.json";
-		try (FileWriter fileWriter = new FileWriter(jsonFile)){
-			fileWriter.write(transformedJson.toString(PRETTY_PRINT_INDENT_FACTOR));
-			fileWriter.close();
-			is.close();
-
-		} catch(Exception  e) {
-			System.out.println(e); 
-		}
 	}
 }

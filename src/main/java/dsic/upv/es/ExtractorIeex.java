@@ -1,13 +1,10 @@
 package dsic.upv.es;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.json.JSONTokener;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.InputStream;
+import java.sql.SQLException;
 
 import org.json.*;
 public class ExtractorIeex implements Extractor{
@@ -16,7 +13,7 @@ public class ExtractorIeex implements Extractor{
 	public ExtractorIeex(JSONObject jsonObj) {
 		this.jsonObj = jsonObj;
 	}
-	public JSONObject extract() {
+	public void extract() throws JSONException, SQLException {
 		JSONObject iexJson = new JSONObject();
 		JSONArray articles = new JSONArray();
 		JSONArray iexArticles = (JSONArray) this.jsonObj.get("articles");
@@ -26,7 +23,7 @@ public class ExtractorIeex implements Extractor{
 			articles.put(publication);
 		}
 		iexJson.put("publicaciones", articles);
-		return iexJson;
+		DataBaseManager.insertIntoDB(iexJson);
 	}
 	private JSONObject getPublication(JSONObject article) {
 		JSONObject publication = new JSONObject();
@@ -153,19 +150,4 @@ public class ExtractorIeex implements Extractor{
 		return aux;
 	}
 	
-	public static void main(String[] args) throws FileNotFoundException {
-		String jsonPath = System.getProperty("user.dir") + "/DemoJsons/ieeeXplore_2018-2020-short.json";
-		InputStream is = new FileInputStream(jsonPath);
-		JSONTokener tokener = new JSONTokener(is);
-		JSONObject object = new JSONObject(tokener);
-		ExtractorIeex ex = new ExtractorIeex(object);
-		JSONObject transformedJson = ex.extract();
-		int PRETTY_PRINT_INDENT_FACTOR = 4;
-		String jsonFile = System.getProperty("user.dir") + "/mapped-data/iex-converted.json";
-		try (FileWriter fileWriter = new FileWriter(jsonFile)){
-			fileWriter.write(transformedJson.toString(PRETTY_PRINT_INDENT_FACTOR));
-
-		} catch(Exception  e) {System.out.println(e); }
-
-	}
 }

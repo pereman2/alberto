@@ -4,8 +4,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.InputStream;
+import java.sql.SQLException;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 public class ExtractorDlbp implements Extractor{
@@ -15,7 +17,7 @@ public class ExtractorDlbp implements Extractor{
 		this.jsonObj = jsonObj;
 	}
 	
-	public JSONObject extract() {
+	public void extract() throws JSONException, SQLException {
 		JSONObject dblpJson = new JSONObject();
 		JSONArray articlesDblp = new JSONArray();
 		JSONObject dblpObject = (JSONObject) this.jsonObj.get("dblp");
@@ -26,7 +28,7 @@ public class ExtractorDlbp implements Extractor{
 			articlesDblp.put(dblpArticle);
 		}
 		dblpJson.put("publicaciones", articlesDblp);
-		return dblpJson;
+		DataBaseManager.insertIntoDB(dblpJson);
 	}
 
 	private JSONObject getPublication(JSONObject article) {
@@ -177,19 +179,4 @@ public class ExtractorDlbp implements Extractor{
 		return this.splitAuthorName(authorsJSON.getString("$"));
 	}
 
-	public static void main(String[] args) throws FileNotFoundException {
-		String jsonPath = System.getProperty("user.dir") + "/DemoJsons/DBLP-SOLO_ARTICLE_SHORT.json";
-		InputStream is = new FileInputStream(jsonPath);
-		JSONTokener tokener = new JSONTokener(is);
-		JSONObject object = new JSONObject(tokener);
-		ExtractorDlbp ex = new ExtractorDlbp(object);
-		JSONObject transformedJson = ex.extract();
-		int PRETTY_PRINT_INDENT_FACTOR = 4;
-		String jsonFile = System.getProperty("user.dir") + "/mapped-data/dblp-converted.json";
-		try (FileWriter fileWriter = new FileWriter(jsonFile)){
-			fileWriter.write(transformedJson.toString(PRETTY_PRINT_INDENT_FACTOR));
-
-		} catch(Exception  e) {System.out.println(e); }
-
-	}
 }
