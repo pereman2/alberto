@@ -21,7 +21,12 @@ public class DataBaseManager {
 	private static final String [] convertedPaths = {System.getProperty("user.dir") + "/mapped-data/iex-converted.json", System.getProperty("user.dir") + "/mapped-data/dblp-converted.json", System.getProperty("user.dir") + "/mapped-data/bibtext-converted.json"};
 	private static final String [] tables = {"publicacionpersona", "articulo","ejemplar","revista","comunicacioncongreso", "libro","persona","publicacion"};
 	
+	private static ConnectionManager connectionManager;
 	private static Connection connection;
+	
+	private static final String URL = "jdbc:mysql://localhost:3306/publications";
+	private static final String USER = "root";
+	private static final String PASSWORD = "root";
 	
 	private static int idArticulo = 1;
 	private static int idComunicacionCongreso = 1;
@@ -307,8 +312,8 @@ public class DataBaseManager {
 		
 		try
 		{
-			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-		   connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/publications?user=root?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "root");
+			connectionManager = new ConnectionManager();
+		   connection = connectionManager.getConnection(URL, USER, PASSWORD);
 		   connection.setAutoCommit(false);
 		   eraseDataBase();
 		   insertIntoDBAll();
