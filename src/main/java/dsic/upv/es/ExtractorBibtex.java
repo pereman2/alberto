@@ -10,7 +10,7 @@ import java.io.FileWriter;
 import java.io.InputStream;
 
 import org.json.*;
-public class ExtractorBibtex {
+public class ExtractorBibtex implements Extractor{
 	JSONObject jsonObj;
 
 	public ExtractorBibtex(JSONObject jsonObj) {

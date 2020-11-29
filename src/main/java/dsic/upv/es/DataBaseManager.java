@@ -61,7 +61,7 @@ public class DataBaseManager {
 		}
 	}
 	
-	private static void insertIntoDB(JSONObject input) throws JSONException, SQLException {
+	public static void insertIntoDB(JSONObject input) throws JSONException, SQLException {
 		JSONArray publicaciones = new JSONArray();
 		publicaciones = (JSONArray) input.get("publicaciones");
 		for(int i = 0; i < publicaciones.length(); i++) {

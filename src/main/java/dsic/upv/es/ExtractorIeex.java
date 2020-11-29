@@ -10,7 +10,7 @@ import java.io.FileWriter;
 import java.io.InputStream;
 
 import org.json.*;
-public class ExtractorIeex {
+public class ExtractorIeex implements Extractor{
 	JSONObject jsonObj;
 
 	public ExtractorIeex(JSONObject jsonObj) {

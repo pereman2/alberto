@@ -8,7 +8,7 @@ import java.io.InputStream;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-public class ExtractorDlbp {
+public class ExtractorDlbp implements Extractor{
 	JSONObject jsonObj;
 
 	public ExtractorDlbp(JSONObject jsonObj) {
