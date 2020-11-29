@@ -37,6 +37,28 @@ public class DataBaseManager {
 	private static int idRevista = 1;
 	
 	
+	public static void main(String [] args) throws FileNotFoundException{
+		//Execute all extractors
+		System.out.println("Starting...");
+		extractAndMapIex();
+		extractAndMapBibtex();
+		extractAndMapDlbp();
+		
+		try
+		{
+			connectionManager = new ConnectionManager();
+		   connection = connectionManager.getConnection(URL, USER, PASSWORD);
+		   connection.setAutoCommit(false);
+		   eraseDataBase();
+		   insertIntoDBAll();
+		   connection.close();
+		   System.out.println("Done! inserted " + (--idPublicacion) + " new publications" );
+		   
+		}catch(Exception e) {
+			System.out.println(e.toString());
+		}
+	}
+	
 	private static void extractAndMapBibtex() throws FileNotFoundException {
 		ExtractorBibtex.main(null);
 	}
@@ -91,11 +113,11 @@ public class DataBaseManager {
 	
 	private static void processArticle(JSONObject article) throws SQLException{
 		String idRevis = Integer.toString(idRevista);
-		String titulo = article.getString("titulo");
+		String titulo = getTitle(article);
 		JSONObject ejemplar = article.getJSONObject("ejemplar");
 		if(!checkDuplicatedPublication(titulo)) {
-		if(ejemplar.has("revista")) {
-			String nombre = ejemplar.getString("revista");
+		if(hasAJournalName(ejemplar)) {
+			String nombre = getJournalName(ejemplar);
 			try {
 				insertIntoRevistaTable(idRevista++, nombre);
 			}catch(Exception e) {
@@ -105,26 +127,18 @@ public class DataBaseManager {
 		}else {
 			idRevis = null;
 		}
-		String volumen = "";
-		String numero = "";
-		String mes = "";
-		if(ejemplar.has("volumen")) {
-			volumen = ejemplar.getString("volumen");
-		}
-		if(ejemplar.has("numero")) {
-			numero = ejemplar.getString("numero");
-		}
-		if(ejemplar.has("mes")) {
-			mes = ejemplar.getString("mes");
-		}
+		
+		String volumen = getVolume(ejemplar);
+		String numero = getIssue(ejemplar);
+		String mes = getMonth(ejemplar);
+		
 		insertIntoEjemplarTable(idEjemplar, volumen, numero, mes, idRevis);
-		int anyo = article.getInt("anyo");
-		String URL = "";
-		if(article.has("url")) {
-			URL = article.getString("url");
-		}
-		String paginaInicio = article.getString("pagina_inicio");
-		String paginaFin = article.getString("pagina_fin");
+		
+		int anyo = getYear(article);
+		String URL = getURL(article);
+		String paginaInicio = getInitPage(article);
+		String paginaFin = getEndPage(article);
+		
 		insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
 		processPersonas(article.getJSONArray("persona"),idPublicacion);
 		insertIntoArticuloTable(idArticulo++, paginaInicio, paginaFin, idPublicacion++, idEjemplar++);
@@ -132,28 +146,17 @@ public class DataBaseManager {
 	}
 	
 	private static void processConference(JSONObject conference) throws JSONException, SQLException {
-		String titulo = conference.getString("titulo");
-		int anyo = conference.getInt("anyo");
-		String URL = "";
-		if(conference.has("url")) {
-			URL = conference.getString("url");
-		}
+		String titulo = getTitle(conference);
+		int anyo = getYear(conference);
+		String URL = getURL(conference);
 		if(!checkDuplicatedPublication(titulo)) {
 			insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
-			String congreso = "";
-			String edicion = "";
-			String lugar = "";
-			String paginaInicio = conference.getString("pagina_inicio");;
-			String paginaFin = conference.getString("pagina_fin");;
-			if(conference.has("congreso")) {
-				congreso = conference.getString("congreso");
-			}
-			if(conference.has("edicion")) {
-				edicion = conference.getString("edicion");
-			}
-			if(conference.has("lugar")) {
-				lugar = conference.getString("lugar");
-			}
+			
+			String congreso = getConvention(conference);
+			String edicion = getEdition(conference);
+			String lugar = getLocation(conference);
+			String paginaInicio = getInitPage(conference);
+			String paginaFin = getEndPage(conference);
 		
 			insertIntoComunicacionCongresoTable(idComunicacionCongreso++, congreso, edicion, lugar, paginaInicio, paginaFin, idPublicacion);
 			processPersonas(conference.getJSONArray("persona"),idPublicacion++);
@@ -161,34 +164,25 @@ public class DataBaseManager {
 	}
 
 	private static void processBook(JSONObject book) throws JSONException, SQLException {
-		String titulo = book.getString("titulo");
-		int anyo = book.getInt("anyo");
-		String URL = "";
-		if(book.has("url")) {
-			URL = book.getString("url");
-		}
-		String editorial = "";
-		if(book.has("editorial")) {
-			editorial = book.getString("editorial");
-		}
+		String titulo = getTitle(book);
+		int anyo = getYear(book);
+		String URL = getURL(book);
+		String editorial = getEditorial(book);
+		
 		if(!checkDuplicatedPublication(titulo)) {
 			insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
 			insertIntoLibroTable(idLibro++, editorial, idPublicacion);
 			processPersonas(book.getJSONArray("persona"),idPublicacion++);
 		}
 	}
-	
+
 	private static void processPersonas(JSONArray personas, int idPublicacion) throws SQLException {
 		for(int i = 0; i < personas.length(); i++) {
 			JSONObject persona = personas.getJSONObject(i);
-			String nombre = "";
-			String apellidos = "";
-			if(persona.has("name")){
-					nombre = persona.getString("name");
-			}
-			if(persona.has("surname")) {	
-				apellidos = persona.getString("surname");
-			}
+			
+			String nombre = getName(persona);
+			String apellidos = getSurname(persona);
+			
 			int idPers = checkPersona(nombre, apellidos);
 			if(idPers == -1) {
 				idPers = idPersona;
@@ -205,11 +199,7 @@ public class DataBaseManager {
 		ResultSet rs = statement.executeQuery("SELECT COUNT(*) AS rowcount FROM publicacion WHERE titulo = '" + titulo + "'");
 		rs.next();
 		int count = rs.getInt("rowcount");
-		if(count == 0) {
-			return false;
-		}else {
-			return true;
-		}
+		return count > 0;
 	}
 	
 	
@@ -218,11 +208,184 @@ public class DataBaseManager {
 		ResultSet rs = statement.executeQuery("SELECT COUNT(*) AS rowcount FROM publicacionpersona WHERE (idpublicacion = " + idPublicacion + " AND idpersona = " + idPers + ")");
 		rs.next();
 		int count = rs.getInt("rowcount");
-		if(count == 0) {
-			return false;
-		}else {
-			return true;
+		return count > 0;
+	}
+	
+	private static String getSurname(JSONObject json) {
+		String apellidos = "";
+		if(hasASurname(json)) {	
+			apellidos = json.getString("surname");
 		}
+		return apellidos;
+	}
+	
+	private static String getName(JSONObject json) {
+		String nombre = "";
+		if(hasAName(json)){
+				nombre = json.getString("name");
+		}
+		return nombre;
+	}
+	
+	private static int getYear(JSONObject json) {
+		int anyo = -1;
+		if(hasAYear(json)) {
+			anyo = json.getInt("anyo");
+		}
+		return anyo;
+	}
+	
+	private static String getURL(JSONObject json) {
+		String URL = "";
+		if(hasAURL(json)) {
+			URL = json.getString("url");
+		}
+		return URL;
+	}
+	
+	private static String getEditorial(JSONObject json) {
+		String editorial = "";
+		if(hasAEditorial(json)) {
+			editorial = json.getString("editorial");
+		}
+		return editorial;
+	}
+	
+	private static String getTitle(JSONObject json) {
+		String titulo = "";
+		if(hasATitle(json)) {
+			titulo = json.getString("titulo");
+		}
+		return titulo;
+	}
+	
+	private static String getConvention(JSONObject json) {
+		String congreso = "";
+		if(hasAConvention(json)) {
+			congreso = json.getString("congreso");
+		}
+		return congreso;
+	}
+	
+	private static String getEdition(JSONObject json) {
+		String edicion = "";
+		if(hasAEdition(json)) {
+			edicion = json.getString("edicion");
+		}
+		return edicion;
+	}
+	
+	private static String getLocation(JSONObject json) {
+		String location = "";
+		if(hasALocation(json)) {
+			location = json.getString("lugar");
+		}
+		return location;
+	}
+	
+	private static String getInitPage(JSONObject json) {
+		String initPage = "";
+		if(hasAnInitPage(json)) {
+		 initPage = json.getString("pagina_inicio");
+		}
+		return initPage;
+	}
+	
+	private static String getEndPage(JSONObject json) {
+		String endPage = "";
+		if(hasAnEndPage(json)) {
+			endPage = json.getString("pagina_fin");
+		}
+		return endPage;
+	}
+	
+	private static String getMonth(JSONObject json) {
+		String mes = "";
+		if(hasAMonth(json)) {
+			mes = json.getString("mes");
+		}
+		return mes;
+	}
+	private static String getIssue(JSONObject json) {
+		String numero = "";
+		if(hasAnIssue(json)) {
+			numero = json.getString("numero");
+		}
+		return numero;
+	}
+	
+	private static String getVolume(JSONObject json) {
+		String volumen = "";
+		if(hasAVolume(json)) {
+			volumen = json.getString("volumen");
+		}
+		return volumen;
+	}
+	private static String getJournalName(JSONObject json) {
+		String nombre = "";
+		if(hasAJournalName(json)) {
+			nombre = json.getString("revista");
+		}
+		return nombre;
+	}
+	
+	private static boolean hasAJournalName(JSONObject json) {
+		return json.has("revista");
+	}
+	
+	private static boolean hasAVolume(JSONObject json) {
+		return json.has("volumen");
+	}
+	
+	private static boolean hasAnIssue(JSONObject json) {
+		return json.has("numero");
+	}
+
+	private static boolean hasAMonth(JSONObject json) {
+		return json.has("mes");
+	}
+	
+	private static boolean hasAnEndPage(JSONObject json) {
+		return json.has("pagina_fin");
+	}
+	
+	private static boolean hasAnInitPage(JSONObject json) {
+		return json.has("pagina-inicio");
+	}
+	
+	private static boolean hasALocation(JSONObject json) {
+		return json.has("lugar");
+	}
+	
+	private static boolean hasAEdition(JSONObject json) {
+		return json.has("edicion");
+	}
+	
+	private static boolean hasAConvention(JSONObject json) {
+		return json.has("congreso");
+	}
+	
+	private static boolean hasAName(JSONObject json) {
+		return json.has("name");
+	}
+	
+	private static boolean hasASurname(JSONObject json) {
+		return json.has("surname");
+	}
+	
+	private static boolean hasATitle(JSONObject json) {
+		return json.has("titulo");
+	}
+
+	private static boolean hasAEditorial(JSONObject json) {
+		return json.has("editorial");
+	}
+	private static boolean hasAURL(JSONObject json) {
+		return json.has("url");
+	}
+
+	private static boolean hasAYear(JSONObject json) {
+		return json.has("anyo");
 	}
 	
 	private static int findRevista(String nombre) throws SQLException {
@@ -301,28 +464,4 @@ public class DataBaseManager {
 		query.executeUpdate("INSERT INTO revista VALUES (" + idRevista + "," + "'" + nombre + "'" + ")");
 		connection.commit();
 	}
-
-	
-	public static void main(String [] args) throws FileNotFoundException{
-		//Execute all extractors
-		System.out.println("Starting...");
-		extractAndMapIex();
-		extractAndMapBibtex();
-		extractAndMapDlbp();
-		
-		try
-		{
-			connectionManager = new ConnectionManager();
-		   connection = connectionManager.getConnection(URL, USER, PASSWORD);
-		   connection.setAutoCommit(false);
-		   eraseDataBase();
-		   insertIntoDBAll();
-		   connection.close();
-		   System.out.println("Done! inserted " + (--idPublicacion) + " new publications" );
-		   
-		}catch(Exception e) {
-			System.out.println(e.toString());
-		}
-	}
-	
 }
