@@ -40,10 +40,6 @@ public class DataBaseManager {
 	public static void main(String [] args) throws FileNotFoundException{
 		//Execute all extractors
 		System.out.println("Starting...");
-		extractAndMapIex();
-		extractAndMapBibtex();
-		extractAndMapDlbp();
-		
 		try
 		{
 			connectionManager = new ConnectionManager();
@@ -57,18 +53,6 @@ public class DataBaseManager {
 		}catch(Exception e) {
 			System.out.println(e.toString());
 		}
-	}
-	
-	private static void extractAndMapBibtex() throws FileNotFoundException {
-		ExtractorBibtex.main(null);
-	}
-	
-	private static void extractAndMapIex() throws FileNotFoundException{
-		ExtractorIeex.main(null);
-	}
-	
-	private static void extractAndMapDlbp() throws FileNotFoundException {
-		ExtractorDlbp.main(null);
 	}
 	
 	private static void eraseDataBase() throws SQLException {
