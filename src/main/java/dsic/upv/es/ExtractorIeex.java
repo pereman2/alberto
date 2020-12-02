@@ -63,8 +63,8 @@ public class ExtractorIeex implements Extractor{
 		if(article.has("publication_date")) {
 			ejemplar.put("mes", article.get("publication_date"));
 		}
-		if(article.has("journal")) {
-			ejemplar.put("revista", article.get("journal"));
+		if(article.has("publication_title")) {
+			ejemplar.put("revista", article.get("publication_title"));
 		}
 		return ejemplar;
 	}
