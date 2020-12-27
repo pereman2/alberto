@@ -1,13 +1,17 @@
 package dsic.upv.es;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -42,10 +46,154 @@ public class DataBaseManager {
 	private static int idPublicacion = 1;
 	private static int idRevista = 1;
 
-	public static void main(String[] args) throws FileNotFoundException, SQLException {
+	public static void main(String[] args) throws Exception {
 		// Execute all extractors
+		searchDataBase("","",2012,2020,true,true,true);
 		connect();
 		eraseDataBase();
+	}
+
+	public static JSONArray searchDataBase(String titulo, String autor, int startYear, int endYear, boolean article,
+			boolean congress, boolean book) throws Exception {
+		JSONArray res = new JSONArray();
+		ResultSet aux;
+		connect();
+
+		if (article) {
+			String query = "SELECT DISTINCT pu.idpublicacion, pu.titulo, r.nombre  as \"revista\", e.volumen, e.numero, e.mes, pu.anyo, a.inicio, a.fin, pu.URL \r\n"
+					+ "FROM ((((publicacion pu LEFT JOIN publicacionpersona pupe ON pu.idpublicacion = pupe.idpublicacion) \r\n"
+					+ "LEFT JOIN persona pe ON pe.idpersona = pupe.idpersona) \r\n"
+					+ "LEFT JOIN articulo a ON pu.idpublicacion = a.idpublicacion) \r\n"
+					+ "LEFT JOIN ejemplar e ON a.esta_en = e.idejemplar) \r\n"
+					+ "LEFT JOIN revista r ON r.idrevista = e.pertenece_a\r\n"
+					+ " WHERE a.idarticulo IS NOT NULL AND pu.titulo LIKE '%?%' AND (pe.nombre LIKE \"%?%\" OR pe.apellidos LIKE \"%?%\")";
+			query = addParemetersToSearch(query, startYear, endYear);
+			PreparedStatement preStatement = connection.prepareStatement(query);
+			preStatement.setString(1, titulo);
+			preStatement.setString(2, autor);
+			preStatement.setString(3, autor);
+
+			aux = preStatement.executeQuery();
+			
+			JSONArray articles = new JSONArray();
+			while(aux.next()) {
+				JSONObject art = new JSONObject();
+				art.put("authors", getAuthors(aux.getInt("idpublicacion")));
+				art.put("titulo", aux.getString("titulo"));
+				art.put("revista", aux.getString("revista"));
+				art.put("volumen", aux.getString("volumen"));
+				art.put("numero", aux.getString("numero"));
+				art.put("mes", aux.getString("mes"));
+				art.put("anyo", aux.getInt("anyo"));
+				art.put("inicio", aux.getString("inicio"));
+				art.put("fin",aux.getString("fin"));
+				art.put("URL", aux.getString("URL"));
+				articles.put(art);
+			}
+			
+			res.put(articles);
+		}
+		
+		if (congress) {
+			String query = "SELECT DISTINCT pu.idpublicacion, pu.titulo, cc.edicion, cc.congreso, cc.lugar, pu.anyo, cc.inicio, cc.fin, pu.URL\r\n"
+					+ "FROM ((publicacion pu LEFT JOIN publicacionpersona pupe ON pu.idpublicacion = pupe.idpublicacion) \r\n"
+					+ "LEFT JOIN persona pe ON pe.idpersona = pupe.idpersona) \r\n"
+					+ "LEFT JOIN comunicacioncongreso cc ON pu.idpublicacion = cc.idpublicacion \r\n"
+					+ " WHERE cc.idcongreso IS NOT NULL AND pu.titulo LIKE '%?%' AND (pe.nombre LIKE \"%?%\" OR pe.apellidos LIKE \"%?%\")";
+			query = addParemetersToSearch(query, startYear, endYear);
+			PreparedStatement preStatement = connection.prepareStatement(query);
+			preStatement.setString(1, titulo);
+			preStatement.setString(2, autor);
+			preStatement.setString(3, autor);
+
+			aux = preStatement.executeQuery();
+			
+			JSONArray conferences = new JSONArray();
+			while(aux.next()) {
+				JSONObject conference = new JSONObject();
+				conference.put("authors", getAuthors(aux.getInt("idpublicacion")));
+				conference.put("titulo", aux.getString("titulo"));
+				conference.put("edicion", aux.getString("edicion"));
+				conference.put("congreso", aux.getString("congreso"));
+				conference.put("lugar", aux.getString("lugar"));
+				conference.put("anyo", aux.getInt("anyo"));
+				conference.put("inicio", aux.getString("inicio"));
+				conference.put("fin",aux.getString("fin"));
+				conference.put("URL", aux.getString("URL"));
+				conferences.put(conference);
+			}
+			
+			res.put(conferences);
+			
+		}
+		
+		if (book) {
+			String query = "SELECT DISTINCT pu.idpublicacion, pu.titulo, li.editorial, pu.anyo, pu.URL \r\n"
+					+ "FROM ((publicacion pu LEFT JOIN publicacionpersona pupe ON pu.idpublicacion = pupe.idpublicacion) \r\n"
+					+ "LEFT JOIN persona pe ON pe.idpersona = pupe.idpersona) \r\n"
+					+ "LEFT JOIN libro li ON pu.idpublicacion = li.idpublicacion \r\n"
+					+ " WHERE li.idlibro IS NOT NULL AND pu.titulo LIKE '%?%' AND (pe.nombre LIKE \"%?%\" OR pe.apellidos LIKE \"%?%\")";
+			query = addParemetersToSearch(query, startYear, endYear);
+			PreparedStatement preStatement = connection.prepareStatement(query);
+			preStatement.setString(1, titulo);
+			preStatement.setString(2, autor);
+			preStatement.setString(3, autor);
+			
+			aux = preStatement.executeQuery();
+			
+			JSONArray books = new JSONArray();
+			while(aux.next()) {
+				JSONObject bok = new JSONObject();
+				bok.put("authors", getAuthors(aux.getInt("idpublicacion")));
+				bok.put("titulo", aux.getString("titulo"));
+				bok.put("editorial", aux.getString("editorial"));
+				bok.put("anyo", aux.getInt("anyo"));
+				bok.put("URL", aux.getString("URL"));
+				books.put(bok);
+			}
+			
+			res.put(books);
+			
+		}
+
+		try (FileWriter file = new FileWriter(new File("C:\\Users\\polim\\Desktop\\Universidad\\search response.json"))) {
+			 
+            file.write(res.toString(4));
+            file.flush();
+ 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		return res;
+	}
+
+	private static String addParemetersToSearch(String query, int startYear, int endYear) {
+		if (!(startYear == 0 || endYear == 0)) {
+			query += "AND pu.anyo <= " + endYear + " AND pu.anyo >= " + startYear;
+		}
+		return query;
+	}
+
+	
+	private static JSONArray getAuthors(int id) throws SQLException {
+		if(connection == null) {
+			connect();
+		}
+		
+		String query = "SELECT DISTINCT pe.nombre, pe.apellidos\r\n"
+				+ "FROM publicacion pu LEFT JOIN publicacionpersona pp ON pp.idpublicacion = pu.idpublicacion LEFT JOIN persona pe ON pp.idpersona = pe.idpersona\r\n"
+				+ "WHERE pu.idpublicacion =?";
+		PreparedStatement preStatement = connection.prepareStatement(query);
+		preStatement.setInt(1,id);
+		ResultSet aux = preStatement.executeQuery();
+		JSONArray authors = new JSONArray();
+		while(aux.next()) {
+			JSONObject author = new JSONObject();
+			author.put("nombre", aux.getString("nombre"));
+			author.put("apellidos", aux.getString("apellidos"));
+			authors.put(author);
+		}
+		return authors;
 	}
 
 	private static void connect() {
@@ -102,7 +250,7 @@ public class DataBaseManager {
 				processArticle(publicacion);
 			}
 			float per = (i / total) * 100;
-			if ((i * 1.0) % (total/400.0) <= 1) {
+			if ((i * 1.0) % (total / 400.0) <= 1) {
 				System.out.print(String.format("Progreso: %.2f %s \r", per, "%"));
 			}
 		}

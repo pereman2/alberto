@@ -23,7 +23,7 @@ public class Main {
 
 	static String searchApi = "http://localhost:8080/RestJerseyEjemplo/servicios";
 	public static void main(String[] args) throws JSONException, SQLException, IOException {
-		String[] sources = {"scholar"};
+		String[] sources = {"ieeex"};
 		loadJsons(sources, 2012, 2020);
 	}
 

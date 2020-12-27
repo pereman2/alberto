@@ -22,7 +22,6 @@ public class ExtractorIeex implements Extractor {
 		JSONArray aux = this.jsonObj.getJSONArray("articles");
 		for (int i = 0; i < aux.length(); i++) {
 			JSONArray iexArticles = ((JSONObject) aux.get(i)).getJSONArray("article");
-
 			for (int j = 0; j < iexArticles.length(); j++) {
 				JSONObject article = iexArticles.getJSONObject(j);
 				JSONObject publication = getPublication(article);

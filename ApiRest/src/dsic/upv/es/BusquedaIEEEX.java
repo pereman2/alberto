@@ -35,7 +35,7 @@ public class BusquedaIEEEX {
 	@Produces("application/json")
 	public Response BuscarIEEX(@PathParam("fechaI") Integer fechaI, @PathParam("fechaF") Integer fechaF)
 			throws Exception {
-		
+		/*
 		HttpURLConnection con = null;
 		String apiKey = "efv84mzqq6ydx4dbd59jhdcn";
 		
@@ -61,10 +61,9 @@ public class BusquedaIEEEX {
 		
 		return Response.status(200).entity(data.toMap()).build();
 		
-		/*
+		*/
 		String xmlString = null;
 		xmlString = new String(Files.readAllBytes(Paths.get("C://Users//polim//Desktop//Universidad//bib.json")), Charset.forName("UTF-8")).replaceAll("[^\\x20-\\x7e]", "");
 		return Response.status(200).entity(xmlString).build();
-		*/
 	}
 }
