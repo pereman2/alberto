@@ -4,6 +4,8 @@ import '../css/Busqueda.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+
+
 class Busqueda extends React.Component {
   constructor(props) {
     super(props);
@@ -45,6 +47,7 @@ class Busqueda extends React.Component {
   buscar() {
     let autor = this.getAutor();
     let titulo = this.getTitulo();
+    this.props.onSearch();
   }
   cancelar() {
 
