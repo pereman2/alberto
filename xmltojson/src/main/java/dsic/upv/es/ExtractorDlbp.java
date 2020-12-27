@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 
 import org.json.JSONArray;
@@ -28,7 +29,18 @@ public class ExtractorDlbp implements Extractor{
 			articlesDblp.put(dblpArticle);
 		}
 		dblpJson.put("publicaciones", articlesDblp);
-		DataBaseManager.insertIntoDB(dblpJson);
+		try {
+			DataBaseManager.insertIntoDB(dblpJson);
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private JSONObject getPublication(JSONObject article) {
@@ -48,10 +60,22 @@ public class ExtractorDlbp implements Extractor{
 	private JSONObject getEjemplar(JSONObject article) {
 		JSONObject ejemplar = new JSONObject();
 		if(article.has("volume")) {
-			ejemplar.put("volumen", article.get("volume"));
+			String volumen;
+			try {
+				volumen = Integer.toString(article.getInt("volume"));
+			} catch (Exception e) {
+				volumen = article.getString("volume");
+			}
+			ejemplar.put("volumen", volumen);
 		}
 		if(article.has("number")) {
-			ejemplar.put("numero", article.get("number"));
+			String number;
+			try {
+				number = Integer.toString(article.getInt("number"));
+			} catch (Exception e) {
+				number = article.getString("number");
+			}
+			ejemplar.put("numero", number);
 		}
 		ejemplar.put("revista", article.get("journal"));
 		return ejemplar;
@@ -176,7 +200,7 @@ public class ExtractorDlbp implements Extractor{
 		
 	}
 	private JSONObject getNameFromObject(JSONObject authorsJSON) {
-		return this.splitAuthorName(authorsJSON.getString("$"));
+		return this.splitAuthorName(authorsJSON.getString("content"));
 	}
 
 }

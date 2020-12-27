@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 
 import org.json.*;
@@ -50,7 +51,18 @@ public class ExtractorBibtex implements Extractor{
 			articles.put(publication);
 		}
 		iexJson.put("publicaciones", articles);
-		DataBaseManager.insertIntoDB(iexJson);
+		try {
+			DataBaseManager.insertIntoDB(iexJson);
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	private JSONObject getCongress(JSONObject article) {
 		JSONObject publication = new JSONObject();
