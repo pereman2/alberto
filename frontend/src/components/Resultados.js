@@ -11,49 +11,68 @@ class Resultados extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            page: 1,
+            pageMax: 5
         }
     }
 
+    isEmpty(obj) {
+        return Object.keys(obj).length === 0;
+    }
 
 
     renderResultados() {
         let resultados = [];
         // iterar tipos : libros articulos congresos
-        let index = 0;
-        for (const [key, value] of Object.entries(this.props.data)) {
-            for (let i = 0; i < value.length; i++) {
-                let resultado = (
-                    <Resultado data={value[i]} key={index} pos={index + 1} type={key}></Resultado>
-                )
-                resultados.push(resultado);
-                index++;
+        console.log(this.props.data);
+        if (this.props.data !== undefined && this.props.data.length > 0) {
+            for (let i = (this.state.page - 1) * this.state.pageMax; i < this.props.data.length && i < this.state.pageMax * this.state.page; i++) {
+                let value = this.props.data[i];
+                let autores = value["autores"];
+                if ((this.props.searchByAutor && !this.isEmpty(autores[0])) || !this.props.searchByAutor) {
+                    let resultado = (
+                        <Resultado data={value} key={i} pos={i + 1} type={value["tipo"]}></Resultado>
+                    )
+                    resultados.push(resultado);
+                }
             }
+
         }
-        return resultados;
+        if (resultados.length == 0) {
+            return (<div className="res-no-results">No se han encontrado resultados</div>);
+        } else {
+            return resultados;
+        }
+
     }
 
     renderPageNumbers() {
-        let page = this.props.page;
-        function styledPage(page) {
-            if (page <= 0) {
-                return "_"
+        let page = this.state.page;
+        const styledPage = (page) => {
+            if (page <= 0 || page >= (this.props.data.length / this.state.pageMax)) {
+                return "_";
             } else {
                 return page;
             }
         }
         return (
-            <div>
-                <span onClick={() => this.movePage(-2)} style={{fontSize: "20px", fontWeight:"normal"}}>{styledPage(page - 2)}</span>
-                <span onClick={() => this.movePage(-1)} style={{fontSize: "20px", fontWeight:"normal"}}>{styledPage(page - 1)}</span>
-                <span style={{fontSize: "40px", fontWeight:"bold"}}>{page}</span>
-                <span onClick={() => this.movePage(+1)} style={{fontSize: "20px", fontWeight:"normal"}}>{styledPage(page + 1)}</span>
-                <span onClick={() => this.movePage(+2)} style={{fontSize: "20px", fontWeight:"normal"}}>{styledPage(page + 2)}</span>
+            <div className="nav-numbers">
+                <span onClick={() => this.movePage(-2)} style={{ fontSize: "30px", fontWeight: "normal", }}>{styledPage(page - 2)}</span>
+                <span onClick={() => this.movePage(-1)} style={{ fontSize: "30px", fontWeight: "normal" }}>{styledPage(page - 1)}</span>
+                <span style={{ fontSize: "45px", fontWeight: "bold" }}>{page}</span>
+                <span onClick={() => this.movePage(+1)} style={{ fontSize: "30px", fontWeight: "normal" }}>{styledPage(page + 1)}</span>
+                <span onClick={() => this.movePage(+2)} style={{ fontSize: "30px", fontWeight: "normal" }}>{styledPage(page + 2)}</span>
             </div>
         );
     }
 
     movePage(movement) {
-        this.props.onChangeResultPage(this.props.page + movement);
+        let newPage = this.state.page + movement;
+        if (newPage > 0 && newPage < this.props.data.length / this.state.pageMax) {
+            this.setState({
+                page: newPage
+            })
+        }
     }
     render() {
         return (
@@ -65,13 +84,13 @@ class Resultados extends React.Component {
 
                 </div>
                 <div className="page-nav">
-                    <img onClick={() => this.movePage(-2)} src={leftMoreImage}></img>
-                    <img onClick={() => this.movePage(-1)} src={leftImage}></img>
+                    <img className="nav-arrow" onClick={() => this.movePage(-2)} src={leftMoreImage}></img>
+                    <img className="nav-arrow" onClick={() => this.movePage(-1)} src={leftImage}></img>
                     <div className="pages-nav">
                         {this.renderPageNumbers()}
                     </div>
-                    <img onClick={() => this.movePage(1)}  src={rightImage}></img>
-                    <img onClick={() => this.movePage(2)}  src={rightMoreImage}></img>
+                    <img className="nav-arrow" onClick={() => this.movePage(1)} src={rightImage}></img>
+                    <img className="nav-arrow" onClick={() => this.movePage(2)} src={rightMoreImage}></img>
                 </div>
             </div>
         );

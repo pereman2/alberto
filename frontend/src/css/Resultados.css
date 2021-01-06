@@ -1,6 +1,6 @@
 .resultados-wrapper {
     /* 100 px of margin top of resulados wrapper + nav height */
-    height: calc(100vh - 150px); 
+    height: calc(100vh - 150px);
     width: 100%;
     margin-top: 100px;
     display: flex;
@@ -14,11 +14,39 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: space-around;
+    font-size: large;
+    margin-left: 130px;
+}
+
+.res-no-results {
+    align-self: center;
+    font-size: 30px;
+    margin-left: -120px;
+    font-weight: bold;
 }
 
 .page-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+    align-self: center;
+    max-width: 800px;
+}
+
+.nav-arrow {
+    margin: 5px;
+    max-height: 70px;
+    display: flex;
+    max-width: 70px;
+}
+
+.nav-numbers {
+    display: flex;
+    min-width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
 }

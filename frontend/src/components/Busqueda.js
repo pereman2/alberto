@@ -3,6 +3,7 @@ import '../css/App.css';
 import '../css/Busqueda.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { requestDBSearch } from "../requests/SearchRequest";
 
 
 
@@ -34,20 +35,37 @@ class Busqueda extends React.Component {
       e.target.style.backgroundColor = "transparent";
     } else {
       this.state.publicaciones.push(fuente);
-      e.target.style.backgroundColor = "yellow";
+      e.target.style.backgroundColor = "black";
     }
-    console.log(this.state.publicaciones);
   }
   getTitulo() {
-    return this.tituloDiv.current.text;
+    return this.tituloDiv.current.value;
   }
   getAutor() {
-    return this.autorDiv.current.text;
+    return this.autorDiv.current.value;
   }
-  buscar() {
-    let autor = this.getAutor();
-    let titulo = this.getTitulo();
-    this.props.onSearch();
+
+  toggleAutor() {
+    return !this.getAutor() == "";
+  }
+
+  async buscar() {
+    this.props.toggleSearchByAutor(this.toggleAutor());
+    let autor = this.getAutor().trim();
+    if (autor === undefined || autor == "") {
+      autor = "%20";
+    }
+    let titulo = this.getTitulo().trim();
+    if (titulo === undefined || titulo == "") {
+      titulo = "%20";
+    }
+    let startYear = this.state.startDate != null ? this.state.startDate.getFullYear() : "0";
+    let endYear = this.state.endDate != null ? this.state.endDate.getFullYear() : "0";
+    let articulo = this.state.publicaciones.includes("articulo") ? "true" : "false";
+    let congreso = this.state.publicaciones.includes("congreso") ? "true" : "false";
+    let libro = this.state.publicaciones.includes("libro") ? "true" : "false";
+    let results = await requestDBSearch(titulo, autor, startYear, endYear, articulo, congreso, libro);
+    this.props.onSearch(results);
   }
   cancelar() {
 
