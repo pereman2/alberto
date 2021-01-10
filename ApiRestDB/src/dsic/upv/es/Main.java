@@ -2,22 +2,17 @@ package dsic.upv.es;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.sql.SQLException;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 
 public class Main {
 
@@ -78,13 +73,6 @@ public class Main {
 			}
 		}
 		return total;
-	}
-	
-	private static JSONObject loadJson(String path) throws FileNotFoundException {
-		InputStream is = new FileInputStream(System.getProperty("user.dir") + path);
-		JSONTokener tokener = new JSONTokener(is);
-		JSONObject object = new JSONObject(tokener);
-		return object;
 	}
 
 	private static String getData(String urlString)

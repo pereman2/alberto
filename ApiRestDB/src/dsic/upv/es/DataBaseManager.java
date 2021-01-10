@@ -1,16 +1,10 @@
 package dsic.upv.es;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,24 +13,17 @@ import java.sql.Statement;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 
-import com.google.common.base.Charsets;
 
 public class DataBaseManager {
-	// FIX paths
-	private static final String[] convertedPaths = { System.getProperty("user.dir") + "/mapped-data/iex-converted.json",
-			System.getProperty("user.dir") + "/mapped-data/dblp-converted.json",
-			System.getProperty("user.dir") + "/mapped-data/bibtext-converted.json" };
 	private static final String[] tables = { "publicacionpersona", "articulo", "ejemplar", "revista",
 			"comunicacioncongreso", "libro", "persona", "publicacion" };
 
 	private static ConnectionManager connectionManager;
 	private static Connection connection;
-
-	private static final String URL = "jdbc:mysql://localhost:3306/publications?useUnicode=yes";
+	private static final String URL = "jdbc:mysql://127.0.0.1:3306/publications?useUnicode=yes";
 	private static final String USER = "root";
-	private static final String PASSWORD = "root";
+	private static final String PASSWORD = "passwordroot";
 
 	private static int idArticulo = 1;
 	private static int idComunicacionCongreso = 1;
@@ -202,6 +189,10 @@ public class DataBaseManager {
 			statement.executeUpdate("DELETE FROM " + table);
 			connection.commit();
 		}
+		resetIds();
+	}
+
+	private static void resetIds() {
 		idArticulo = 1;
 		idComunicacionCongreso = 1;
 		idEjemplar = 1;
@@ -211,15 +202,6 @@ public class DataBaseManager {
 		idRevista = 1;
 	}
 
-	private static void insertIntoDBAll()
-			throws FileNotFoundException, JSONException, SQLException, UnsupportedEncodingException {
-		for (String path : convertedPaths) {
-			InputStream inputStream = new FileInputStream(path);
-			JSONTokener tokener = new JSONTokener(inputStream);
-			JSONObject object = new JSONObject(tokener);
-			insertIntoDB(object);
-		}
-	}
 
 	public static int insertIntoDB(JSONObject input) throws JSONException, SQLException, UnsupportedEncodingException {
 		connect();
@@ -229,30 +211,45 @@ public class DataBaseManager {
 		for (int i = 0; i < publicaciones.length(); i++) {
 			JSONObject publicacion = publicaciones.getJSONObject(i);
 			if (publicacion.has("publication_type")) {
-				switch (publicacion.getString("publication_type")) {
-				case "article":
-					processArticle(publicacion);
-					break;
-				case "conference":
-					processConference(publicacion);
-					break;
-				case "book":
-					processBook(publicacion);
-					break;
-				}
+				processPublication(publicacion);
 			} else {
 				processArticle(publicacion);
 			}
-			float per = (i / total) * 100;
-			if ((i * 1.0) % (total / 400.0) <= 1) {
-				System.out.print(String.format("Progreso: %.2f %s \r", per, "%"));
-			}
+			printProgess(total, i);
 		}
+		printProgess(total, (int)total);
+
+		return getNumPublicaciones();
+	}
+
+	private static int getNumPublicaciones() throws SQLException {
 		Statement statement = connection.createStatement();
 		ResultSet rs = statement
 				.executeQuery("SELECT COUNT(*) as rowcount FROM publicacion");
 		rs.next();
-		return rs.getInt("rowcount");
+		int rows = rs.getInt("rowcount");
+		return rows;
+	}
+
+	private static void processPublication(JSONObject publicacion) throws SQLException, UnsupportedEncodingException {
+		switch (publicacion.getString("publication_type")) {
+		case "article":
+			processArticle(publicacion);
+			break;
+		case "conference":
+			processConference(publicacion);
+			break;
+		case "book":
+			processBook(publicacion);
+			break;
+		}
+	}
+
+	private static void printProgess(float total, int i) {
+		float per = (i / total) * 100;
+		if ((i * 1.0) % (total / 400.0) <= 1) {
+			System.out.print(String.format("Progreso: %.2f %s \r", per, "%"));
+		}
 	}
 
 	private static void processArticle(JSONObject article)
@@ -261,33 +258,50 @@ public class DataBaseManager {
 		String titulo = getTitle(article);
 		JSONObject ejemplar = article.getJSONObject("ejemplar");
 		if (!checkDuplicatedPublication(titulo)) {
-			if (hasAJournalName(ejemplar)) {
-				String nombre = getJournalName(ejemplar);
-				try {
-					insertIntoRevistaTable(idRevista++, nombre);
-				} catch (Exception e) {
-					idRevis = Integer.toString(findRevista(nombre));
-					idRevista--;
-				}
-			} else {
-				idRevis = null;
-			}
+			idRevis = insertRevista(idRevis, ejemplar);
 
-			String volumen = getVolume(ejemplar);
-			String numero = getIssue(ejemplar);
-			String mes = getMonth(ejemplar);
-
-			insertIntoEjemplarTable(idEjemplar, volumen, numero, mes, idRevis);
-
-			int anyo = getYear(article);
-			String URL = getURL(article);
-			String paginaInicio = getInitPage(article);
-			String paginaFin = getEndPage(article);
-
-			insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
+			insertEjemplar(idRevis, ejemplar);
+			insertPublicacion(article, titulo);
 			processPersonas(article.getJSONArray("persona"), idPublicacion);
-			insertIntoArticuloTable(idArticulo++, paginaInicio, paginaFin, idPublicacion++, idEjemplar++);
+			insertArticulo(article);
+			
+			idArticulo++; idPublicacion++; idEjemplar++;
 		}
+	}
+
+	private static void insertArticulo(JSONObject article) throws SQLException {
+		String paginaInicio = getInitPage(article);
+		String paginaFin = getEndPage(article);
+		insertIntoArticuloTable(idArticulo, paginaInicio, paginaFin, idPublicacion, idEjemplar);
+	}
+
+	private static void insertPublicacion(JSONObject article, String titulo) throws SQLException {
+		int anyo = getYear(article);
+		String URL = getURL(article);
+		insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
+	}
+
+	private static void insertEjemplar(String idRevis, JSONObject ejemplar) throws SQLException {
+		String volumen = getVolume(ejemplar);
+		String numero = getIssue(ejemplar);
+		String mes = getMonth(ejemplar);
+
+		insertIntoEjemplarTable(idEjemplar, volumen, numero, mes, idRevis);
+	}
+
+	private static String insertRevista(String idRevis, JSONObject ejemplar) throws SQLException {
+		if (hasAJournalName(ejemplar)) {
+			String nombre = getJournalName(ejemplar);
+			try {
+				insertIntoRevistaTable(idRevista, nombre);
+				idRevista++;
+			} catch (Exception e) {
+				idRevis = Integer.toString(findRevista(nombre));
+			}
+		} else {
+			idRevis = null;
+		}
+		return idRevis;
 	}
 
 	private static void processConference(JSONObject conference)
@@ -297,17 +311,20 @@ public class DataBaseManager {
 		String URL = getURL(conference);
 		if (!checkDuplicatedPublication(titulo)) {
 			insertIntoPublicacionTable(idPublicacion, titulo, anyo, URL);
-
-			String congreso = getConvention(conference);
-			String edicion = getEdition(conference);
-			String lugar = getLocation(conference);
-			String paginaInicio = getInitPage(conference);
-			String paginaFin = getEndPage(conference);
-
-			insertIntoComunicacionCongresoTable(idComunicacionCongreso++, congreso, edicion, lugar, paginaInicio,
-					paginaFin, idPublicacion);
+			insertCongreso(conference);
 			processPersonas(conference.getJSONArray("persona"), idPublicacion++);
 		}
+	}
+
+	private static void insertCongreso(JSONObject conference) throws SQLException {
+		String congreso = getConvention(conference);
+		String edicion = getEdition(conference);
+		String lugar = getLocation(conference);
+		String paginaInicio = getInitPage(conference);
+		String paginaFin = getEndPage(conference);
+
+		insertIntoComunicacionCongresoTable(idComunicacionCongreso++, congreso, edicion, lugar, paginaInicio,
+				paginaFin, idPublicacion);
 	}
 
 	private static void processBook(JSONObject book) throws JSONException, SQLException, UnsupportedEncodingException {

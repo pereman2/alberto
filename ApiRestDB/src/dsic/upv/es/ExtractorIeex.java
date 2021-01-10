@@ -1,9 +1,5 @@
 package dsic.upv.es;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 
@@ -66,9 +62,6 @@ public class ExtractorIeex implements Extractor {
 			publication.put("publication_type", "book");
 			publication.put("editorial", this.getEditorial(article));
 		}
-		// dblpArticle.put("pagina_inicio", this.getFirstPage(article));
-		// dblpArticle.put("pagina_fin", this.getEndPage(article));
-		// dblpArticle.put("ejemplar", this.getEjemplar(article));
 		return publication;
 	}
 

@@ -1,9 +1,5 @@
 package dsic.upv.es;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 
@@ -121,12 +117,7 @@ public class ExtractorBibtex implements Extractor{
 		}
 		return "";
 	}
-	private String getLugar(JSONObject article) {
-		if(article.has("conference_location")) {
-			return article.getString("conference_location");
-		}
-		return "";
-	}
+	
 	private int getYear(JSONObject article) {
 		int year = -1;
 		if(article.has("year")) {
@@ -150,13 +141,6 @@ public class ExtractorBibtex implements Extractor{
 			}
 		}
 		return endPage;
-	}
-	private String getUrl(JSONObject article) {
-		String url = "";
-		if(article.has("html_url")) {
-			url = article.getString("html_url");
-		}
-		return url;
 	}
 	private String getTitle(JSONObject article) {
 		String title = "";

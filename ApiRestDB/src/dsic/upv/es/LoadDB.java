@@ -6,7 +6,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 @Path("/LoadDB")
