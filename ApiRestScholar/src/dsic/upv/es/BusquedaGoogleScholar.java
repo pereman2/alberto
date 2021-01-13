@@ -48,8 +48,12 @@ public class BusquedaGoogleScholar {
 	public Response BuscarGS(@PathParam("fechaI") Integer fechaI, @PathParam("fechaF") Integer fechaF)
 			throws Exception {
 		
-		//String publications = loadFromSelenium(fechaI, fechaF);			
-		String publications = loadFromFile();
+		String publications = loadFromSelenium(fechaI, fechaF);	
+		if(publications.equals("")) 
+		{
+			publications = loadFromFile();
+		}
+		
 		BibTexToJson parser = new BibTexToJson(publications);
 		JSONObject data = parser.getJson();
 		JSONObject res = new JSONObject();

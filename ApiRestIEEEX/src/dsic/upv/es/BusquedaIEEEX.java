@@ -31,9 +31,13 @@ public class BusquedaIEEEX {
 	@Produces("application/json")
 	public Response BuscarIEEEX(@PathParam("fechaI") Integer fechaI, @PathParam("fechaF") Integer fechaF)
 			throws Exception {
-		// Si no se puede usar por problemas de carga con IEEEX cambiar a loadFromFile
-		Map<String, Object> map = loadFromIeeex(fechaI, fechaF);
-		// Map<String, Object> map = loadFromFile(fechaI, fechaF);
+		
+		Map<String, Object> map;
+		try {
+			map = loadFromIeeex(fechaI, fechaF);
+		} catch(Exception e ) {
+			map = loadFromFile(fechaI, fechaF);
+		}
 		
 		return Response.status(200).entity(map).build();
 	}
