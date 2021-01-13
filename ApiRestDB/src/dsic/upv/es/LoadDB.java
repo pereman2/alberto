@@ -32,7 +32,7 @@ public class LoadDB {
 			sources[2] = "";
 		}
 		
-		JSONObject res = Main.loadJsons(sources, fechaI, fechaF);
+		JSONObject res = LoadDBController.loadJsons(sources, fechaI, fechaF);
 		
 		return Response.status(200).entity(res.toMap()).build();
 	}

@@ -11,6 +11,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +26,7 @@ public class BusquedaGoogleScholar {
 	private static final int MAX_PAGES = 10;
 	private static final int NUM_ELEMENTS = 11;
 	private static WebDriver driver = null;
+	private static String [] types = {"books","incollection","inproceedings","articles"};
 
 	private static void GoogleChrome(int fechaI, int fechaF) {
 		String exePath = "C:\\Users\\Administrador\\git\\alberto\\ApiRestScholar\\Resources\\chromedriver.exe";
@@ -45,15 +48,34 @@ public class BusquedaGoogleScholar {
 	public Response BuscarGS(@PathParam("fechaI") Integer fechaI, @PathParam("fechaF") Integer fechaF)
 			throws Exception {
 		
-		String publications = loadFromSelenium(fechaI, fechaF);			
-		//String publications = loadFromFile();
+		//String publications = loadFromSelenium(fechaI, fechaF);			
+		String publications = loadFromFile();
+		BibTexToJson parser = new BibTexToJson(publications);
+		JSONObject data = parser.getJson();
+		JSONObject res = new JSONObject();
+		for(String type:types) {
+			res.put(type, filter(type, data, fechaI, fechaF));
+		}
 		
-		return Response.status(200).entity(publications).build();
+		return Response.status(200).entity(res.toMap()).build();
+	}
+	
+	private JSONArray filter(String type, JSONObject input, int startYear, int endYear) {
+		JSONArray aux = input.getJSONArray(type);
+		JSONArray res = new JSONArray();
+		for(int i = 0; i < aux.length(); i++) {
+			JSONObject publication = aux.getJSONObject(i);
+			if(publication.has("year") && publication.getInt("year") <= endYear &&
+					publication.getInt("year") >= startYear) {
+				res.put(publication);
+			}
+		}
+		return res;
 	}
 
 	private String loadFromFile() throws IOException {
 		String xmlString = null;
-		xmlString = new String(Files.readString(Paths.get("C://Users//polim//Desktop//Universidad//scholar.bib")));
+		xmlString = new String(Files.readString(Paths.get("C:\\Users\\Administrador\\git\\alberto\\ApiRestScholar\\Resources\\scholar.bib")));
 		return xmlString;
 	}
 

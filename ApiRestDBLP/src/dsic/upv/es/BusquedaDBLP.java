@@ -17,7 +17,7 @@ import org.json.XML;
 
 @Path("/BuscarDBLP")
 public class BusquedaDBLP {
-	private static final String PATH = "C:\\Users\\Administrador\\git\\alberto\\ApiRestDBLP\\Resources\\DBLP-SOLO_ARTICLE-1 (1).XML";
+	private static final String PATH = "C:\\Users\\Administrador\\git\\alberto\\ApiRestDBLP\\Resources\\DBLP-ENTREGA-FINAL.xml";
 	private static final int maxPublications= 1000;
 	@GET
 	@Path("/{fechaI}/{fechaF}")

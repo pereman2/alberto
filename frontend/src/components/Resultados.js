@@ -49,7 +49,7 @@ class Resultados extends React.Component {
     renderPageNumbers() {
         let page = this.state.page;
         const styledPage = (page) => {
-            if (page <= 0 || page >= (this.props.data.length / this.state.pageMax)) {
+            if (page <= 0 || page >= (this.props.data.length / this.state.pageMax + 1)) {
                 return "_";
             } else {
                 return page;
@@ -68,7 +68,7 @@ class Resultados extends React.Component {
 
     movePage(movement) {
         let newPage = this.state.page + movement;
-        if (newPage > 0 && newPage < this.props.data.length / this.state.pageMax) {
+        if (newPage > 0 && newPage < this.props.data.length / this.state.pageMax + 1) {
             this.setState({
                 page: newPage
             })

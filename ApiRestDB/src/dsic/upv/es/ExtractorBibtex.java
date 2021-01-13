@@ -61,6 +61,7 @@ public class ExtractorBibtex implements Extractor{
 		}
 		return 0;
 	}
+	
 	private JSONObject getCongress(JSONObject article) {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
@@ -72,12 +73,14 @@ public class ExtractorBibtex implements Extractor{
 		publication.put("publication_type", "conference");
 		return publication;
 	}
+	
 	private String getCongressName(JSONObject article) {
 		if(article.has("booktitle")) {
 			return article.getString("booktitle");
 		}
 		return "";
 	}
+	
 	private JSONObject getBook(JSONObject article) {
 		JSONObject publication = new JSONObject();
 		publication.put("persona", this.getAuthors(article));
@@ -87,6 +90,7 @@ public class ExtractorBibtex implements Extractor{
 		publication.put("publication_type", "book");
 		return publication;
 	}
+	
 	private JSONObject getPublication(JSONObject article) {
 		JSONObject publication = new JSONObject();
 		publication.put("publication_type", "article");
@@ -98,6 +102,7 @@ public class ExtractorBibtex implements Extractor{
 		publication.put("ejemplar", this.getEjemplar(article));
 		return publication;
 	}
+	
 	private JSONObject getEjemplar(JSONObject article) {
 		JSONObject ejemplar = new JSONObject();
 		if(article.has("volume")) {
@@ -111,6 +116,7 @@ public class ExtractorBibtex implements Extractor{
 		}
 		return ejemplar;
 	}
+	
 	private String getEditorial(JSONObject article) {
 		if(article.has("publisher")) {
 			return article.getString("publisher");
@@ -125,12 +131,14 @@ public class ExtractorBibtex implements Extractor{
 		}
 		return year;
 	}
+	
 	private String getFirstPage(JSONObject article) {
 		if(article.has("pages")) {
 			return article.getString("pages").split("--")[0];
 		}
 		return "";
 	}
+	
 	private String getEndPage(JSONObject article) {
 		String endPage = "";
 		if(article.has("pages")) {
@@ -142,6 +150,7 @@ public class ExtractorBibtex implements Extractor{
 		}
 		return endPage;
 	}
+	
 	private String getTitle(JSONObject article) {
 		String title = "";
 		if(article.has("title")) {
@@ -149,6 +158,7 @@ public class ExtractorBibtex implements Extractor{
 		}
 		return title;
 	}
+	
 	private JSONArray getAuthors(JSONObject article) {
 		JSONArray authors = new JSONArray();
 		if(article.has("author")) {

@@ -129,15 +129,6 @@ public class DataBaseManager {
 			
 			
 		}
-
-		try (FileWriter file = new FileWriter(new File("C:\\Users\\polim\\Desktop\\Universidad\\search response.json"))) {
-			 
-            file.write(res.toString(4));
-            file.flush();
- 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 		return res;
 	}
 

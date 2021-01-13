@@ -1,0 +1,77 @@
+{
+    "books": [
+        {
+            "year": "2012",
+            "author": "Weber, Max",
+            "publisher": "Fondo de cultura economica",
+            "title": "La etica protestante y el espiritu del capitalismo"
+        },
+        {
+            "year": "2012",
+            "author": "Arias, Fidias G",
+            "publisher": "Fidias G. Arias Odon",
+            "title": "El proyecto de investigacion. Introduccion a la metodologia cientifica. 6ta"
+        },
+        {
+            "year": "2012",
+            "author": "Rawls, John",
+            "publisher": "Fondo de cultura economica",
+            "title": "Teoria de la justicia"
+        },
+        {
+            "year": "2012",
+            "author": "Bachelard, Gaston",
+            "publisher": "Fondo de cultura economica",
+            "title": "La poetica del espacio"
+        },
+        {
+            "year": "2012",
+            "author": "Canclini, Nestor Garcia",
+            "publisher": "Debolsillo",
+            "title": "Culturas hibridas"
+        },
+        {
+            "volume": "303",
+            "year": "2012",
+            "author": "Flick, Uwe and others",
+            "publisher": "Ediciones Morata, SL",
+            "title": "Introduccion a la investigacion cualitativa"
+        },
+        {
+            "volume": "15",
+            "year": "2012",
+            "author": "Olabuenaga, Jose Ignacio Ruiz",
+            "publisher": "Universidad de Deusto",
+            "title": "Metodologia de la investigacion cualitativa"
+        },
+        {
+            "year": "2013",
+            "author": "Raffestin, Claude and Santana, Octavio Martin Gonzalez",
+            "publisher": "El Colegio de Michoacan Michoacan",
+            "title": "Por una geografia del poder"
+        }
+    ],
+    "incollection": [],
+    "inproceedings": [],
+    "articles": [
+        {
+            "volume": "3",
+            "number": "1",
+            "journal": "R package version",
+            "pages": "111",
+            "year": "2013",
+            "author": "Pinheiro, Jose and Bates, Douglas and DebRoy, Saikat and Sarkar, Deepayan and Team, R Core and others",
+            "title": "nlme: Linear and nonlinear mixed effects models"
+        },
+        {
+            "volume": "11",
+            "number": "26",
+            "journal": "Medicine-Programa de Formacion Medica Continuada Acreditado",
+            "pages": "1597--1607",
+            "year": "2013",
+            "author": "Leon, ML Villalobos and Villaverde, R Molina and Gonzalez, JL Lopez and Soto, M Alvarez-Mon",
+            "publisher": "Elsevier",
+            "title": "Melanoma"
+        }
+    ]
+}
